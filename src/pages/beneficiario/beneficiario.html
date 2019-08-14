@@ -1,0 +1,151 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Beneficiário</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentBeneficiario">
+    <div class="user-details">
+        <ion-row wrap class="user-bio-row">
+            <ion-col no-padding col-12 text-center>
+                <h2 class="user-name">{{beneficiario.nome | capitalizeAll}}</h2>
+            </ion-col>
+            <section class="user-detail-section">
+                <ion-col no-padding col-12>
+                    <p class="user-description">
+                        Matrícula: {{beneficiario.matriculaCassems | matriculaCassems}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="user-description">
+                        Dependência: {{beneficiario.descricaoDependencia | capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="user-description">
+                        Validade Carteira: {{(beneficiario.compValidadeFinal || beneficiario.dataValidadeFinal) | date:
+                        "dd/MM/y"}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12 *ngIf="beneficiario.cpf">
+                    <p class="user-description">
+                        CPF: {{beneficiario.cpf | cpf}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12 *ngIf="beneficiario.rg">
+                    <p class="user-description">
+                        RG: {{beneficiario.rg}}<span *ngIf="beneficiario.orgaoExpRg">{{beneficiario.orgaoExpRg}}</span>
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="user-description">
+                        Data Nascimento: {{beneficiario.dataNascimento | date: "dd/MM/y"}}
+                    </p>
+                </ion-col>
+            </section>
+        </ion-row>
+    </div>
+    <div class="endereco-content"
+         *ngIf="isTitular && beneficiarioLogado.benId === beneficiario.benId">
+        <ion-grid>
+            <ion-row>
+                <ion-col no-padding col-12 text-center>
+                    <h2 class="endereco-title">Endereço</h2>
+                </ion-col>
+            </ion-row>
+            <section class="endereco-detail-section">
+                <ion-row>
+                    <ion-col no-padding col-12>
+                        <p class="endereco-description">
+                            CEP: {{beneficiario.cep | cep}}
+                        </p>
+                    </ion-col>
+                    <ion-col no-padding col-12>
+                        <p class="endereco-description">
+                            Logradouro: {{beneficiario.enderecoResidencial | capitalizeAll}},
+                            {{beneficiario.numeroResidencial}}
+                        </p>
+                    </ion-col>
+                    <ion-col no-padding col-12 *ngIf="beneficiario.complementoEndereco">
+                        <p class="endereco-description">
+                            Complemento: {{beneficiario.complementoEndereco | capitalizeAll}}
+                        </p>
+                    </ion-col>
+                    <ion-col no-padding col-12>
+                        <p class="endereco-description">
+                            Bairro: {{beneficiario.bairro | capitalizeAll}}
+                        </p>
+                    </ion-col>
+                    <ion-col no-padding col-12>
+                        <p class="endereco-description">
+                            Cidade: {{beneficiario.municipioResidencial | capitalizeAll}}
+                        </p>
+                    </ion-col>
+                    <ion-col no-padding col-12>
+                        <p class="endereco-description">
+                            Estado: {{beneficiario.estadoResidencial}}
+                        </p>
+                    </ion-col>
+                    <ion-col no-padding col-12>
+                        <p class="endereco-description">
+                            Telefone: {{beneficiario.telefone | telefone}}
+                        </p>
+                    </ion-col>
+                    <ion-col no-padding col-12>
+                        <p class="endereco-description">
+                            Celular: {{beneficiario.celular | telefone}}
+                        </p>
+                    </ion-col>
+                </ion-row>
+                <section class="endereco-options">
+                    <ion-row>
+                        <ion-col></ion-col>
+                        <ion-col col-8>
+                            <button class="atualizar-endereco-button" block ion-button type="button"
+                                    (click)="atualizarEndereco()">Atualizar Endereço
+                            </button>
+                        </ion-col>
+                        <ion-col></ion-col>
+                    </ion-row>
+                </section>
+            </section>
+        </ion-grid>
+    </div>
+    <div class="contato-content">
+        <ion-grid>
+            <ion-row>
+                <ion-col no-padding col-12 text-center>
+                    <h2 class="contato-title">Contato</h2>
+                </ion-col>
+            </ion-row>
+            <section class="contato-detail-section">
+                <ion-row>
+                    <ion-col no-padding col-12>
+                        <p class="contato-description">
+                            Celular: {{beneficiario.celularContato | telefone}}
+                        </p>
+                    </ion-col>
+                    <ion-col no-padding col-12>
+                        <p class="contato-description">
+                            E-mail: {{beneficiario.email}}
+                        </p>
+                    </ion-col>
+                </ion-row>
+                <section class="contato-options">
+                    <ion-row>
+                        <ion-col></ion-col>
+                        <ion-col col-8>
+                            <button class="atualizar-contato-button" block ion-button type="button"
+                                    (click)="atualizarContato()">Atualizar Contato
+                            </button>
+                        </ion-col>
+                        <ion-col></ion-col>
+                    </ion-row>
+                </section>
+            </section>
+        </ion-grid>
+    </div>
+</ion-content>

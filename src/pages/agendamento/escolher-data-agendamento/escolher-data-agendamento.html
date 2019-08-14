@@ -1,0 +1,93 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <span class="titulo-page">Data Agendamento</span>
+        </ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="abrirInformacoes()">
+                <ion-icon name="information"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentEscolherDataAgendamento">
+    <form (ngSubmit)="confirmarAgendamento()" class="formEscolherDataAgendamento" [formGroup]="agendamentoForm"
+          #agendamentoFormElement="ngForm" novalidate>
+        <ion-list>
+            <ion-item>
+                <ion-label floating>Nome do Prestador</ion-label>
+                <ion-input class="text-dark" [readonly]="true" type="text" [(ngModel)]="prestador.nome"
+                           formControlName="nome"></ion-input>
+            </ion-item>
+            <div *ngIf="tipoBusca == 'especialidade' || tipoBusca == 'prestador'">
+                <ion-item>
+                    <ion-label floating>Especialidade</ion-label>
+                    <ion-select [(ngModel)]="codEspecialidade" formControlName="codEspecialidade" cancelText="Fechar"
+                                (ionChange)="buscarCentroMedico()">
+                        <ion-option [value]="especialidade.codEspecialidade"
+                                    *ngFor="let especialidade of listaEspecialidades">{{especialidade.descricao |
+                            capitalizeAll}}
+                        </ion-option>
+                    </ion-select>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Centro Médico</ion-label>
+                    <ion-select [(ngModel)]="codCentroMedico" formControlName="codCentroMedico" cancelText="Fechar"
+                                (ionChange)="buscarAgendaPrestador()" [disabled]="listaCentroMedicos.length == 0">
+                        <ion-option [value]="centroMedico.codCentroMedico"
+                                    *ngFor="let centroMedico of listaCentroMedicos">
+                            {{centroMedico.descricao | capitalizeAll}}
+                        </ion-option>
+                    </ion-select>
+                </ion-item>
+            </div>
+            <div *ngIf="tipoBusca == 'cm'">
+                <ion-item>
+                    <ion-label floating>Centro Médico</ion-label>
+                    <ion-select [(ngModel)]="codCentroMedico" formControlName="codCentroMedico" cancelText="Fechar"
+                                (ionChange)="buscarEspecialidade()">
+                        <ion-option [value]="centroMedico.codCentroMedico"
+                                    *ngFor="let centroMedico of listaCentroMedicos">
+                            {{centroMedico.descricao | capitalizeAll}}
+                        </ion-option>
+                    </ion-select>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Especialidade</ion-label>
+                    <ion-select [(ngModel)]="codEspecialidade" formControlName="codEspecialidade" cancelText="Fechar"
+                                (ionChange)="buscarAgendaPrestador()"
+                                [disabled]="listaEspecialidades.length == 0">
+                        <ion-option [value]="especialidade.codEspecialidade"
+                                    *ngFor="let especialidade of listaEspecialidades">{{especialidade.descricao |
+                            capitalizeAll}}
+                        </ion-option>
+                    </ion-select>
+                </ion-item>
+            </div>
+            <ion-item>
+                <ion-label floating>Data</ion-label>
+                <ion-select [(ngModel)]="dataAgendamento" formControlName="dataAgendamento" cancelText="Fechar"
+                            (ionChange)="atribuirHora()" [disabled]="listaDatasAgendamento.length == 0">
+                    <ion-option [value]="data.dataFormatada+'-'+data.horaFormatada" *ngFor="let data of listaDatasAgendamento">
+                        {{data.dataFormatada+" - "+data.horaFormatada}}
+                    </ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Beneficiário</ion-label>
+                <ion-select [(ngModel)]="matriculaCassems" formControlName="matriculaCassems" cancelText="Fechar" #beneficiario
+                             (ionChange)="atribuirBeneficiario()">
+                    <ion-option [value]="beneficiario.matriculaCassems" *ngFor="let beneficiario of listaGrupoFamiliar">
+                        {{beneficiario.nome | capitalizeAll}}
+                    </ion-option>
+                </ion-select>
+            </ion-item>
+        </ion-list>
+        <button type="submit" ion-button block [disabled]="!agendamentoFormElement.form.valid">Confirmar Agendamento
+        </button>
+    </form>
+</ion-content>

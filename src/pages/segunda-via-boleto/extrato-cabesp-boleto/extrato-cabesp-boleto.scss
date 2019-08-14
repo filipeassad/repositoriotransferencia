@@ -1,0 +1,45 @@
+page-extrato-cabesp-boleto {
+  .contentExtratoCabespBoleto {
+    background-color: color($colors, background, base);
+    
+    .extrato {
+      @include element-shadow();
+      padding-bottom: 4%;
+      background-color: $white;
+
+      .extrato-title-row {
+        padding: 4%;
+
+        .extrato-title {
+          font-size: 1.6rem;
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          color: $theme-color-1;
+          margin: 0px;
+        }
+
+        .extrato-location {
+          font-size: 1.2rem;
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          color: $white-e;
+          display: block;
+          text-align: right;
+          line-height: 1.6;
+        }
+
+        .extrato-description {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          letter-spacing: 0.2px;
+          color: $white-e;
+          margin: 10px 0px 0px;
+        }
+
+        .extrato-details-section {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}

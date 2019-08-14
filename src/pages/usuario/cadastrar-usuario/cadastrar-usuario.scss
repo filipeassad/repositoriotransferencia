@@ -1,0 +1,27 @@
+page-cadastrar-usuario {
+
+  .switcher-item {
+
+    .button {
+      margin: 0px;
+      padding: 0px;
+      font-size: 1.2rem;
+    }
+
+    @include switcher-item-styles($white-e, $theme-color-1);
+
+    padding: 0px 14px;
+    background: $white;
+
+
+    .item-inner {
+      ion-label {
+        opacity: 1;
+      }
+
+      ion-toggle {
+        padding-right: 0px;
+      }
+    }
+  }
+}

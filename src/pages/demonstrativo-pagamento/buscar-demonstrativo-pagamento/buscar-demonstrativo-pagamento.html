@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <span class="titulo-page">Demonstrativo Pagamento</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentBuscaDemonstrativoPagamento">
+    <form (ngSubmit)="buscarDemonstrativoPagamento()" class="formBuscaDemonstrativoPagamento" [formGroup]="buscaForm" #buscaFormElement="ngForm">
+        <ion-list>
+            <ion-item>
+                <ion-label floating>Ano</ion-label>
+                <ion-datetime displayFormat="YYYY" doneText="Ok" min="2013" max="2018" cancelText="Fechar" [(ngModel)]="buscaDemonstrativoPagamentoTO.ano" formControlName="ano"></ion-datetime>
+            </ion-item>
+        </ion-list>
+        <button type="submit" ion-button block [disabled]="!buscaFormElement.form.valid">Buscar</button>
+    </form>
+</ion-content>

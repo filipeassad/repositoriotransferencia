@@ -1,0 +1,74 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Perfil</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentPerfil">
+    <ion-refresher (ionRefresh)="recarregarDados($event)">
+        <ion-refresher-content
+                pullingIcon="arrow-dropdown"
+                pullingText="Puxe para atualizar"
+                refreshingSpinner="circles"
+                refreshingText="Carregando dados...">
+        </ion-refresher-content>
+    </ion-refresher>
+    <div class="user-details">
+        <ion-row wrap class="user-bio-row">
+            <ion-col no-padding col-12 text-center>
+                <h2 class="user-name">{{beneficiario.nome | capitalizeAll}}</h2>
+            </ion-col>
+            <section class="user-detail-section">
+                <ion-col no-padding col-12>
+                    <p class="user-description">
+                        Matrícula: {{beneficiario.matriculaCassems | matriculaCassems}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="user-description">
+                        Dependência: {{beneficiario.descricaoDependencia | capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="user-description">
+                        Validade Carteira: {{(beneficiario.compValidadeFinal || beneficiario.dataValidadeFinal) | date:
+                        "dd/MM/y"}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12 *ngIf="beneficiario.cpf">
+                    <p class="user-description">
+                        CPF: {{beneficiario.cpf | cpf}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12 *ngIf="beneficiario.rg">
+                    <p class="user-description">
+                        RG: {{beneficiario.rg}}<span *ngIf="beneficiario.orgaoExpRg">/{{beneficiario.orgaoExpRg}}</span>
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="user-description">
+                        Data Nascimento: {{beneficiario.dataNascimento | date: "dd/MM/y"}}
+                    </p>
+                </ion-col>
+            </section>
+        </ion-row>
+    </div>
+    <ion-row class="alt-options">
+        <button ion-button block (click)="alterarSenha()" class="alterar-senha-button">
+            Alterar Senha
+        </button>
+        <button ion-button block icon-left class="facebook-auth-button" (click)="vincularUsuarioFacebook()"
+                *ngIf="usuario.idFacebook == null">
+            <ion-icon name="logo-facebook"></ion-icon>
+            Vincular Facebook
+        </button>
+        <!--<button ion-button block icon-left class="google-auth-button" (click)="vincularUsuarioGooglePlus()"
+        *ngIf="usuario.idGooglePlus == null">
+            <ion-icon name="logo-googleplus"></ion-icon>
+            Vincular Google+
+        </button>-->
+    </ion-row>
+</ion-content>

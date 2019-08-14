@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Grupo Familiar</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentGrupoFamiliar">
+    <ion-refresher (ionRefresh)="recarregarDados($event)">
+        <ion-refresher-content
+                pullingIcon="arrow-dropdown"
+                pullingText="Puxe para atualizar"
+                refreshingSpinner="circles"
+                refreshingText="Carregando dados...">
+        </ion-refresher-content>
+    </ion-refresher>
+    <ion-searchbar placeholder="Buscar" autocomplete="on" animated=true (ionInput)="buscarBeneficiario($event)"></ion-searchbar>
+    <ion-list text-wrap>
+        <button ion-item class="list-item" *ngFor="let beneficiario of listaBeneficiarios" (click)="visualizarBeneficiario(beneficiario)">
+            <ion-row no-padding class="content-row one-line">
+
+                <ion-col no-padding width-90 class="item-content">
+                    <h3 class="item-title" text-wrap>{{ beneficiario.nome | capitalizeAll}}</h3>
+                    <p class="item-description">Matrícula: {{beneficiario.matriculaCassems | matriculaCassems}}</p>
+                </ion-col>
+                <ion-col no-padding width-10 class="item-icon">
+                    <ion-icon name="arrow-forward"></ion-icon>
+                </ion-col>
+            </ion-row>
+        </button>
+    </ion-list>
+</ion-content>

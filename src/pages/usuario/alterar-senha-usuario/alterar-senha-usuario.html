@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Alterar Senha</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="login-content auth-content">
+    <form class="login-form auth-form" (ngSubmit)="alterarSenha()" [formGroup]="alterarSenhaForm" #alterarSenhaFormElement="ngForm"
+          novalidate>
+        <ion-list>
+            <show-hide-container>
+                <ion-item>
+                    <ion-label floating>Senha Atual</ion-label>
+                    <ion-input type="password" [(ngModel)]="alterarSenhaUsuarioTO.senhaAtual" formControlName="senhaAtual"
+                               show-hide-input></ion-input>
+                </ion-item>
+            </show-hide-container>
+            <show-hide-container>
+                <ion-item>
+                    <ion-label floating>Nova Senha</ion-label>
+                    <ion-input type="password" [(ngModel)]="alterarSenhaUsuarioTO.novaSenha" formControlName="novaSenha" (keyup)="alterarValorComparacaoSenha()"
+                               show-hide-input></ion-input>
+                </ion-item>
+            </show-hide-container>
+            <show-hide-container>
+                <ion-item>
+                    <ion-label floating>Confirmar Nova Senha</ion-label>
+                    <ion-input type="password" [(ngModel)]="alterarSenhaUsuarioTO.confirmarNovaSenha" formControlName="confirmarNovaSenha"
+                               show-hide-input></ion-input>
+                </ion-item>
+            </show-hide-container>
+        </ion-list>
+        <button type="submit" ion-button block [disabled]="!alterarSenhaFormElement.form.valid">Alterar Senha</button>
+    </form>
+</ion-content>

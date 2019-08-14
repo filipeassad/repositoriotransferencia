@@ -1,0 +1,40 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Revalidação</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentRevalidacao">
+    <form (ngSubmit)="revalidar()" [formGroup]="form" class="formQuestionarioRevalidacao" #formElement="ngForm">
+        <ion-list>
+            <ion-item>
+                <ion-label floating>Qual o grau de parentesco?</ion-label>
+                <ion-select [(ngModel)]="questionario.questao1" formControlName="questao1" cancelText="Fechar">
+                    <ion-option [value]="tipo.value" *ngFor="let tipo of opcoesQuestao1 | keysJson">{{tipo.key}}</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Ultimamente tem utilizado o plano para qual finalidade?</ion-label>
+                <ion-select [(ngModel)]="questionario.questao2" formControlName="questao2" cancelText="Fechar">
+                    <ion-option [value]="tipo.value" *ngFor="let tipo of opcoesQuestao2 | keysJson">{{tipo.key}}</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Cônjuge possui vinculo empregatício com:</ion-label>
+                <ion-select [(ngModel)]="questionario.questao3" formControlName="questao3" cancelText="Fechar" (ionChange)="resetValorPrefeitura()">
+                    <ion-option [value]="tipo.value" *ngFor="let tipo of opcoesQuestao3 | keysJson">{{tipo.key}}</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item *ngIf="questionario.questao3 == 2">
+                <ion-label floating>Qual?</ion-label>
+                <ion-input type="text" [(ngModel)]="questionario.prefeitura" formControlName="prefeitura"></ion-input>
+            </ion-item>
+        </ion-list>
+        <ion-row>
+            <button type="submit" ion-button block [disabled]="!formElement.form.valid">Revalidar</button>
+        </ion-row>
+    </form>
+</ion-content>

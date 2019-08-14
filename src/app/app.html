@@ -1,0 +1,67 @@
+<ion-menu id="nao_autenticado" [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title align="center">Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="menu-content">
+    <ion-list text-wrap class="menu-list">
+      <button menuClose ion-item *ngFor="let p of paginasNaoAutenticado" (click)="openPage(p)">
+        <ion-icon [name]="p.icon" item-left></ion-icon>
+        {{p.title}}
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-menu id="titular" [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title align="center">Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="menu-content">
+    <ion-list text-wrap class="menu-list">
+      <button menuClose ion-item *ngFor="let p of paginasTitular" (click)="openPage(p)">
+        <ion-icon [name]="p.icon" item-left></ion-icon>
+        {{p.title}}
+      </button>
+      <button menuClose ion-item (click)="laudosWebRedirect()">
+        <ion-icon name="open" item-left></ion-icon>
+        Resultados Laboratório CASSEMS
+      </button>
+      <button menuClose ion-item (click)="logout()">
+        <ion-icon name="log-out" item-left></ion-icon>
+        Sair
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+<ion-menu id="dependente" [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title align="center">Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="menu-content">
+    <ion-list text-wrap class="menu-list">
+      <button menuClose ion-item *ngFor="let p of paginasDependente" (click)="openPage(p)">
+        <ion-icon [name]="p.icon" item-left></ion-icon>
+        {{p.title}}
+      </button>
+      <button menuClose ion-item (click)="laudosWebRedirect()">
+        <ion-icon name="open" item-left></ion-icon>
+        Resultados Laboratório CASSEMS
+      </button>
+      <button menuClose ion-item (click)="logout()">
+        <ion-icon name="log-out" item-left></ion-icon>
+        Sair
+      </button>
+    </ion-list>
+  </ion-content>
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

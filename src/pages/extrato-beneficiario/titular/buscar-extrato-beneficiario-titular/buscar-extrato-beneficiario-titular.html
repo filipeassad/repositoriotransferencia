@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <span class="titulo-page">Extrato Beneficiário</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentBuscaExtratoBeneficiario">
+    <form (ngSubmit)="buscarExtratoBeneficiario()" class="formBuscaExtratoBeneficiario" [formGroup]="buscaForm" #buscaFormElement="ngForm">
+        <ion-list>
+            <ion-item>
+                <ion-label floating>Data Inicial</ion-label>
+                <ion-datetime displayFormat="DD/MM/YYYY" doneText="Ok" cancelText="Fechar" [(ngModel)]="buscarExtratoBeneficiarioTO.dataInicial" formControlName="data-inicial"></ion-datetime>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Data Final</ion-label>
+                <ion-datetime displayFormat="DD/MM/YYYY" doneText="Ok" cancelText="Fechar" [(ngModel)]="buscarExtratoBeneficiarioTO.dataFinal" formControlName="data-final"></ion-datetime>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Tipo Busca</ion-label>
+                <ion-select [(ngModel)]="buscarExtratoBeneficiarioTO.tipoBusca" formControlName="tipo-busca" cancelText="Fechar" (ngModelChange)="alternarValidacaoTipoBusca();buscarGrupoFamiliar()" >
+                    <ion-option [value]="tipo.value" *ngFor="let tipo of listaTipoBusca | keysEnum">{{tipo.key}}</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item *ngIf="buscarExtratoBeneficiarioTO.tipoBusca == listaTipoBusca.Individual && listaGrupoFamiliar.length > 0">
+                <ion-label floating>Beneficiário</ion-label>
+                <ion-select text-wrap [(ngModel)]="buscarExtratoBeneficiarioTO.beneficiario" formControlName="beneficiario" cancelText="Fechar">
+                    <ion-option text-wrap [value]="beneficiario" *ngFor="let beneficiario of listaGrupoFamiliar">{{beneficiario.nome}}</ion-option>
+                </ion-select>
+            </ion-item>
+        </ion-list>
+        <button type="submit" ion-button block [disabled]="!buscaFormElement.form.valid">Buscar</button>
+    </form>
+</ion-content>

@@ -1,0 +1,31 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <span class="titulo-page">Atualizar Contato</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentAtualizarContato">
+    <form (ngSubmit)="atualizarContato()" class="formAtualizarContato" [formGroup]="form" #formElement="ngForm">
+        <ion-list inset>
+            <ion-item [class.ng-valid]="form.get('email').valid" [class.ng-invalid]="!form.get('email').valid">
+                <ion-label floating>E-mail</ion-label>
+                <ion-input type="email" [(ngModel)]="email" maxlength="40" formControlName="email"></ion-input>
+            </ion-item>
+            <ion-item [class.ng-valid]="form.get('celular').valid" [class.ng-invalid]="!form.get('celular').valid" >
+                <ion-label floating>Celular</ion-label>
+                <ion-input type="tel" [(ngModel)]="celular" [brmasker]="{phone: true}" maxlength="15"
+                           formControlName="celular"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-row>
+                    <button type="submit" ion-button block [disabled]="!formElement.form.valid">Atualizar</button>
+                </ion-row>
+            </ion-item>
+        </ion-list>
+    </form>
+</ion-content>

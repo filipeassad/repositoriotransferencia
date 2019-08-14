@@ -1,0 +1,42 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <span class="titulo-page">Extrato Reciprocidade</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentExtratoCabespBoleto">
+    <div class="extrato" *ngFor="let extratoCabesp of listaExtratoCabesp">
+        <ion-row wrap class="extrato-title-row">
+            <ion-col no-padding col-12>
+                <h2 class="extrato-title" align="center">Número da Guia: {{extratoCabesp.numero}}</h2>
+            </ion-col>
+            <section class="extrato-details-section">
+                <ion-col no-padding col-12>
+                    <p class="extrato-description">
+                        Tipo da Guia: {{extratoCabesp.tipo | capitalizeAll}}
+                    </p>
+                    <p class="extrato-description">
+                        Data do Atendimento: {{extratoCabesp.dataAtendimento | date: "dd/MM/y"}}
+                    </p>
+                    <p class="extrato-description">
+                        Local do Atendimento: {{extratoCabesp.nome}}
+                    </p>
+                    <p class="extrato-description">
+                        Cidade do Atendimento: {{extratoCabesp.descricao}}
+                    </p>
+                    <p class="extrato-description">
+                        Descrição do Procedimento: {{extratoCabesp.descTuss}}
+                    </p>
+                    <p class="extrato-description">
+                        Valor do Procedimento: {{extratoCabesp.valor | monetarioBrasil}}
+                    </p>
+                </ion-col>
+            </section>
+        </ion-row>
+    </div>
+</ion-content>

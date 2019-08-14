@@ -1,0 +1,24 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Cancelar Agendamento</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentAgendamento">
+    <form (ngSubmit)="cancelarAgendamento()" class="formCancelarAgendamento" [formGroup]="cancelarAgendamentoForm"
+          #cancelarAgendamentoFormElement="ngForm" novalidate>
+        <ion-list>
+            <ion-item>
+                <ion-label floating>Motivo do cancelamento</ion-label>
+                <ion-textarea elastic [(ngModel)]="motivoCancelamento"
+                              formControlName="motivoCancelamento" maxlength="400"></ion-textarea>
+            </ion-item>
+        </ion-list>
+        <button type="submit" ion-button block [disabled]="!cancelarAgendamentoFormElement.form.valid">Cancelar
+            Agendamento
+        </button>
+    </form>
+</ion-content>

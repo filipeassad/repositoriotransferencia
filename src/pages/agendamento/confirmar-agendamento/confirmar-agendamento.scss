@@ -1,0 +1,74 @@
+page-confirmar-agendamento{
+  .contentConfirmarAgendamento {
+    background-color: color($colors, background, base);
+
+    .agendamento-details {
+      @include element-shadow();
+      padding-bottom: 4%;
+      background-color: $white;
+
+      .agendamento-bio-row {
+        padding: 4%;
+
+        .agendamento-name {
+          font-size: 1.6rem;
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          color: $theme-color-1;
+          margin: 0px;
+        }
+
+        .agendamento-location {
+          font-size: 1.2rem;
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          color: $white-e;
+          display: block;
+          text-align: right;
+          line-height: 1.6;
+        }
+
+        .agendamento-description {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          letter-spacing: 0.2px;
+          color: $white-e;
+          margin: 10px 0px 0px;
+        }
+
+        .agendamento-detail-section {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .lista-mensagens-section {
+      margin-top: 25px;
+      .titulo-lista-mensagens{
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        color: $theme-color-1;
+        margin: 0px;
+        margin-bottom: 20px;
+      }
+
+      @include layout-list-styles($theme-color-1, $white-e);
+
+      ion-list {
+        .list-item {
+          .content-row {
+            &.one-line {
+              @include align-items(center);
+
+              .item-description {
+                overflow: hidden;
+                text-overflow: ellipsis;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

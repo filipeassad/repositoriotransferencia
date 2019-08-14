@@ -1,0 +1,175 @@
+page-meus-agendamentos {
+
+  .contentMeusAgendamentos {
+    background-color: color($colors, background, base);
+
+    .titulo-lista-vazia {
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      color: $theme-color-1;
+      margin-bottom: 30px;
+      margin-top: 50%;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    ion-item {
+      @include basic-input-style(color($colors, background, base), $theme-color-3, $white-e);
+
+      &.item {
+        margin-top: 14px;
+
+        &.item-label-floating {
+          margin-top: 0px;
+
+          ion-label {
+            color: $white-e;
+          }
+        }
+
+        .item-inner {
+          ion-icon {
+            color: $theme-color-2;
+          }
+        }
+      }
+
+      &:first-of-type {
+        margin-top: 0px;
+      }
+    }
+    .schedule-segment {
+      padding: 14px 0px;
+      background-color: $white;
+      @include element-shadow();
+
+      @include segment-button-styles($theme-color-2);
+
+      .segment-button {
+        @include segment-text-styles($white-e);
+      }
+    }
+
+    .schedule-list {
+      padding: 10px 5px;
+
+      .schedule-item {
+        padding: 5px;
+        background-color: transparent;
+        border: none;
+
+        .item-inner {
+          border: none;
+          padding: 0px;
+
+          ion-label {
+            margin: 0px;
+          }
+        }
+
+        .schedule-date {
+          color: $white-e;
+          text-align: center;
+          padding: 0px 10px 0px 0px;
+          @include align-self(center);
+
+          .schedule-day {
+            font-size: 3.2rem;
+            font-weight: 400;
+          }
+
+          .schedule-month {
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+          }
+
+          .schedule-time {
+            font-size: 1.2rem;
+            font-weight: 500;
+          }
+        }
+
+        .schedule-data {
+          border-radius: 6px;
+          background-color: $white;
+          padding: 12px 14px;
+          @include element-shadow();
+
+          .data-item {
+            @include display(flex);
+            @include align-items(center);
+            @include justify-content(space-between);
+
+            .item-content {
+              flex: 0 0 90%;
+              max-width: 90%;
+              padding-right: 5px;
+
+              .item-title {
+                font-size: 1.6rem;
+                font-weight: 500;
+                letter-spacing: 0.2px;
+                color: $theme-color-1;
+                margin-bottom: 12px;
+
+                &.one-line {
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  white-space: nowrap;
+                }
+              }
+
+              .item-description {
+                margin-bottom: 4px;
+                @include display(flex);
+                @include align-items(center);
+                @include justify-content(space-between);
+
+                &:last-child {
+                  margin: 0px;
+                }
+
+                .description-icon {
+                  color: $white-e;
+                  flex: 0 0 12%;
+                  max-width: 12%;
+                  padding-right: 2px;
+                  font-size: 2.1rem;
+                  text-align: left;
+                }
+
+                .description-text {
+                  flex: 0 0 88%;
+                  max-width: 88%;
+                  padding-left: 2px;
+                  white-space: normal;
+                  font-size: 1.2rem;
+                  line-height: 1.4;
+                  letter-spacing: 0.2px;
+                  color: $white-e;
+
+                  &.one-line {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                  }
+                }
+              }
+            }
+
+            .item-icon {
+              flex: 0 0 10%;
+              max-width: 10%;
+              text-align: right;
+              color: $theme-color-1;
+              font-size: 2.2em;
+              padding-left: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

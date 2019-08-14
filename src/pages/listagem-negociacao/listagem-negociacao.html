@@ -1,0 +1,36 @@
+<ion-header class="listing-header">
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Negociações</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <h4 style="color:#0090BF; text-align: left;">Negociações</h4>
+    <ion-list>
+        <ion-item *ngFor="let negociacao of negociacoes">
+            <ion-row>
+                <ion-col no-padding col-2>
+                    <p>{{negociacao.snId}}</p>
+                </ion-col>
+                <ion-col no-padding col-8>
+                    <ion-row>
+                        <ion-col no-padding col-12>
+                            <p>{{negociacao.snDatacadastro | date: "dd/MM/yyyy"}}</p>
+                        </ion-col>
+                    </ion-row>
+                    <ion-row>
+                        <ion-col no-padding col-12>
+                            <p>{{negociacao.snDataaceite != null ? 'Aceito' : (negociacao.snDatarejeicao != null ? 'Rejeitado' : 'Aberto') }}</p>
+                        </ion-col>
+                    </ion-row>
+                </ion-col>
+                <ion-col no-padding col-2 *ngIf="negociacao.snDataaceite == null && negociacao.snDatarejeicao == null">
+                    <img width="20px" src="./assets/images/left-arrow.png" alt="" (click)="redirecionarNegociacao(negociacao)">
+                </ion-col>
+            </ion-row>
+        </ion-item>
+    </ion-list>
+</ion-content>

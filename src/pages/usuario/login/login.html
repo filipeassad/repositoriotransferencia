@@ -1,0 +1,69 @@
+<ion-header class="listing-header">
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <div class="header-logo">
+                <preload-image [ratio]="{w:583, h:100}" src="./assets/images/logo3.png"></preload-image>
+            </div>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="login-content auth-content">
+    <form class="login-form auth-form" (ngSubmit)="realizarLogin()" [formGroup]="loginForm" #loginFormElement="ngForm"
+          novalidate>
+        <ion-list>
+            <ion-item>
+                <ion-label floating>CPF</ion-label>
+                <ion-input type="number" [(ngModel)]="usuario.username"
+                           formControlName="cpf" maxlength="11"></ion-input>
+
+            </ion-item>
+            <show-hide-container>
+                <ion-item>
+                    <ion-label floating>Senha</ion-label>
+                    <ion-input type="password" [(ngModel)]="usuario.password" formControlName="senha"
+                               show-hide-input></ion-input>
+                </ion-item>
+            </show-hide-container>
+
+        </ion-list>
+        <button type="submit" icon-left ion-button block [disabled]="!loginFormElement.form.valid">
+            <ion-icon name="log-in"></ion-icon>
+            Entrar
+        </button>
+    </form>
+    <ion-row class="alt-options">
+        <ion-col no-padding width-50>
+            <button ion-button block clear class="forgot-button" (click)="realizarRecuperacaoDeSenha()">Esqueci minha
+                senha?
+            </button>
+        </ion-col>
+        <ion-col no-padding width-50>
+            <button ion-button block clear class="signup-button" (click)="realizarCadastro()">Cadastrar!</button>
+        </ion-col>
+    </ion-row>
+    <p class="auth-divider">
+        Ou
+    </p>
+    <ion-row class="alt-options">
+        <button ion-button block clear class="codigo-ativacao-button" (click)="realizarInsercaoCodigoAtivacao()">Inserir
+            Código de Ativação
+        </button>
+    </ion-row>
+    <div class="redes-sociais">
+        <button ion-button block icon-left class="facebook-auth-button" (click)="realizarLoginFacebook()">
+            <ion-icon name="logo-facebook"></ion-icon>
+            Login Facebook
+        </button>
+        <!--<button ion-button block icon-left class="google-auth-button" (click)="realizarLoginGooglePlus()">
+            <ion-icon name="logo-googleplus"></ion-icon>
+            Login Google+
+        </button>-->
+    </div>
+    <div class="laudos-web">
+        <button ion-button block (click)="laudosWebRedirect()">Resultados Laboratório CASSEMS</button>
+    </div>
+</ion-content>

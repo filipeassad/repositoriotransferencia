@@ -1,0 +1,66 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Segunda Via Boleto</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentSegundaViaBoleto" text-wrap>
+    <div class="details">
+        <ion-row wrap class="details-title-row">
+            <ion-col no-padding col-12 text-center>
+                <h2 class="details-title" *ngIf="boleto.nomeCli_titular">{{boleto.nomeCli_titular | capitalizeAll}}</h2>
+                <h2 class="details-title" *ngIf="boleto.nomeCli_agregado">{{boleto.nomeCli_agregado | capitalizeAll}}</h2>
+            </ion-col>
+            <section class="details-section">
+                <ion-col no-padding col-12>
+                    <p class="details-description">
+                        Título: {{boleto.desTpt | capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="details-description">
+                        Número Título: {{boleto.numTitulo}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="details-description">
+                        Transação: {{boleto.desTns | capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="details-description">
+                        Valor: {{boleto.vlr_Abe | monetarioBrasil}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="details-description">
+                        Vencimento: {{boleto.dataVencimentoCalculado | date: "dd/MM/y"}}
+                    </p>
+                </ion-col>
+            </section>
+        </ion-row>
+        <section class="opcoes-boleto">
+            <section class="linha-digitavel-section" *ngIf="boleto.numeroDigitavel && boleto.dias_Venc < 60">
+                <h2 class="section-title" text-center="">Linha Digitável</h2>
+                <p text-center>{{boleto.numeroDigitavel}}</p>
+                <button class="copiar-linha-digitavel-button" ion-button full type="button"
+                        (click)="copiarLinhaDigitavel()">Copiar Linha Digitável
+                </button>
+                <button class="enviar-por-email-button" ion-button full type="button"
+                        (click)="abrirAlertOpcaoEmail()">Enviar
+                    Boleto por E-mail
+                </button>
+            </section>
+            <section class="boleto-vencido-section" *ngIf="boleto.dias_Venc >= 60">
+                <h4 class="section-title" text-center><ion-icon name="alert" class="icon-color-warning"></ion-icon> Atenção</h4>
+                <p text-center>Boleto vencido a mais de 60 dias. Vá até um local de atendimento para negociação.</p>
+            </section>
+            <button class="extrato-cabesp-button" ion-button full type="button" *ngIf="boleto.reciprocidade"
+                    (click)="abrirExtratoCabespBoleto()">Visualizar Extrato Reciprocidade
+            </button>
+        </section>
+    </div>
+</ion-content>

@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Redefinir Senha</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="login-content auth-content">
+    <form class="login-form auth-form" (ngSubmit)="realizarRedefinicaoSenha()" [formGroup]="redefinirSenhaForm" #redefinirSenhaFormElement="ngForm"
+          novalidate>
+        <ion-list>
+            <ion-item>
+                <ion-label floating>CPF</ion-label>
+                <ion-input type="number" [(ngModel)]="redefinirSenhaTO.cpf"
+                           formControlName="cpf" maxlength="11"></ion-input>
+            </ion-item>
+        </ion-list>
+        <button type="submit" ion-button block [disabled]="!redefinirSenhaFormElement.form.valid">Redefinir</button>
+    </form>
+</ion-content>

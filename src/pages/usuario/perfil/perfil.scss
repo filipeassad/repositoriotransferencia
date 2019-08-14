@@ -1,0 +1,68 @@
+page-perfil {
+  .contentPerfil {
+    background-color: color($colors, background, base);
+
+    .user-details {
+      @include element-shadow();
+      padding-bottom: 4%;
+      background-color: $white;
+
+      .user-bio-row {
+        padding: 4%;
+
+        .user-name {
+          font-size: 1.6rem;
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          color: $theme-color-1;
+          margin: 0px;
+        }
+
+        .user-location {
+          font-size: 1.2rem;
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          color: $white-e;
+          display: block;
+          text-align: right;
+          line-height: 1.6;
+        }
+
+        .user-description {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          letter-spacing: 0.2px;
+          color: $white-e;
+          margin: 10px 0px 0px;
+        }
+
+        .user-detail-section {
+          margin-top: 20px;
+        }
+      }
+    }
+    .alt-options {
+      margin-top: 15px;
+
+      .alterar-senha-button{
+        font-size: 1.6rem;
+        border-radius: 6px;
+        font-weight: 500;
+      }
+
+      .facebook-auth-button {
+        margin: 0px;
+        margin-top: 20px;
+        font-size: 1.5rem;
+        @include call-to-action-button-styles(color($colors, facebook, base), color($colors, facebook, contrast));
+      }
+
+      .google-auth-button {
+        margin: 0px;
+        margin-top: 10px;
+        font-size: 1.5rem;
+        @include call-to-action-button-styles(color($colors, google, base), color($colors, google, contrast));
+      }
+    }
+  }
+}

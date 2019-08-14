@@ -1,0 +1,109 @@
+page-beneficiario {
+    .contentBeneficiario {
+        background-color: color($colors, background, base);
+
+        .user-details {
+            @include element-shadow();
+            padding-bottom: 4%;
+            background-color: $white;
+
+            .user-bio-row {
+                padding: 4%;
+
+                .user-name {
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    letter-spacing: 0.2px;
+                    color: $theme-color-1;
+                    margin: 0;
+                }
+
+                .user-location {
+                    font-size: 1.2rem;
+                    font-weight: 500;
+                    letter-spacing: 0.2px;
+                    color: $white-e;
+                    display: block;
+                    text-align: right;
+                    line-height: 1.6;
+                }
+
+                .user-description {
+                    font-size: 1.2rem;
+                    line-height: 1.6;
+                    letter-spacing: 0.2px;
+                    color: $white-e;
+                    margin: 10px 0 0;
+                }
+
+                .user-detail-section {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .endereco-content {
+            @include element-shadow();
+            padding-bottom: 4%;
+            background-color: $white;
+            margin-top: 10px;
+
+            .endereco-title {
+                padding-top: 4%;
+                font-size: 1.6rem;
+                font-weight: 500;
+                letter-spacing: 0.2px;
+                color: $theme-color-1;
+                margin: 0;
+            }
+
+            .endereco-detail-section {
+                padding: 4% 4% 0;
+
+                .endereco-description {
+                    font-size: 1.2rem;
+                    line-height: 1.6;
+                    letter-spacing: 0.2px;
+                    color: $white-e;
+                    margin: 10px 0 0;
+                }
+
+                .endereco-options{
+                    margin-top: 4%;
+                }
+            }
+        }
+
+        .contato-content {
+            @include element-shadow();
+            padding-bottom: 4%;
+            background-color: $white;
+            margin-top: 10px;
+
+            .contato-title {
+                padding-top: 4%;
+                font-size: 1.6rem;
+                font-weight: 500;
+                letter-spacing: 0.2px;
+                color: $theme-color-1;
+                margin: 0;
+            }
+
+            .contato-detail-section {
+                padding: 4% 4% 0;
+
+                .contato-description {
+                    font-size: 1.2rem;
+                    line-height: 1.6;
+                    letter-spacing: 0.2px;
+                    color: $white-e;
+                    margin: 10px 0 0;
+                }
+
+                .contato-options{
+                    margin-top: 4%;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Agendamento</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="abrirInformacoes()">
+                <ion-icon name="information"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentAgendamento">
+    <div class="agendamento-details">
+        <ion-row wrap class="agendamento-bio-row">
+            <ion-col no-padding col-12 text-center>
+                <h2 class="agendamento-name">{{agendamento.dtoPrestador.nome| capitalizeAll}}</h2>
+            </ion-col>
+            <section class="agendamento-detail-section">
+                <ion-col no-padding col-12>
+                    <p class="agendamento-description">
+                        Especialidade: {{agendamento.dtoEspecialidade.descricao | capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="agendamento-description">
+                        Centro Médico: {{agendamento.dtoCentroMedico.descricao| capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="agendamento-description">
+                        Data: {{agendamento.dataFormatada}} - {{agendamento.horaFormatada}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="agendamento-description">
+                        Beneficiário: {{beneficiario.nome | capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="agendamento-description">
+                        Situação: {{statusAutorizacao | capitalizeAll}}
+                    </p>
+                </ion-col>
+            </section>
+        </ion-row>
+    </div>
+    <button type="button" class="btn-cancelar-agendamento" ion-button block (click)="paginaCancelarAgendamento()">Cancelar Agendamento</button>
+</ion-content>

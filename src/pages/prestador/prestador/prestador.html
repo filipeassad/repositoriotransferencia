@@ -1,0 +1,76 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Prestador</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content text-wrap class="contentPrestador">
+    <div class="prestador">
+        <ion-row wrap class="prestador-title-row">
+            <ion-col no-padding col-12 text-center>
+                <h2 class="prestador-title">{{prestador.nome | capitalizeAll}}</h2>
+            </ion-col>
+            <section class="prestador-details-section">
+                <ion-col no-padding col-12 *ngIf="prestador.cpf">
+                    <p class="prestador-description">
+                        CPF: {{prestador.cpf | cpf}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12 *ngIf="prestador.cnpj">
+                    <p class="prestador-description">
+                        CNPJ: {{prestador.cnpj | cnpj}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12 *ngIf="prestador.descCategoria">
+                    <p class="prestador-description">
+                        Tipo Assistência: {{prestador.descCategoria | capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12 *ngIf="prestador.tipoConselho">
+                    <p class="prestador-description">
+                        Tipo Conselho: {{prestador.tipoConselho | capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12 *ngIf="prestador.numConselho">
+                    <p class="prestador-description">
+                        Número Conselho: {{prestador.numConselho}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12 *ngIf="prestador.ufConselho">
+                    <p class="prestador-description">
+                        UF Conselho: {{prestador.ufConselho}}
+                    </p>
+                </ion-col>
+                <section class="lista-especialidades-section" *ngIf="stringEspecialidadesPrestador">
+                    <ion-col no-padding col-12>
+                        <p class="prestador-description">
+                            Especialidades: {{stringEspecialidadesPrestador | capitalizeAll}}
+                        </p>
+                    </ion-col>
+                </section>
+            </section>
+        </ion-row>
+    </div>
+    <section class="prestador-locais-atendimento-section" *ngIf="listaLocaisAtendimento.length">
+        <h2 class="titulo-locais-atendimento" text-center>Locais de Atendimento</h2>
+        <ion-list>
+            <button ion-item class="list-item" *ngFor="let localAtendimento of listaLocaisAtendimento" (click)="abrirOpcoesLocalAtendimento(localAtendimento)">
+                <ion-row no-padding class="content-row one-line">
+
+                    <ion-col no-padding width-90 class="item-content">
+                        <h3 class="item-title" text-wrap>Endereço: {{localAtendimento.endereco | capitalizeAll}}</h3>
+                        <p class="item-description" *ngIf="localAtendimento.bairro">Bairro: {{localAtendimento.bairro | capitalizeAll}}</p>
+                        <p class="item-description" *ngIf="localAtendimento.descricaoMunicipio">Município: {{localAtendimento.descricaoMunicipio | capitalizeAll}} - {{localAtendimento.uf}}</p>
+                        <p class="item-description" *ngIf="localAtendimento.fone">Telefone: {{localAtendimento.fone}}</p>
+                    </ion-col>
+                    <ion-col no-padding width-10 class="item-icon">
+                        <ion-icon name="arrow-forward"></ion-icon>
+                    </ion-col>
+                </ion-row>
+            </button>
+        </ion-list>
+    </section>
+</ion-content>

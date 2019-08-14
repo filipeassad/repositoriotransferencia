@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <span class="titulo-page">Buscar Prestador</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentBuscarPrestadorAgendamento">
+    <form (ngSubmit)="buscarPrestador()" class="formBuscarPrestadorAgendamento" [formGroup]="buscarForm" #buscarFormElement="ngForm">
+        <ion-list>
+            <ion-item>
+                <ion-label floating>Nome do Prestador</ion-label>
+                <ion-input type="text" [(ngModel)]="nome" formControlName="nome"></ion-input>
+            </ion-item>
+        </ion-list>
+        <button type="submit" ion-button block [disabled]="!buscarFormElement.form.valid">Buscar</button>
+    </form>
+</ion-content>

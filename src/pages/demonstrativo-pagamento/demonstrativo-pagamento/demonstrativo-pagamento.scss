@@ -1,0 +1,46 @@
+page-demonstrativo-pagamento {
+  .contentDemonstrativoPagamento {
+    background-color: color($colors, background, base);
+
+    .demonstrativo {
+      @include element-shadow();
+      padding-bottom: 4%;
+      background-color: $white;
+
+      .demonstrativo-title-row {
+        padding: 4%;
+
+        .demonstrativo-title {
+          font-size: 1.6rem;
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          color: $theme-color-1;
+          margin: 0px;
+        }
+
+        .demonstrativo-location {
+          font-size: 1.2rem;
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          color: $white-e;
+          display: block;
+          text-align: right;
+          line-height: 1.6;
+        }
+
+        .demonstrativo-description {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          letter-spacing: 0.2px;
+          color: $white-e;
+          margin: 10px 0px 0px;
+        }
+
+        .demonstrativo-details-section {
+          margin-top: 20px;
+        }
+      }
+    }
+
+  }
+}

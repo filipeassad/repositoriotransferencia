@@ -1,0 +1,68 @@
+<ion-header class="listing-header">
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Consultar Autorizações</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item>
+        <ion-label floating>Beneficiário</ion-label>
+        <ion-select [(ngModel)]="beneficiarioSelecionado"
+            (ionChange)="buscarAutorizacoes(beneficiarioSelecionado.handle)">
+            <ion-option [value]="beneficiarioItem" *ngFor="let beneficiarioItem of beneficiarios">
+                {{ beneficiarioItem.nome}}</ion-option>
+        </ion-select>
+    </ion-item>
+
+    <ion-list text-wrap>
+        <ion-item *ngFor="let autorizacao of autorizacoes">
+            <div style="display: inline-block; vertical-align: middle; width: 15%; text-align: center;">
+                <div text-center style="font-size: 35px; color: #A4A4A4;">{{autorizacao.dataInclusao | date: "dd"}}
+                </div>
+                <div text-center style="font-size: 10px; color: #A4A4A4;">{{ buscarMesEscrito(autorizacao.dataInclusao | date: "MM") }}</div>
+                <div text-center style="font-size: 10px; color: #A4A4A4;">{{autorizacao.dataInclusao | date: "yyyy"}}
+                </div>
+                <div text-center style="font-size: 10px; color: #A4A4A4;">{{autorizacao.dataInclusao | date: "hh:MM"}}
+                </div>
+            </div>
+            <div style="display: inline-block; vertical-align: middle; width: 65%; margin-left: 20px;">
+                <div style="font-size: 15px; color:#0090BF; text-align: left; overflow: hidden;">{{autorizacao.beneficiario}}</div>
+                <div style="margin-top: 5px;">
+                    <div style="display: inline-block; vertical-align: middle; width: 6%;">
+                        <img width="100%" src="./assets/images/asterisk.png" alt="">
+                    </div>
+                    <div
+                        style="display: inline-block; vertical-align: middle; font-size: 10px; text-align: left; color: #A4A4A4;">
+                        Autorização: {{autorizacao.autorizacao}}</div>
+                </div>
+                <div>
+                    <div style="display: inline-block; vertical-align: middle; width: 6%;">
+                        <img width="100%" src="./assets/images/calendar-page-empty.png" alt="">
+                    </div>
+                    <div
+                        style="display: inline-block; vertical-align: middle; font-size: 10px; text-align: left; color: #A4A4A4;">
+                        Data de Validade: {{autorizacao.dataValidade | date: "dd/MM/yyyy"}}</div>
+                </div>
+                <div>
+                    <div style="display: inline-block; vertical-align: middle; width: 6%;">
+                        <img width="100%" src="./assets/images/newspaper.png" alt="">
+                    </div>
+                    <div
+                        style="display: inline-block; vertical-align: middle; font-size: 10px; text-align: left; color: #A4A4A4;">
+                        Tipo de Guia: {{autorizacao.descricaoTipoAutorizacao}}</div>
+                </div>
+            </div>
+            <div style="display: inline-block; vertical-align: middle; width: 9%; padding-top: 10px;">
+                <div style="width: 100%;">
+                    <img width="100%" src="./assets/images/left-arrow.png" alt="" (click)="redirecionarDetalhe(autorizacao)">
+                </div>
+                <div style="width: 100%; margin-top: 5px;">
+                    <img *ngIf="autorizacao.temFatura == 1" width="100%" src="./assets/images/dollar-symbol.png" alt="" (click)="redirecionarNegociacaoAut(autorizacao)">
+                </div>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>

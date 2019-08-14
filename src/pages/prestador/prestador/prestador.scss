@@ -1,0 +1,84 @@
+page-prestador {
+  .contentPrestador {
+    background-color: color($colors, background, base);
+
+    .prestador {
+      @include element-shadow();
+      padding-bottom: 4%;
+      background-color: $white;
+
+      .prestador-title-row {
+        padding: 4%;
+
+        .prestador-title {
+          font-size: 1.6rem;
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          color: $theme-color-1;
+          margin: 0px;
+        }
+
+        .prestador-location {
+          font-size: 1.2rem;
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          color: $white-e;
+          display: block;
+          text-align: right;
+          line-height: 1.6;
+        }
+
+        .prestador-description {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          letter-spacing: 0.2px;
+          color: $white-e;
+          margin: 10px 0px 0px;
+        }
+
+        .prestador-details-section {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .prestador-locais-atendimento-section {
+      margin-top: 20px;
+
+      .titulo-locais-atendimento {
+        font-size: 1.6rem;
+        font-weight: 500;
+        letter-spacing: 0.2px;
+        color: $theme-color-1;
+        margin: 0px;
+        margin-bottom: 20px;
+      }
+
+      @include layout-list-styles($theme-color-1, $white-e);
+
+      ion-list {
+        .list-item {
+          .content-row {
+            .item-title {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              //white-space: nowrap;
+              margin-bottom: 10px;
+            }
+
+            &.one-line {
+              @include align-items(center);
+
+              .item-description {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
+
+  }
+}

@@ -1,0 +1,53 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Buscar Prestador</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentPrestadorBusca">
+    <ion-refresher (ionRefresh)="recarregarDados($event)">
+        <ion-refresher-content
+                pullingIcon="arrow-dropdown"
+                pullingText="Puxe para atualizar"
+                refreshingSpinner="circles"
+                refreshingText="Carregando dados...">
+        </ion-refresher-content>
+    </ion-refresher>
+    <form (ngSubmit)="buscarPrestadorForm()" class="formPrestadorBusca" #buscaPrestadorTOFormElement="ngForm">
+        <ion-list>
+            <ion-item>
+                <ion-label floating>Nome do Prestador</ion-label>
+                <ion-input type="text" [(ngModel)]="buscaPrestadorTO.nome" name="nome" (ngModelChange)="habilitarEnvio()"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Tipo de Assistência</ion-label>
+                <ion-select [(ngModel)]="buscaPrestadorTO.tipoPrestador" name="tipo-assistencia" cancelText="Fechar" (ionChange)="habilitarEnvio()">
+                    <ion-option [value]="categoria.codigo" *ngFor="let categoria of listaTipoPrestadores">{{categoria.descricao | capitalizeAll}}</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Especialidade</ion-label>
+                <ion-select [(ngModel)]="buscaPrestadorTO.especialidade" name="especialidade" cancelText="Fechar" (ionChange)="habilitarEnvio()">
+                    <ion-option [value]="especidalidade.codEspecialidade" *ngFor="let especidalidade of listaEspecialidades">{{especidalidade.descricao | capitalizeAll}}</ion-option>
+                </ion-select>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Município</ion-label>
+                <ion-select [(ngModel)]="buscaPrestadorTO.municipio" name="municipio" cancelText="Fechar" (ionChange)="habilitarEnvio()">
+                    <ion-option [value]="municipio.codLocal" *ngFor="let municipio of listaMunicipios">{{municipio.descricao | capitalizeAll}} - {{municipio.uf}}</ion-option>
+                </ion-select>
+            </ion-item>
+        </ion-list>
+        <ion-row>
+            <ion-col col-6>
+                <button type="submit" ion-button block [disabled]="!habilitarEnvioFormulario">Buscar</button>
+            </ion-col>
+            <ion-col col-6>
+                <button type="button" ion-button block [disabled]="!habilitarEnvioFormulario" (click)="limparCamposBusca()"><span text-wrap>Limpar</span></button>
+            </ion-col>
+        </ion-row>
+    </form>
+</ion-content>

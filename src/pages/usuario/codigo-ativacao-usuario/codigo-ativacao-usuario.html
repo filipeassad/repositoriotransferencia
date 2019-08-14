@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Codigo Ativação</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="login-content auth-content">
+    <form class="login-form auth-form" (ngSubmit)="realizarEnvioCodigoAtivacao()" [formGroup]="codigoAtivacaoForm" #codigoAtivacaoFormElement="ngForm"
+          novalidate>
+        <ion-list>
+            <ion-item>
+                <ion-label floating>CPF</ion-label>
+                <ion-input type="number" [(ngModel)]="codigoAtivacaoTO.cpf"
+                           formControlName="cpf" maxlength="11"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Código de Ativação</ion-label>
+                <ion-input type="number" [(ngModel)]="codigoAtivacaoTO.codigoAtivacao"
+                           formControlName="codigo" maxlength="6"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Tipo Ativação</ion-label>
+                <ion-select [(ngModel)]="codigoAtivacaoTO.tipoCodigoAtivacao" formControlName="tipo-codigo" cancelText="Fechar" >
+                    <ion-option [value]="tipo.value" *ngFor="let tipo of listaTipoCodigoAtivacao | keysEnum">{{tipo.key}}</ion-option>
+                </ion-select>
+            </ion-item>
+        </ion-list>
+        <button type="submit" ion-button block [disabled]="!codigoAtivacaoFormElement.form.valid">Validar</button>
+    </form>
+</ion-content>

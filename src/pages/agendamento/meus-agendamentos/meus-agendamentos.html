@@ -1,0 +1,67 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <span class="titulo-page">Meus Agendamentos</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentMeusAgendamentos">
+    <ion-refresher (ionRefresh)="recarregarDados($event)">
+        <ion-refresher-content
+                pullingIcon="arrow-dropdown"
+                pullingText="Puxe para atualizar"
+                refreshingSpinner="circles"
+                refreshingText="Carregando dados...">
+        </ion-refresher-content>
+    </ion-refresher>
+    <ion-list>
+        <ion-item>
+            <ion-label floating>Beneficiário</ion-label>
+            <ion-select [(ngModel)]="selectMatriculaBeneficiario" name="selectMatriculaBeneficiario" cancelText="Fechar"
+                        (ionChange)="alterarBeneficiario()">
+                <ion-option [value]="beneficiario.matriculaCassems"
+                            *ngFor="let beneficiario of listaBeneficiarios">{{beneficiario.nome |
+                    capitalizeAll}}
+                </ion-option>
+            </ion-select>
+        </ion-item>
+    </ion-list>
+    <h2 class="titulo-lista-vazia" text-center *ngIf="listaAgendamentos.length == 0">Não existem agendamentos para este beneficiário</h2>
+    <ion-list class="schedule-list" *ngIf="listaAgendamentos.length > 0">
+        <ion-item class="schedule-item" *ngFor="let agendamento of listaAgendamentos">
+            <ion-row>
+                <ion-col width-20 class="schedule-date">
+                    <h2 class="schedule-day">{{agendamento.dataFinal | date:'d'}}</h2>
+                    <h3 class="schedule-month">{{agendamento.dataFinal.getMonth() | mesBrasil}}</h3>
+                    <h4 class="schedule-time">{{agendamento.dataFinal | date:'y'}}</h4>
+                    <h4 class="schedule-time">{{agendamento.horaFormatada}}</h4>
+                </ion-col>
+                <ion-col width-80 class="schedule-data" (click)="visualizarAgendamento(agendamento)">
+                    <div class="data-item">
+                        <div class="item-content">
+                            <h2 class="item-title">{{agendamento.dtoPrestador.nome}}</h2>
+                            <div class="item-description">
+                                <ion-icon class="description-icon" name="medical"></ion-icon>
+                                <p class="description-text">{{agendamento.dtoEspecialidade.descricao}}</p>
+                            </div>
+                            <div class="item-description">
+                                <ion-icon class="description-icon" name="navigate"></ion-icon>
+                                <p class="description-text">{{agendamento.dtoCentroMedico.descricao}}</p>
+                            </div>
+                        </div>
+                        <ion-icon class="item-icon" name="arrow-forward"></ion-icon>
+                    </div>
+                </ion-col>
+            </ion-row>
+        </ion-item>
+    </ion-list>
+    <ion-fab right bottom>
+        <button ion-fab (click)="novoAgendamento()"><ion-icon name="add"></ion-icon></button>
+    </ion-fab>
+
+
+</ion-content>

@@ -1,0 +1,27 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <span class="titulo-page">Demonstrativo Pagamento</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentDemonstrativoPagamento">
+    <div class="demonstrativo" *ngFor="let demonstrativoPagamento of listaDemonstrativoPagamento">
+        <ion-row wrap class="demonstrativo-title-row">
+            <ion-col no-padding col-12>
+                <h2 class="demonstrativo-title">{{demonstrativoPagamento.nome | capitalizeAll}}</h2>
+            </ion-col>
+            <section class="demonstrativo-details-section">
+                <ion-col no-padding col-12>
+                    <p class="demonstrativo-description">
+                        Valor: {{demonstrativoPagamento.valor | monetarioBrasil}}
+                    </p>
+                </ion-col>
+            </section>
+        </ion-row>
+    </div>
+</ion-content>

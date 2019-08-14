@@ -1,0 +1,18 @@
+{
+  "android": {
+    "release": {
+      "keystore": "./keystore.jks",
+      "storePassword": "senhas.123",
+      "alias": "cassems-beneficiarios",
+      "password": "senhas.123",
+      "keystoreType": ""
+    },
+    "debug": {
+      "keystore": "./keystore-debug.jks",
+      "storePassword": "senhas@123",
+      "alias": "cassems-beneficiarios",
+      "password": "senhas@123",
+      "keystoreType": ""
+    }
+  }
+}

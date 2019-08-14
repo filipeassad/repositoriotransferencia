@@ -1,0 +1,42 @@
+page-lista-grupo-familiar-revalidacao {
+  .contentRevalidacao {
+    background-color: color($colors, background, base);
+
+    .titulo-lista-beneficiario-vazia {
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      color: $theme-color-1;
+      margin-bottom: 30px;
+      margin-top: 50%;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+
+    @include layout-list-styles($theme-color-1, $white-e);
+
+    ion-list {
+      .list-item {
+        .content-row {
+          .item-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            //white-space: nowrap;
+          }
+
+          &.one-line {
+            @include align-items(center);
+
+            .item-description {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}

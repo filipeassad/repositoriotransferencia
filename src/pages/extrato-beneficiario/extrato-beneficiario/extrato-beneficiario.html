@@ -1,0 +1,83 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <span class="titulo-page">Extrato Beneficiário</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentExtratoBeneficiario">
+
+    <div class="details">
+        <ion-row wrap class="details-title-row">
+            <ion-col no-padding col-12>
+                <h2 class="details-title" text-center>{{extratoBeneficiario.nome | capitalizeAll}}</h2>
+            </ion-col>
+            <section class="prestador-section">
+                <ion-col no-padding col-12>
+                    <p class="details-description">
+                        Matrícula: {{extratoBeneficiario.matricCassems | matriculaCassems}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="details-description">
+                        Plano: {{extratoBeneficiario.plano | capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="details-description">
+                        Prestador: {{extratoBeneficiario.nomeCredenciado | capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="details-description">
+                        CNES: {{extratoBeneficiario.cnes}}
+                    </p>
+                </ion-col>
+            </section>
+            <section class="procedimento-section">
+                <ion-col no-padding col-12>
+                    <p class="details-description">
+                        Data Procedimento: {{extratoBeneficiario.dataInicial | date: "dd/MM/y"}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="details-description">
+                        Procedimento: {{extratoBeneficiario.descProcedimento | capitalizeAll}}
+                    </p>
+                </ion-col>
+            </section>
+            <section class="outros-detalhes-section">
+                <ion-col no-padding col-12 *ngIf="extratoBeneficiario.tipoConsulta">
+                    <p class="details-description">
+                        Tipo Consulta: {{extratoBeneficiario.tipoConsulta |
+                        capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12 *ngIf="extratoBeneficiario.tipoInternacao">
+                    <p class="details-description">
+                        Tipo Internação: {{extratoBeneficiario.tipoInternacao}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12 *ngIf="extratoBeneficiario.evento">
+                    <p class="details-description">
+                        Evento: {{extratoBeneficiario.evento | capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="details-description">
+                        Caráter: {{tipoCaraterAtendimentoDescricao}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12 *ngIf="extratoBeneficiario.municipio">
+                    <p class="details-description">
+                        Município: {{extratoBeneficiario.municipio | capitalizeAll}}
+                    </p>
+                </ion-col>
+            </section>
+        </ion-row>
+    </div>
+</ion-content>

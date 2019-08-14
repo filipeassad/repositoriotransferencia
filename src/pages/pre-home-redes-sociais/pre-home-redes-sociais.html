@@ -1,0 +1,32 @@
+<ion-header class="listing-header">
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <div class="header-logo">
+                <preload-image [ratio]="{w:583, h:100}" src="./assets/images/logo3.png"></preload-image>
+            </div>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentPreHomeRedesSociais">
+    <h2 class="titulo-vinculacao" text-center>Deseja vincular sua conta com alguma rede social?</h2>
+    <div class="redes-sociais">
+        <button ion-button block icon-left class="facebook-auth-button" (click)="vincularUsuarioFacebook()">
+            <ion-icon name="logo-facebook"></ion-icon>
+            Vincular Facebook
+        </button>
+        <!--<button ion-button block icon-left class="google-auth-button" (click)="vincularUsuarioGooglePlus()">
+            <ion-icon name="logo-googleplus"></ion-icon>
+            Vincular Google+
+        </button>-->
+    </div>
+    <div align="right">
+        <button ion-button icon-left (click)="redirecionarPaginaHome()" class="button-continuar">
+            <ion-icon name="arrow-forward"></ion-icon>
+            Pular
+        </button>
+    </div>
+</ion-content>

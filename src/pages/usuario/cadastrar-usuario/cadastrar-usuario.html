@@ -1,0 +1,43 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Cadastrar</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="signup-content auth-content">
+    <form class="signup-form auth-form" (ngSubmit)="cadastrarUsuario()" [formGroup]="cadastroForm" #cadastroFormElement="ngForm" novalidate>
+        <ion-list>
+            <ion-item>
+                <ion-label floating>Matrícula CASSEMS</ion-label>
+                <ion-input type="number" [(ngModel)]="usuarioCadastro.matriculaCassems" formControlName="matricula"
+                            maxlength="16"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>CPF</ion-label>
+                <ion-input type="number" [(ngModel)]="usuarioCadastro.cpf" formControlName="cpf"
+                           maxlength="11"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>E-mail</ion-label>
+                <ion-input type="email" [(ngModel)]="usuarioCadastro.email" formControlName="email" (keyup)="alterarValorComparacaoEmail()"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Confirmar E-mail</ion-label>
+                <ion-input type="email" [(ngModel)]="usuarioCadastro.emailConfirmar" formControlName="confirmar-email"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-label floating>Data Nascimento</ion-label>
+                <ion-datetime displayFormat="DD/MM/YYYY" doneText="Ok" cancelText="Fechar"
+                              [(ngModel)]="usuarioCadastro.dataNascimento" formControlName="data-nascimento"></ion-datetime>
+            </ion-item>
+            <ion-item class="switcher-item">
+                <ion-label><button ion-button type="button" block clear (click)="modalTermosECondicoes()">Aceito os termos e condições</button></ion-label>
+                <ion-toggle [(ngModel)]="usuarioCadastro.aceiteTermo" color="secondary" formControlName="aceite-termo" (ionChange)="aceitarTermo($event)"></ion-toggle>
+            </ion-item>
+        </ion-list>
+        <button type="submit" ion-button block [disabled]="!cadastroFormElement.form.valid">Cadastrar</button>
+    </form>
+</ion-content>

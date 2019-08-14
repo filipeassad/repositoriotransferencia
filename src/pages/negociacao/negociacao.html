@@ -1,0 +1,79 @@
+<ion-header class="listing-header">
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Negociação</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <ion-row wrap class="user-bio-row">
+        <ion-col no-padding col-12>
+            <p class="user-description">
+                Fatura: {{ itemNegociacaoSelecionado.sniNumeroFatura }}
+            </p>
+        </ion-col>
+    </ion-row>
+
+    <ion-row wrap class="user-bio-row">
+        <ion-col no-padding col-12>
+            <p class="user-description">
+                Tipo: {{ itemNegociacaoSelecionado.sniDescTipofatura }}
+            </p>
+        </ion-col>
+    </ion-row>
+
+    <ion-row wrap class="user-bio-row">
+        <ion-col no-padding col-12>
+            <p class="user-description">
+                Valor: R$ {{ itemNegociacaoSelecionado.sniValortotal }}
+            </p>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col col-12>
+            <ion-item>
+                <ion-label floating>Condições</ion-label>
+                <ion-select [(ngModel)]="condicaoPagamentoSelecionada"
+                    (ionChange)="selecionaCondicaoPagamento()">
+                    <ion-option [value]="condicaoPagamento" *ngFor="let condicaoPagamento of condicoesPagamento">
+                        {{ condicaoPagamento.desCpg }}</ion-option>
+                </ion-select>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="temEntrada">
+        <ion-col>
+            <ion-item>
+                <ion-label floating>Entrada</ion-label>
+                <ion-input type="text" [(ngModel)]="entrada" mask="9*.99" (ionChange)="atualizaParcela()"></ion-input>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+
+    <ion-row *ngIf="temParcela">
+        <ion-col>
+            <ion-item>
+                <ion-label floating>{{ condicaoPagamentoSelecionada.parcelas.length == 2 ? condicaoPagamentoSelecionada.parcelas[1].qtdPar : condicaoPagamentoSelecionada.parcelas[0].qtdPar }}x</ion-label>
+                <ion-input type="text" [(ngModel)]="parcela" mask="9*.99" [disabled]="temEntrada"></ion-input>
+            </ion-item>
+        </ion-col>
+    </ion-row>
+
+    <ion-row style="margin-top: 20px;">
+        <ion-col offset-1 col-10>
+            <button style="width: 100%;" ion-button type="button" (click)="confirmarCondicao()" >Confirmar</button>
+        </ion-col>
+    </ion-row>
+
+    <ion-row>
+        <ion-col offset-1 col-10>
+            <button style="width: 100%;" ion-button type="button" (click)="cancelar()">Cancelar</button>
+        </ion-col>
+    </ion-row>
+
+</ion-content>

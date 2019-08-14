@@ -1,0 +1,51 @@
+page-extrato-beneficiario {
+  .contentExtratoBeneficiario {
+    background-color: color($colors, background, base);
+
+    .details {
+      @include element-shadow();
+      padding-bottom: 4%;
+      background-color: $white;
+
+      .details-title-row {
+        padding: 4%;
+
+        .prestador-section{
+          margin-top: 20px;
+        }
+        .procedimento-section{
+          margin-top: 20px;
+        }
+        .outros-detalhes-section{
+          margin-top: 20px;
+        }
+
+        .details-title {
+          font-size: 1.6rem;
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          color: $theme-color-1;
+          margin: 0px;
+        }
+
+        .details-location {
+          font-size: 1.2rem;
+          font-weight: 500;
+          letter-spacing: 0.2px;
+          color: $white-e;
+          display: block;
+          text-align: right;
+          line-height: 1.6;
+        }
+
+        .details-description {
+          font-size: 1.2rem;
+          line-height: 1.6;
+          letter-spacing: 0.2px;
+          color: $white-e;
+          margin: 10px 0px 0px;
+        }
+      }
+    }
+  }
+}

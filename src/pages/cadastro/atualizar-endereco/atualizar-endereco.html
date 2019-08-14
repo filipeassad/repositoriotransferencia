@@ -1,0 +1,80 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <span class="titulo-page">Atualizar Endereço</span>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentAtualizarEndereco">
+    <form (ngSubmit)="atualizarEndereco()" class="formAtualizarEndereco" [formGroup]="form" #formElement="ngForm">
+        <ion-list inset>
+            <ion-item>
+                <ion-label floating>CEP</ion-label>
+                <ion-input type="tel" [(ngModel)]="cep" [brmasker]="{mask: '00000-000', len: '9', type:'num'}" maxlength="9"
+                           formControlName="cep" [disabled]="dtoLogradouro !== null"></ion-input>
+            </ion-item>
+            <ion-item *ngIf="dtoLogradouro === null">
+                <ion-row>
+                    <button type="button" ion-button block [disabled]="!form.controls['cep'].valid"
+                            (click)="buscarCep()">
+                        <span text-wrap>Buscar</span></button>
+                </ion-row>
+            </ion-item>
+            <div class="dadosCep" *ngIf="dtoLogradouro !== null">
+                <ion-item>
+                    <ion-label floating>Logradouro</ion-label>
+                    <ion-input type="text" [disabled]="dtoLogradouro !== null" [(ngModel)]="logradouro"
+                               formControlName="logradouro"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Número</ion-label>
+                    <ion-input type="number" [(ngModel)]="numero" formControlName="numero"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Complemento</ion-label>
+                    <ion-input type="text" [(ngModel)]="complemento" formControlName="complemento"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Bairro</ion-label>
+                    <ion-input type="text" [disabled]="dtoLogradouro !== null" [(ngModel)]="bairro"
+                               formControlName="bairro"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>Cidade</ion-label>
+                    <ion-input type="text" [disabled]="dtoLogradouro !== null" [(ngModel)]="cidade"
+                               formControlName="cidade"></ion-input>
+                </ion-item>
+                <ion-item>
+                    <ion-label floating>UF</ion-label>
+                    <ion-input type="text" [disabled]="dtoLogradouro !== null" [(ngModel)]="uf"
+                               formControlName="uf"></ion-input>
+                </ion-item>
+                <ion-item [class.ng-valid]="form.get('telefone').valid" [class.ng-invalid]="!form.get('telefone').valid">
+                    <ion-label floating>Telefone</ion-label>
+                    <ion-input type="tel" [(ngModel)]="telefone"
+                               [brmasker]="{mask: '(00) 0000-0000', len: '14', type:'num'}" maxlength="14"
+                               formControlName="telefone"></ion-input>
+                </ion-item>
+                <ion-item [class.ng-valid]="form.get('celular').valid" [class.ng-invalid]="!form.get('celular').valid" >
+                    <ion-label floating>Celular</ion-label>
+                    <ion-input type="tel" [(ngModel)]="celular" [brmasker]="{phone: true}" maxlength="15"
+                               formControlName="celular"></ion-input>
+                </ion-item>
+            </div>
+        </ion-list>
+        <ion-grid *ngIf="dtoLogradouro !== null">
+            <ion-row>
+                <ion-col col-6>
+                    <button type="submit" ion-button block [disabled]="!formElement.form.valid">Atualizar</button>
+                </ion-col>
+                <ion-col col-6>
+                    <button type="button" ion-button block (click)="limpar()"><span text-wrap>Limpar</span></button>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </form>
+</ion-content>

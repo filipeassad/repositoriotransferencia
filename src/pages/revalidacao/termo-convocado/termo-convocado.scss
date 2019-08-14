@@ -1,0 +1,10 @@
+page-termo-convocado {
+  .content-termo {
+    background-color: color($colors, background, base);
+    @include layout-list-styles($theme-color-1, $white-e);
+
+    .title {
+      text-align: center;
+    }
+  }
+}

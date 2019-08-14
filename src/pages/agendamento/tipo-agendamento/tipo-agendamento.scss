@@ -1,0 +1,22 @@
+page-tipo-agendamento {
+  .contentTipoAgendamento {
+    background-color: color($colors, background, base);
+    .titulo-lista-tipo-agendamentos {
+      font-size: 1.8rem;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+      color: $theme-color-1;
+      margin-bottom: 30px;
+      margin-top: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    .group-btn-tipo-agendamento{
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+    .btn-tipo-agendamento{
+      margin-bottom: 15px;
+    }
+  }
+}

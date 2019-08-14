@@ -1,0 +1,29 @@
+page-lista-segunda-via-boleto {
+  .contentListaSegundaViaBoleto {
+    background-color: color($colors, background, base);
+
+    @include layout-list-styles($theme-color-1, $white-e);
+
+    ion-list {
+      .list-item {
+        .content-row {
+          .item-title {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            //white-space: nowrap;
+          }
+
+          &.one-line {
+            @include align-items(center);
+
+            .item-description {
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+          }
+        }
+      }
+    }
+  }
+}

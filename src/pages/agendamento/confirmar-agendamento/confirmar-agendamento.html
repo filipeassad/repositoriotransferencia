@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Confirmar Agendamento</ion-title>
+        <ion-buttons end>
+            <button ion-button icon-only (click)="abrirInformacoes()">
+                <ion-icon name="information"></ion-icon>
+            </button>
+        </ion-buttons>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentConfirmarAgendamento">
+    <div class="agendamento-details">
+        <ion-row wrap class="agendamento-bio-row">
+            <ion-col no-padding col-12 text-center>
+                <h2 class="agendamento-name">{{prestador.nome | capitalizeAll}}</h2>
+            </ion-col>
+            <section class="agendamento-detail-section">
+                <ion-col no-padding col-12>
+                    <p class="agendamento-description">
+                        Especialidade: {{especialidade.descricao | capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="agendamento-description">
+                        Centro Médico: {{centroMedico.descricao| capitalizeAll}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="agendamento-description">
+                        Data: {{dataAgendamento}} - {{horaAgendamento}}
+                    </p>
+                </ion-col>
+                <ion-col no-padding col-12>
+                    <p class="agendamento-description">
+                        Beneficiário: {{beneficiario.nome | capitalizeAll}}
+                    </p>
+                </ion-col>
+            </section>
+        </ion-row>
+    </div>
+    <section class="lista-mensagens-section" *ngIf="listaMensagens.length">
+        <h2 class="titulo-lista-mensagens" text-center>Avisos</h2>
+        <ion-list>
+            <ion-item class="list-item" *ngFor="let mensagem of listaMensagens">
+                <ion-row no-padding class="content-row one-line">
+                    <ion-col no-padding width-100 class="item-content">
+                        <p class="item-description">{{mensagem.mensagem | capitalizeAll}}</p>
+                    </ion-col>
+                </ion-row>
+            </ion-item>
+        </ion-list>
+    </section>
+    <button margin-top="25px" type="button" ion-button block (click)="realizarAgendamento()">Realizar Agendamento</button>
+</ion-content>

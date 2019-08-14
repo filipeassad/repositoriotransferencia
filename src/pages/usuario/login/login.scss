@@ -1,0 +1,46 @@
+page-login {
+  .listing-header {
+    .header-logo {
+      width: 34vw;
+    }
+  }
+  .login-content {
+    .alt-options {
+      .button {
+        margin: 0px;
+        padding: 0px;
+        font-size: 1.1rem;
+      }
+
+      .forgot-button {
+        color: $theme-color-3;
+
+        .button-inner {
+          @include justify-content(flex-start);
+        }
+      }
+
+      .signup-button {
+        font-weight: 500;
+        color: $theme-color-2;
+
+        .button-inner {
+          @include justify-content(flex-end);
+        }
+      }
+
+    }
+
+    .redes-sociais {
+      margin-top: 15px;
+    }
+
+    .laudos-web {
+      margin-top: 15px;
+
+      button {
+        border-radius: 5px;
+      }
+    }
+  }
+}

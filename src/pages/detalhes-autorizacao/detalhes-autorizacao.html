@@ -1,0 +1,35 @@
+<ion-header class="listing-header">
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Detalhes Autorização</ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding text-wrap >
+  <div>
+    <p
+      style="width: 50%; display: inline-block; vertical-align: middle; font-size: 15px; color:#0090BF; text-align: left;">
+      {{autorizacaoSelecionada.solicitante}}
+    </p>
+    <p
+      style="width: 45%; display: inline-block; vertical-align: middle; font-size: 15px; color:#0090BF; text-align: right;">
+      {{autorizacaoSelecionada.autorizacao}}
+    </p>
+  </div>
+    <ion-item *ngFor="let evento of autorizacaoSelecionada.eventos">
+        <div style="margin-top: 15px; font-size: 10px; text-align: left; color: #A4A4A4;" *ngIf="autorizacaoSelecionada.eventos != null" >
+          Evento: {{evento.codEvento}} - {{evento.descricaoEvento}}
+        </div>
+        <div style="margin-top: 5px; font-size: 10px; text-align: left; color: #A4A4A4;">
+          Status da Autorização: {{autorizacaoSelecionada.statusAutorizacao}}
+        </div>
+        <div style="margin-top: 5px; font-size: 10px; text-align: left; color: #A4A4A4;">
+          Data Pedido: {{autorizacaoSelecionada.dataInclusao | date: "dd/MM/yyyy"}}
+        </div>
+        <div style="margin-top: 5px; font-size: 10px; text-align: left; color: #A4A4A4;">
+          Data Validade: {{autorizacaoSelecionada.dataValidade | date: "dd/MM/yyyy"}}
+        </div>
+    </ion-item>
+</ion-content>

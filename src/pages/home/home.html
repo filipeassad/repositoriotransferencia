@@ -1,0 +1,57 @@
+<ion-header class="listing-header">
+    <ion-navbar>
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>
+            <div class="header-logo">
+                <preload-image [ratio]="{w:583, h:100}" src="./assets/images/logo3.png"></preload-image>
+            </div>
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content class="contentHome">
+
+    <ion-refresher (ionRefresh)="recarregarDados($event)">
+        <ion-refresher-content
+                pullingIcon="arrow-dropdown"
+                pullingText="Puxe para atualizar"
+                refreshingSpinner="circles"
+                refreshingText="Carregando dados...">
+        </ion-refresher-content>
+    </ion-refresher>
+
+    <div class="user-details">
+        <ion-row wrap class="user-bio-row">
+            <ion-col no-padding col-12 text-center>
+                <h2 class="user-name">{{beneficiario.nome | capitalizeAll}}</h2>
+            </ion-col>
+            <section class="user-detail-section">
+                <ion-col no-padding col-12>
+                    <p class="user-description">
+                        Matrícula: {{beneficiario.matriculaCassems | matriculaCassems}}
+                    </p>
+                </ion-col>
+            </section>
+        </ion-row>
+    </div>
+    <section class="lista-extrato-beneficiario-section" *ngIf="listaExtratoBeneficiario.length">
+        <h2 class="titulo-lista-extratos" text-center>Procedimentos Recentes</h2>
+        <ion-list>
+            <button ion-item class="list-item" *ngFor="let extratoBeneficiario of listaExtratoBeneficiario" (click)="visualizarExtratoBeneficiario(extratoBeneficiario)">
+                <ion-row no-padding class="content-row one-line">
+
+                    <ion-col no-padding width-90 class="item-content">
+                        <h3 class="item-title" text-wrap>{{ extratoBeneficiario.nome | capitalizeAll}}</h3>
+                        <p class="item-description">Data: {{ extratoBeneficiario.dataInicial | date: "dd/MM/y"}}</p>
+                        <p class="item-description">Procedimento: {{extratoBeneficiario.descProcedimento | capitalizeAll}}</p>
+                    </ion-col>
+                    <ion-col no-padding width-10 class="item-icon">
+                        <ion-icon name="arrow-forward"></ion-icon>
+                    </ion-col>
+                </ion-row>
+            </button>
+        </ion-list>
+    </section>
+</ion-content>
