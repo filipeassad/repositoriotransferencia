@@ -1,6 +1,6 @@
 webpackJsonp([2],{
 
-/***/ 343:
+/***/ 339:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,8 +9,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pipes_pipe_module__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__atualizar_contato__ = __webpack_require__(402);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_brmasker_ionic_3__ = __webpack_require__(377);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__atualizar_contato__ = __webpack_require__(398);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_brmasker_ionic_3__ = __webpack_require__(378);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -47,7 +47,7 @@ var AtualizarContatoModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 374:
+/***/ 375:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -383,7 +383,7 @@ BrMaskerIonic3.propDecorators = {
 
 /***/ }),
 
-/***/ 375:
+/***/ 376:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -570,7 +570,7 @@ BrMaskerIonicServices3.ctorParameters = function () { return []; };
 
 /***/ }),
 
-/***/ 376:
+/***/ 377:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -620,13 +620,13 @@ var CustomValidatorsHelper = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 377:
+/***/ 378:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_module__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_module__ = __webpack_require__(379);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__app_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(380);
 /* unused harmony namespace reexport */
 
 
@@ -634,15 +634,15 @@ var CustomValidatorsHelper = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 378:
+/***/ 379:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BrMaskerModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_brmasker_ionic_3__ = __webpack_require__(374);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_brmasker_ionic_services__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_brmasker_ionic_3__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_brmasker_ionic_services__ = __webpack_require__(376);
 
 
 
@@ -678,13 +678,13 @@ BrMaskerModule.ctorParameters = function () { return []; };
 
 /***/ }),
 
-/***/ 379:
+/***/ 380:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__brmasker_ionic_3__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__brmasker_ionic_3__ = __webpack_require__(375);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__brmasker_ionic_services__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__brmasker_ionic_services__ = __webpack_require__(376);
 /* unused harmony namespace reexport */
 
 
@@ -692,7 +692,7 @@ BrMaskerModule.ctorParameters = function () { return []; };
 
 /***/ }),
 
-/***/ 402:
+/***/ 398:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -701,7 +701,7 @@ BrMaskerModule.ctorParameters = function () { return []; };
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__helpers_toast_helper__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__helpers_custom_validators_helper__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__helpers_custom_validators_helper__ = __webpack_require__(377);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_storage_service__ = __webpack_require__(56);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__models_beneficiario_benner_en_vi_portal_beneficiario_model__ = __webpack_require__(214);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_beneficiario_cadastro_benner_beneficiario_cadastro_benner_service__ = __webpack_require__(219);
@@ -795,7 +795,7 @@ var AtualizarContatoPage = /** @class */ (function () {
     };
     AtualizarContatoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-atualizar-contato',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\cadastro\atualizar-contato\atualizar-contato.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n            <span class="titulo-page">Atualizar Contato</span>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="contentAtualizarContato">\n    <form (ngSubmit)="atualizarContato()" class="formAtualizarContato" [formGroup]="form" #formElement="ngForm">\n        <ion-list inset>\n            <ion-item [class.ng-valid]="form.get(\'email\').valid" [class.ng-invalid]="!form.get(\'email\').valid">\n                <ion-label floating>E-mail</ion-label>\n                <ion-input type="email" [(ngModel)]="email" maxlength="40" formControlName="email"></ion-input>\n            </ion-item>\n            <ion-item [class.ng-valid]="form.get(\'celular\').valid" [class.ng-invalid]="!form.get(\'celular\').valid" >\n                <ion-label floating>Celular</ion-label>\n                <ion-input type="tel" [(ngModel)]="celular" [brmasker]="{phone: true}" maxlength="15"\n                           formControlName="celular"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-row>\n                    <button type="submit" ion-button block [disabled]="!formElement.form.valid">Atualizar</button>\n                </ion-row>\n            </ion-item>\n        </ion-list>\n    </form>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\cadastro\atualizar-contato\atualizar-contato.html"*/
+            selector: 'page-atualizar-contato',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\cadastro\atualizar-contato\atualizar-contato.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            <span class="titulo-page">Atualizar Contato</span>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="contentAtualizarContato">\n\n    <form (ngSubmit)="atualizarContato()" class="formAtualizarContato" [formGroup]="form" #formElement="ngForm">\n\n        <ion-list inset>\n\n            <ion-item [class.ng-valid]="form.get(\'email\').valid" [class.ng-invalid]="!form.get(\'email\').valid">\n\n                <ion-label floating>E-mail</ion-label>\n\n                <ion-input type="email" [(ngModel)]="email" maxlength="40" formControlName="email"></ion-input>\n\n            </ion-item>\n\n            <ion-item [class.ng-valid]="form.get(\'celular\').valid" [class.ng-invalid]="!form.get(\'celular\').valid" >\n\n                <ion-label floating>Celular</ion-label>\n\n                <ion-input type="tel" [(ngModel)]="celular" [brmasker]="{phone: true}" maxlength="15"\n\n                           formControlName="celular"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-row>\n\n                    <button type="submit" ion-button block [disabled]="!formElement.form.valid">Atualizar</button>\n\n                </ion-row>\n\n            </ion-item>\n\n        </ion-list>\n\n    </form>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\cadastro\atualizar-contato\atualizar-contato.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2_ionic_angular__["m" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* LoadingController */],

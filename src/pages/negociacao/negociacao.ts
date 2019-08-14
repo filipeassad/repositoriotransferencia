@@ -71,8 +71,7 @@ export class NegociacaoPage {
         if(this.temParcela)
             this.parcela = (this.itemNegociacaoSelecionado.sniValortotal - this.entrada) / this.condicaoPagamentoSelecionada.parcelas[1].qtdPar;
         else
-            this.parcela = 0;
-        
+            this.parcela = 0;        
     }
 
     confirmarCondicao(){        

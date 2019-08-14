@@ -1,6 +1,6 @@
 webpackJsonp([28],{
 
-/***/ 354:
+/***/ 355:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -10,7 +10,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pipes_pipe_module__ = __webpack_require__(211);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(217);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pre_home_redes_sociais__ = __webpack_require__(414);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pre_home_redes_sociais__ = __webpack_require__(416);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -47,7 +47,7 @@ var HomeModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 414:
+/***/ 416:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -136,7 +136,7 @@ var PreHomeRedesSociaisPage = /** @class */ (function () {
     };
     PreHomeRedesSociaisPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-pre-home-redes-sociais',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\pre-home-redes-sociais\pre-home-redes-sociais.html"*/'<ion-header class="listing-header">\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n            <div class="header-logo">\n                <preload-image [ratio]="{w:583, h:100}" src="./assets/images/logo3.png"></preload-image>\n            </div>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="contentPreHomeRedesSociais">\n    <h2 class="titulo-vinculacao" text-center>Deseja vincular sua conta com alguma rede social?</h2>\n    <div class="redes-sociais">\n        <button ion-button block icon-left class="facebook-auth-button" (click)="vincularUsuarioFacebook()">\n            <ion-icon name="logo-facebook"></ion-icon>\n            Vincular Facebook\n        </button>\n        <!--<button ion-button block icon-left class="google-auth-button" (click)="vincularUsuarioGooglePlus()">\n            <ion-icon name="logo-googleplus"></ion-icon>\n            Vincular Google+\n        </button>-->\n    </div>\n    <div align="right">\n        <button ion-button icon-left (click)="redirecionarPaginaHome()" class="button-continuar">\n            <ion-icon name="arrow-forward"></ion-icon>\n            Pular\n        </button>\n    </div>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\pre-home-redes-sociais\pre-home-redes-sociais.html"*/
+            selector: 'page-pre-home-redes-sociais',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\pre-home-redes-sociais\pre-home-redes-sociais.html"*/'<ion-header class="listing-header">\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            <div class="header-logo">\n\n                <preload-image [ratio]="{w:583, h:100}" src="./assets/images/logo3.png"></preload-image>\n\n            </div>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="contentPreHomeRedesSociais">\n\n    <h2 class="titulo-vinculacao" text-center>Deseja vincular sua conta com alguma rede social?</h2>\n\n    <div class="redes-sociais">\n\n        <button ion-button block icon-left class="facebook-auth-button" (click)="vincularUsuarioFacebook()">\n\n            <ion-icon name="logo-facebook"></ion-icon>\n\n            Vincular Facebook\n\n        </button>\n\n        <!--<button ion-button block icon-left class="google-auth-button" (click)="vincularUsuarioGooglePlus()">\n\n            <ion-icon name="logo-googleplus"></ion-icon>\n\n            Vincular Google+\n\n        </button>-->\n\n    </div>\n\n    <div align="right">\n\n        <button ion-button icon-left (click)="redirecionarPaginaHome()" class="button-continuar">\n\n            <ion-icon name="arrow-forward"></ion-icon>\n\n            Pular\n\n        </button>\n\n    </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\pre-home-redes-sociais\pre-home-redes-sociais.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__providers_storage_service__["a" /* StorageService */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],

@@ -1,6 +1,6 @@
 webpackJsonp([1],{
 
-/***/ 358:
+/***/ 357:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,9 +8,9 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NegociacaoPageModule", function() { return NegociacaoPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__negociacao__ = __webpack_require__(419);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__ = __webpack_require__(377);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ngx_mask_ionic__ = __webpack_require__(420);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__negociacao__ = __webpack_require__(418);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_brmasker_ionic_3__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4_ngx_mask_ionic__ = __webpack_require__(419);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var NegociacaoPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 374:
+/***/ 375:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -380,7 +380,7 @@ BrMaskerIonic3.propDecorators = {
 
 /***/ }),
 
-/***/ 375:
+/***/ 376:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -567,13 +567,13 @@ BrMaskerIonicServices3.ctorParameters = function () { return []; };
 
 /***/ }),
 
-/***/ 377:
+/***/ 378:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_module__ = __webpack_require__(378);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_module__ = __webpack_require__(379);
 /* harmony namespace reexport (by used) */ __webpack_require__.d(__webpack_exports__, "a", function() { return __WEBPACK_IMPORTED_MODULE_0__app_module__["a"]; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(379);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__directives__ = __webpack_require__(380);
 /* unused harmony namespace reexport */
 
 
@@ -581,15 +581,15 @@ BrMaskerIonicServices3.ctorParameters = function () { return []; };
 
 /***/ }),
 
-/***/ 378:
+/***/ 379:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BrMaskerModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_common__ = __webpack_require__(33);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_brmasker_ionic_3__ = __webpack_require__(374);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_brmasker_ionic_services__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__directives_brmasker_ionic_3__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__directives_brmasker_ionic_services__ = __webpack_require__(376);
 
 
 
@@ -625,13 +625,13 @@ BrMaskerModule.ctorParameters = function () { return []; };
 
 /***/ }),
 
-/***/ 379:
+/***/ 380:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__brmasker_ionic_3__ = __webpack_require__(374);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__brmasker_ionic_3__ = __webpack_require__(375);
 /* unused harmony namespace reexport */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__brmasker_ionic_services__ = __webpack_require__(375);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__brmasker_ionic_services__ = __webpack_require__(376);
 /* unused harmony namespace reexport */
 
 
@@ -639,14 +639,14 @@ BrMaskerModule.ctorParameters = function () { return []; };
 
 /***/ }),
 
-/***/ 419:
+/***/ 418:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NegociacaoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_condicoes_pagamento_service__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_condicoes_pagamento_service__ = __webpack_require__(231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__helpers_toast_helper__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_negociacao_item_estatico_service__ = __webpack_require__(221);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -748,7 +748,7 @@ var NegociacaoPage = /** @class */ (function () {
     };
     NegociacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-negociacao',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\negociacao\negociacao.html"*/'<ion-header class="listing-header">\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>Negociação</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n    <ion-row wrap class="user-bio-row">\n        <ion-col no-padding col-12>\n            <p class="user-description">\n                Fatura: {{ itemNegociacaoSelecionado.sniNumeroFatura }}\n            </p>\n        </ion-col>\n    </ion-row>\n\n    <ion-row wrap class="user-bio-row">\n        <ion-col no-padding col-12>\n            <p class="user-description">\n                Tipo: {{ itemNegociacaoSelecionado.sniDescTipofatura }}\n            </p>\n        </ion-col>\n    </ion-row>\n\n    <ion-row wrap class="user-bio-row">\n        <ion-col no-padding col-12>\n            <p class="user-description">\n                Valor: R$ {{ itemNegociacaoSelecionado.sniValortotal }}\n            </p>\n        </ion-col>\n    </ion-row>\n\n    <ion-row>\n        <ion-col col-12>\n            <ion-item>\n                <ion-label floating>Condições</ion-label>\n                <ion-select [(ngModel)]="condicaoPagamentoSelecionada"\n                    (ionChange)="selecionaCondicaoPagamento()">\n                    <ion-option [value]="condicaoPagamento" *ngFor="let condicaoPagamento of condicoesPagamento">\n                        {{ condicaoPagamento.desCpg }}</ion-option>\n                </ion-select>\n            </ion-item>\n        </ion-col>\n    </ion-row>\n\n    <ion-row *ngIf="temEntrada">\n        <ion-col>\n            <ion-item>\n                <ion-label floating>Entrada</ion-label>\n                <ion-input type="text" [(ngModel)]="entrada" mask="9*.99" (ionChange)="atualizaParcela()"></ion-input>\n            </ion-item>\n        </ion-col>\n    </ion-row>\n\n    <ion-row *ngIf="temParcela">\n        <ion-col>\n            <ion-item>\n                <ion-label floating>{{ condicaoPagamentoSelecionada.parcelas.length == 2 ? condicaoPagamentoSelecionada.parcelas[1].qtdPar : condicaoPagamentoSelecionada.parcelas[0].qtdPar }}x</ion-label>\n                <ion-input type="text" [(ngModel)]="parcela" mask="9*.99" [disabled]="temEntrada"></ion-input>\n            </ion-item>\n        </ion-col>\n    </ion-row>\n\n    <ion-row style="margin-top: 20px;">\n        <ion-col offset-1 col-10>\n            <button style="width: 100%;" ion-button type="button" (click)="confirmarCondicao()" >Confirmar</button>\n        </ion-col>\n    </ion-row>\n\n    <ion-row>\n        <ion-col offset-1 col-10>\n            <button style="width: 100%;" ion-button type="button" (click)="cancelar()">Cancelar</button>\n        </ion-col>\n    </ion-row>\n\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\negociacao\negociacao.html"*/,
+            selector: 'page-negociacao',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\negociacao\negociacao.html"*/'<ion-header class="listing-header">\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>Negociação</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n    <ion-row wrap class="user-bio-row">\n\n        <ion-col no-padding col-12>\n\n            <p class="user-description">\n\n                Fatura: {{ itemNegociacaoSelecionado.sniNumeroFatura }}\n\n            </p>\n\n        </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row wrap class="user-bio-row">\n\n        <ion-col no-padding col-12>\n\n            <p class="user-description">\n\n                Tipo: {{ itemNegociacaoSelecionado.sniDescTipofatura }}\n\n            </p>\n\n        </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row wrap class="user-bio-row">\n\n        <ion-col no-padding col-12>\n\n            <p class="user-description">\n\n                Valor: R$ {{ itemNegociacaoSelecionado.sniValortotal }}\n\n            </p>\n\n        </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row>\n\n        <ion-col col-12>\n\n            <ion-item>\n\n                <ion-label floating>Condições</ion-label>\n\n                <ion-select [(ngModel)]="condicaoPagamentoSelecionada"\n\n                    (ionChange)="selecionaCondicaoPagamento()">\n\n                    <ion-option [value]="condicaoPagamento" *ngFor="let condicaoPagamento of condicoesPagamento">\n\n                        {{ condicaoPagamento.desCpg }}</ion-option>\n\n                </ion-select>\n\n            </ion-item>\n\n        </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row *ngIf="temEntrada">\n\n        <ion-col>\n\n            <ion-item>\n\n                <ion-label floating>Entrada</ion-label>\n\n                <ion-input type="text" [(ngModel)]="entrada" mask="9*.99" (ionChange)="atualizaParcela()"></ion-input>\n\n            </ion-item>\n\n        </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row *ngIf="temParcela">\n\n        <ion-col>\n\n            <ion-item>\n\n                <ion-label floating>{{ condicaoPagamentoSelecionada.parcelas.length == 2 ? condicaoPagamentoSelecionada.parcelas[1].qtdPar : condicaoPagamentoSelecionada.parcelas[0].qtdPar }}x</ion-label>\n\n                <ion-input type="text" [(ngModel)]="parcela" mask="9*.99" [disabled]="temEntrada"></ion-input>\n\n            </ion-item>\n\n        </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row style="margin-top: 20px;">\n\n        <ion-col offset-1 col-10>\n\n            <button style="width: 100%;" ion-button type="button" (click)="confirmarCondicao()" >Confirmar</button>\n\n        </ion-col>\n\n    </ion-row>\n\n\n\n    <ion-row>\n\n        <ion-col offset-1 col-10>\n\n            <button style="width: 100%;" ion-button type="button" (click)="cancelar()">Cancelar</button>\n\n        </ion-col>\n\n    </ion-row>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\negociacao\negociacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
@@ -764,7 +764,7 @@ var NegociacaoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 420:
+/***/ 419:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

@@ -1,4 +1,4 @@
-webpackJsonp([44],{
+webpackJsonp([45],{
 
 /***/ 10:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -186,186 +186,186 @@ webpackEmptyAsyncContext.id = 120;
 var map = {
 	"../pages/agendamento/agendamento/agendamento.module": [
 		330,
-		57
+		11
 	],
 	"../pages/agendamento/buscar-prestador-agendamento/buscar-prestador-agendamento.module": [
-		335,
-		90
+		331,
+		44
 	],
 	"../pages/agendamento/cancelar-agendamento/cancelar-agendamento.module": [
-		331,
-		56
+		332,
+		10
 	],
 	"../pages/agendamento/confirmar-agendamento/confirmar-agendamento.module": [
-		332,
-		89
+		333,
+		43
 	],
 	"../pages/agendamento/escolher-data-agendamento/escolher-data-agendamento.module": [
-		372,
-		88
+		373,
+		42
 	],
 	"../pages/agendamento/filtros-busca-agendamento-centro-medico/filtros-busca-agendamento-centro-medico.module": [
-		333,
-		87
+		334,
+		41
 	],
 	"../pages/agendamento/filtros-busca-agendamento-especialidade/filtros-busca-agendamento-especialidade.module": [
-		334,
-		86
+		335,
+		40
 	],
 	"../pages/agendamento/filtros-busca-agendamento-prestador/filtros-busca-agendamento-prestador.module": [
 		336,
-		85
+		39
 	],
 	"../pages/agendamento/meus-agendamentos/meus-agendamentos.module": [
-		337,
-		84
+		338,
+		38
 	],
 	"../pages/agendamento/tipo-agendamento/tipo-agendamento.module": [
-		338,
-		83
+		337,
+		37
 	],
 	"../pages/beneficiario/beneficiario.module": [
-		339,
-		82
+		340,
+		36
 	],
 	"../pages/cadastro/atualizar-contato/atualizar-contato.module": [
-		343,
-		48
+		339,
+		2
 	],
 	"../pages/cadastro/atualizar-endereco/atualizar-endereco.module": [
-		340,
-		46
+		341,
+		0
 	],
 	"../pages/demonstrativo-pagamento/buscar-demonstrativo-pagamento/buscar-demonstrativo-pagamento.module": [
-		341,
-		63
+		343,
+		17
 	],
 	"../pages/demonstrativo-pagamento/demonstrativo-pagamento/demonstrativo-pagamento.module": [
-		342,
-		62
+		349,
+		16
 	],
 	"../pages/detalhe-fatura-negocicao/detalhe-fatura-negocicao.module": [
-		445,
-		81
+		342,
+		35
 	],
 	"../pages/detalhes-autorizacao/detalhes-autorizacao.module": [
-		346,
-		80
+		344,
+		34
 	],
 	"../pages/extrato-beneficiario/dependente/buscar-extrato-beneficiario-dependente/buscar-extrato-beneficiario-dependente.module": [
-		344,
-		55
+		345,
+		9
 	],
 	"../pages/extrato-beneficiario/extrato-beneficiario/extrato-beneficiario.module": [
-		345,
-		67
+		346,
+		21
 	],
 	"../pages/extrato-beneficiario/lista-extrato-beneficiario/lista-extrato-beneficiario.module": [
-		347,
-		54
+		348,
+		8
 	],
 	"../pages/extrato-beneficiario/titular/buscar-extrato-beneficiario-titular/buscar-extrato-beneficiario-titular.module": [
-		352,
-		53
+		347,
+		7
 	],
 	"../pages/grupo-familiar/dependente/grupo-familiar-dependente/grupo-familiar-dependente.module": [
-		348,
-		79
+		353,
+		33
 	],
 	"../pages/grupo-familiar/titular/grupo-familiar-titular/grupo-familiar-titular.module": [
-		349,
-		78
+		350,
+		32
 	],
 	"../pages/home/home.module": [
 		166
 	],
 	"../pages/listagem-autorizacao/listagem-autorizacao.module": [
-		350,
-		77
+		351,
+		31
 	],
 	"../pages/listagem-faturas-negociacao/listagem-faturas-negociacao.module": [
-		351,
-		76
+		352,
+		30
 	],
 	"../pages/listagem-negociacao/listagem-negociacao.module": [
-		353,
-		75
+		354,
+		29
 	],
 	"../pages/negociacao/negociacao.module": [
-		358,
-		47
+		357,
+		1
 	],
 	"../pages/pre-home-redes-sociais/pre-home-redes-sociais.module": [
-		354,
-		74
+		355,
+		28
 	],
 	"../pages/prestador/busca-prestador-lista/busca-prestador-lista.module": [
-		355,
-		61
+		359,
+		15
 	],
 	"../pages/prestador/busca-prestador/busca-prestador.module": [
 		356,
-		60
+		14
 	],
 	"../pages/prestador/prestador/prestador.module": [
-		357,
-		66
+		360,
+		20
 	],
 	"../pages/revalidacao/dependente/questionario-revalidacao-dependente/questionario-revalidacao-dependente.module": [
-		361,
-		65
+		358,
+		19
 	],
 	"../pages/revalidacao/lista-grupo-familiar-revalidacao/lista-grupo-familiar-revalidacao.module": [
-		359,
-		73
+		361,
+		27
 	],
 	"../pages/revalidacao/revalidacao-atualizar-endereco/revalidacao-atualizar-endereco.module": [
-		360,
-		59
+		362,
+		13
 	],
 	"../pages/revalidacao/termo-convocado/termo-convocado.module": [
-		363,
-		72
+		364,
+		26
 	],
 	"../pages/segunda-via-boleto/extrato-cabesp-boleto/extrato-cabesp-boleto.module": [
-		362,
-		71
+		365,
+		25
 	],
 	"../pages/segunda-via-boleto/lista-segunda-via-boleto/lista-segunda-via-boleto.module": [
-		364,
-		70
+		366,
+		24
 	],
 	"../pages/segunda-via-boleto/segunda-via-boleto/segunda-via-boleto.module": [
-		365,
-		68
+		363,
+		22
 	],
 	"../pages/usuario/alterar-senha-usuario/alterar-senha-usuario.module": [
-		366,
-		51
+		367,
+		5
 	],
 	"../pages/usuario/cadastrar-usuario/cadastrar-usuario.module": [
-		367,
-		50
+		369,
+		4
 	],
 	"../pages/usuario/codigo-ativacao-usuario/codigo-ativacao-usuario.module": [
-		368,
-		52
+		370,
+		6
 	],
 	"../pages/usuario/login/login.module": [
-		373,
-		49
+		374,
+		3
 	],
 	"../pages/usuario/modal-termos-e-condicoes/modal-termos-e-condicoes.module": [
-		369,
-		69
+		368,
+		23
 	],
 	"../pages/usuario/perfil/perfil.module": [
-		370,
-		58
+		371,
+		12
 	],
 	"../pages/usuario/redefinir-senha-usuario/redefinir-senha-usuario.module": [
-		371,
-		64
+		372,
+		18
 	]
 };
 function webpackAsyncContext(req) {
@@ -508,7 +508,7 @@ var HomePage = /** @class */ (function () {
     };
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\home\home.html"*/'<ion-header class="listing-header">\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n            <div class="header-logo">\n                <preload-image [ratio]="{w:583, h:100}" src="./assets/images/logo3.png"></preload-image>\n            </div>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="contentHome">\n\n    <ion-refresher (ionRefresh)="recarregarDados($event)">\n        <ion-refresher-content\n                pullingIcon="arrow-dropdown"\n                pullingText="Puxe para atualizar"\n                refreshingSpinner="circles"\n                refreshingText="Carregando dados...">\n        </ion-refresher-content>\n    </ion-refresher>\n\n    <div class="user-details">\n        <ion-row wrap class="user-bio-row">\n            <ion-col no-padding col-12 text-center>\n                <h2 class="user-name">{{beneficiario.nome | capitalizeAll}}</h2>\n            </ion-col>\n            <section class="user-detail-section">\n                <ion-col no-padding col-12>\n                    <p class="user-description">\n                        Matrícula: {{beneficiario.matriculaCassems | matriculaCassems}}\n                    </p>\n                </ion-col>\n            </section>\n        </ion-row>\n    </div>\n    <section class="lista-extrato-beneficiario-section" *ngIf="listaExtratoBeneficiario.length">\n        <h2 class="titulo-lista-extratos" text-center>Procedimentos Recentes</h2>\n        <ion-list>\n            <button ion-item class="list-item" *ngFor="let extratoBeneficiario of listaExtratoBeneficiario" (click)="visualizarExtratoBeneficiario(extratoBeneficiario)">\n                <ion-row no-padding class="content-row one-line">\n\n                    <ion-col no-padding width-90 class="item-content">\n                        <h3 class="item-title" text-wrap>{{ extratoBeneficiario.nome | capitalizeAll}}</h3>\n                        <p class="item-description">Data: {{ extratoBeneficiario.dataInicial | date: "dd/MM/y"}}</p>\n                        <p class="item-description">Procedimento: {{extratoBeneficiario.descProcedimento | capitalizeAll}}</p>\n                    </ion-col>\n                    <ion-col no-padding width-10 class="item-icon">\n                        <ion-icon name="arrow-forward"></ion-icon>\n                    </ion-col>\n                </ion-row>\n            </button>\n        </ion-list>\n    </section>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\home\home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\home\home.html"*/'<ion-header class="listing-header">\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            <div class="header-logo">\n\n                <preload-image [ratio]="{w:583, h:100}" src="./assets/images/logo3.png"></preload-image>\n\n            </div>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="contentHome">\n\n\n\n    <ion-refresher (ionRefresh)="recarregarDados($event)">\n\n        <ion-refresher-content\n\n                pullingIcon="arrow-dropdown"\n\n                pullingText="Puxe para atualizar"\n\n                refreshingSpinner="circles"\n\n                refreshingText="Carregando dados...">\n\n        </ion-refresher-content>\n\n    </ion-refresher>\n\n\n\n    <div class="user-details">\n\n        <ion-row wrap class="user-bio-row">\n\n            <ion-col no-padding col-12 text-center>\n\n                <h2 class="user-name">{{beneficiario.nome | capitalizeAll}}</h2>\n\n            </ion-col>\n\n            <section class="user-detail-section">\n\n                <ion-col no-padding col-12>\n\n                    <p class="user-description">\n\n                        Matrícula: {{beneficiario.matriculaCassems | matriculaCassems}}\n\n                    </p>\n\n                </ion-col>\n\n            </section>\n\n        </ion-row>\n\n    </div>\n\n    <section class="lista-extrato-beneficiario-section" *ngIf="listaExtratoBeneficiario.length">\n\n        <h2 class="titulo-lista-extratos" text-center>Procedimentos Recentes</h2>\n\n        <ion-list>\n\n            <button ion-item class="list-item" *ngFor="let extratoBeneficiario of listaExtratoBeneficiario" (click)="visualizarExtratoBeneficiario(extratoBeneficiario)">\n\n                <ion-row no-padding class="content-row one-line">\n\n\n\n                    <ion-col no-padding width-90 class="item-content">\n\n                        <h3 class="item-title" text-wrap>{{ extratoBeneficiario.nome | capitalizeAll}}</h3>\n\n                        <p class="item-description">Data: {{ extratoBeneficiario.dataInicial | date: "dd/MM/y"}}</p>\n\n                        <p class="item-description">Procedimento: {{extratoBeneficiario.descProcedimento | capitalizeAll}}</p>\n\n                    </ion-col>\n\n                    <ion-col no-padding width-10 class="item-icon">\n\n                        <ion-icon name="arrow-forward"></ion-icon>\n\n                    </ion-col>\n\n                </ion-row>\n\n            </button>\n\n        </ion-list>\n\n    </section>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\home\home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__providers_storage_service__["a" /* StorageService */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
@@ -2139,6 +2139,147 @@ var NegociacaoItemEstaticoService = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TipoPrestadorService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var TipoPrestadorService = /** @class */ (function () {
+    function TipoPrestadorService(http) {
+        this.http = http;
+        this.utilHelper = new __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__["a" /* UtilHelper */]();
+        if (Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* isDevMode */])()) {
+            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioDev;
+        }
+        else {
+            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioProd;
+        }
+    }
+    TipoPrestadorService.prototype.buscarListaTipoPrestadores = function () {
+        return this.http.get(this.apiUrl + 'busca-categoria', { headers: this.utilHelper.montarHeaders() });
+    };
+    TipoPrestadorService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]])
+    ], TipoPrestadorService);
+    return TipoPrestadorService;
+}());
+
+//# sourceMappingURL=tipo-prestador.service.js.map
+
+/***/ }),
+
+/***/ 223:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EspecialidadeService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var EspecialidadeService = /** @class */ (function () {
+    function EspecialidadeService(http) {
+        this.http = http;
+        this.utilHelper = new __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__["a" /* UtilHelper */]();
+        if (Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* isDevMode */])()) {
+            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioDev;
+        }
+        else {
+            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioProd;
+        }
+    }
+    EspecialidadeService.prototype.buscarListaEspecialidades = function () {
+        return this.http.get(this.apiUrl + 'busca-especialidade', { headers: this.utilHelper.montarHeaders() });
+    };
+    EspecialidadeService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]])
+    ], EspecialidadeService);
+    return EspecialidadeService;
+}());
+
+//# sourceMappingURL=especialidade.service.js.map
+
+/***/ }),
+
+/***/ 224:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MunicipioService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var MunicipioService = /** @class */ (function () {
+    function MunicipioService(http) {
+        this.http = http;
+        this.utilHelper = new __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__["a" /* UtilHelper */]();
+        if (Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* isDevMode */])()) {
+            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioDev;
+        }
+        else {
+            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioProd;
+        }
+    }
+    MunicipioService.prototype.buscarListaMunicipios = function () {
+        return this.http.get(this.apiUrl + 'busca-municipio', { headers: this.utilHelper.montarHeaders() });
+    };
+    MunicipioService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]])
+    ], MunicipioService);
+    return MunicipioService;
+}());
+
+//# sourceMappingURL=municipio.service.js.map
+
+/***/ }),
+
+/***/ 225:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PrestadorService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(10);
@@ -2210,147 +2351,6 @@ var PrestadorService = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=prestador.service.js.map
-
-/***/ }),
-
-/***/ 223:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TipoPrestadorService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var TipoPrestadorService = /** @class */ (function () {
-    function TipoPrestadorService(http) {
-        this.http = http;
-        this.utilHelper = new __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__["a" /* UtilHelper */]();
-        if (Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* isDevMode */])()) {
-            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioDev;
-        }
-        else {
-            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioProd;
-        }
-    }
-    TipoPrestadorService.prototype.buscarListaTipoPrestadores = function () {
-        return this.http.get(this.apiUrl + 'busca-categoria', { headers: this.utilHelper.montarHeaders() });
-    };
-    TipoPrestadorService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]])
-    ], TipoPrestadorService);
-    return TipoPrestadorService;
-}());
-
-//# sourceMappingURL=tipo-prestador.service.js.map
-
-/***/ }),
-
-/***/ 224:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return EspecialidadeService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var EspecialidadeService = /** @class */ (function () {
-    function EspecialidadeService(http) {
-        this.http = http;
-        this.utilHelper = new __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__["a" /* UtilHelper */]();
-        if (Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* isDevMode */])()) {
-            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioDev;
-        }
-        else {
-            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioProd;
-        }
-    }
-    EspecialidadeService.prototype.buscarListaEspecialidades = function () {
-        return this.http.get(this.apiUrl + 'busca-especialidade', { headers: this.utilHelper.montarHeaders() });
-    };
-    EspecialidadeService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]])
-    ], EspecialidadeService);
-    return EspecialidadeService;
-}());
-
-//# sourceMappingURL=especialidade.service.js.map
-
-/***/ }),
-
-/***/ 225:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MunicipioService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var MunicipioService = /** @class */ (function () {
-    function MunicipioService(http) {
-        this.http = http;
-        this.utilHelper = new __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__["a" /* UtilHelper */]();
-        if (Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* isDevMode */])()) {
-            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioDev;
-        }
-        else {
-            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioProd;
-        }
-    }
-    MunicipioService.prototype.buscarListaMunicipios = function () {
-        return this.http.get(this.apiUrl + 'busca-municipio', { headers: this.utilHelper.montarHeaders() });
-    };
-    MunicipioService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]])
-    ], MunicipioService);
-    return MunicipioService;
-}());
-
-//# sourceMappingURL=municipio.service.js.map
 
 /***/ }),
 
@@ -2591,57 +2591,6 @@ var AutorizacaoProvider = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalAtendimentoService; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(10);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__ = __webpack_require__(23);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-
-
-var LocalAtendimentoService = /** @class */ (function () {
-    function LocalAtendimentoService(http) {
-        this.http = http;
-        this.chaveGeocoder = 'AIzaSyCjn7LBjBjmVqlYcZgiYXhjLARMRrhiIuE';
-        this.utilHelper = new __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__["a" /* UtilHelper */]();
-        if (Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* isDevMode */])()) {
-            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioDev;
-        }
-        else {
-            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioProd;
-        }
-    }
-    LocalAtendimentoService.prototype.buscarLocaisAtendimento = function (codCredenciado) {
-        return this.http.get(this.apiUrl + 'busca-local-prestador/' + codCredenciado, { headers: this.utilHelper.montarHeaders([]) });
-    };
-    LocalAtendimentoService.prototype.buscarGeoLocation = function (endereco) {
-        return this.http.get('https://maps.googleapis.com/maps/api/geocode/json?address=' + endereco + '&key=' + this.chaveGeocoder);
-    };
-    LocalAtendimentoService = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]])
-    ], LocalAtendimentoService);
-    return LocalAtendimentoService;
-}());
-
-//# sourceMappingURL=local-atendimento.service.js.map
-
-/***/ }),
-
-/***/ 234:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CondicaoPagamentoService; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common_http__ = __webpack_require__(7);
@@ -2688,6 +2637,57 @@ var CondicaoPagamentoService = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=condicoes-pagamento.service.js.map
+
+/***/ }),
+
+/***/ 232:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LocalAtendimentoService; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__environments_environment__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__ = __webpack_require__(23);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_common_http__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+
+
+var LocalAtendimentoService = /** @class */ (function () {
+    function LocalAtendimentoService(http) {
+        this.http = http;
+        this.chaveGeocoder = 'AIzaSyCjn7LBjBjmVqlYcZgiYXhjLARMRrhiIuE';
+        this.utilHelper = new __WEBPACK_IMPORTED_MODULE_2__helpers_util_helper__["a" /* UtilHelper */]();
+        if (Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_17" /* isDevMode */])()) {
+            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioDev;
+        }
+        else {
+            this.apiUrl = __WEBPACK_IMPORTED_MODULE_1__environments_environment__["a" /* environment */].apiUrlBeneficiarioProd;
+        }
+    }
+    LocalAtendimentoService.prototype.buscarLocaisAtendimento = function (codCredenciado) {
+        return this.http.get(this.apiUrl + 'busca-local-prestador/' + codCredenciado, { headers: this.utilHelper.montarHeaders([]) });
+    };
+    LocalAtendimentoService.prototype.buscarGeoLocation = function (endereco) {
+        return this.http.get('https://maps.googleapis.com/maps/api/geocode/json?address=' + endereco + '&key=' + this.chaveGeocoder);
+    };
+    LocalAtendimentoService = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["B" /* Injectable */])(),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__angular_common_http__["a" /* HttpClient */]])
+    ], LocalAtendimentoService);
+    return LocalAtendimentoService;
+}());
+
+//# sourceMappingURL=local-atendimento.service.js.map
 
 /***/ }),
 
@@ -2769,22 +2769,22 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__ionic_native_splash_screen__ = __webpack_require__(209);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_usuario_service__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(165);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_municipio_service__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_especialidade_service__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_tipo_prestador_service__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_municipio_service__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__providers_especialidade_service__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__providers_tipo_prestador_service__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__helpers_toast_helper__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__helpers_ios_helper__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__providers_extrato_beneficiario_service__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_agendamento_service__ = __webpack_require__(212);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__providers_demonstrativo_pagamento_service__ = __webpack_require__(229);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_local_atendimento_service__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_prestador_service__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__providers_local_atendimento_service__ = __webpack_require__(232);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__providers_prestador_service__ = __webpack_require__(225);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__providers_revalidacao_service__ = __webpack_require__(215);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__providers_segunda_via_boleto_service__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__providers_util_service__ = __webpack_require__(235);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_home_home_module__ = __webpack_require__(166);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_launch_navigator__ = __webpack_require__(232);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_call_number__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__ionic_native_launch_navigator__ = __webpack_require__(233);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__ionic_native_call_number__ = __webpack_require__(234);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__ionic_native_clipboard__ = __webpack_require__(236);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__ionic_native_toast__ = __webpack_require__(163);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__ionic_native_facebook__ = __webpack_require__(107);
@@ -2798,7 +2798,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_34__ionic_native_in_app_browser__ = __webpack_require__(109);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_35__providers_autorizacao_autorizacao__ = __webpack_require__(230);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_36__providers_negociacao_service__ = __webpack_require__(220);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__providers_condicoes_pagamento_service__ = __webpack_require__(234);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_37__providers_condicoes_pagamento_service__ = __webpack_require__(231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_38__providers_negociacao_item_estatico_service__ = __webpack_require__(221);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -2867,46 +2867,47 @@ var AppModule = /** @class */ (function () {
                 }, {
                     links: [
                         { loadChildren: '../pages/agendamento/agendamento/agendamento.module#AgendamentoModule', name: 'AgendamentoPage', segment: 'agendamento', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/agendamento/buscar-prestador-agendamento/buscar-prestador-agendamento.module#BuscarPrestadorAgendamentoModule', name: 'BuscarPrestadorAgendamentoPage', segment: 'buscar-prestador-agendamento', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/agendamento/cancelar-agendamento/cancelar-agendamento.module#AgendamentoModule', name: 'CancelarAgendamentoPage', segment: 'cancelar-agendamento', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/agendamento/confirmar-agendamento/confirmar-agendamento.module#ConfirmarAgendamentoModule', name: 'ConfirmarAgendamentoPage', segment: 'confirmar-agendamento', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/agendamento/filtros-busca-agendamento-centro-medico/filtros-busca-agendamento-centro-medico.module#FiltrosBuscaAgendamentoCentroMedicoModule', name: 'FiltrosBuscaAgendamentoCentroMedicoPage', segment: 'filtros-busca-agendamento-centro-medico', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/agendamento/filtros-busca-agendamento-especialidade/filtros-busca-agendamento-especialidade.module#FiltrosBuscaAgendamentoEspecialidadeModule', name: 'FiltrosBuscaAgendamentoEspecialidadePage', segment: 'filtros-busca-agendamento-especialidade', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/agendamento/buscar-prestador-agendamento/buscar-prestador-agendamento.module#BuscarPrestadorAgendamentoModule', name: 'BuscarPrestadorAgendamentoPage', segment: 'buscar-prestador-agendamento', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/agendamento/filtros-busca-agendamento-prestador/filtros-busca-agendamento-prestador.module#FiltrosBuscaAgendamentoPrestadorModule', name: 'FiltrosBuscaAgendamentoPrestadorPage', segment: 'filtros-busca-agendamento-prestador', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/agendamento/meus-agendamentos/meus-agendamentos.module#MeusAgendamentosModule', name: 'MeusAgendamentosPage', segment: 'meus-agendamentos', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/agendamento/tipo-agendamento/tipo-agendamento.module#TipoAgendamentoModule', name: 'TipoAgendamentoPage', segment: 'tipo-agendamento', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/agendamento/meus-agendamentos/meus-agendamentos.module#MeusAgendamentosModule', name: 'MeusAgendamentosPage', segment: 'meus-agendamentos', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/cadastro/atualizar-contato/atualizar-contato.module#AtualizarContatoModule', name: 'AtualizarContatoPage', segment: 'atualizar-contato', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/beneficiario/beneficiario.module#BeneficiarioModule', name: 'BeneficiarioPage', segment: 'beneficiario', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cadastro/atualizar-endereco/atualizar-endereco.module#AtualizarEnderecoModule', name: 'AtualizarEnderecoPage', segment: 'atualizar-endereco', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/detalhe-fatura-negocicao/detalhe-fatura-negocicao.module#DetalheFaturaNegocicaoPageModule', name: 'DetalheFaturaNegocicaoPage', segment: 'detalhe-fatura-negocicao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/demonstrativo-pagamento/buscar-demonstrativo-pagamento/buscar-demonstrativo-pagamento.module#BuscarDemonstrativoPagamentoModule', name: 'BuscarDemonstrativoPagamentoPage', segment: 'buscar-demonstrativo-pagamento', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/demonstrativo-pagamento/demonstrativo-pagamento/demonstrativo-pagamento.module#DemonstrativoPagamentoModule', name: 'DemonstrativoPagamentoPage', segment: 'demonstrativo-pagamento', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/cadastro/atualizar-contato/atualizar-contato.module#AtualizarContatoModule', name: 'AtualizarContatoPage', segment: 'atualizar-contato', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/detalhes-autorizacao/detalhes-autorizacao.module#DetalhesAutorizacaoPageModule', name: 'DetalhesAutorizacaoPage', segment: 'detalhes-autorizacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/extrato-beneficiario/dependente/buscar-extrato-beneficiario-dependente/buscar-extrato-beneficiario-dependente.module#BuscarExtratoBeneficiarioDependenteModule', name: 'BuscarExtratoBeneficiarioDependentePage', segment: 'buscar-extrato-beneficiario-dependente', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/extrato-beneficiario/extrato-beneficiario/extrato-beneficiario.module#ExtratoBeneficiarioModule', name: 'ExtratoBeneficiarioPage', segment: 'extrato-beneficiario', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/detalhes-autorizacao/detalhes-autorizacao.module#DetalhesAutorizacaoPageModule', name: 'DetalhesAutorizacaoPage', segment: 'detalhes-autorizacao', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/extrato-beneficiario/titular/buscar-extrato-beneficiario-titular/buscar-extrato-beneficiario-titular.module#BuscarExtratoBeneficiarioTitularModule', name: 'BuscarExtratoBeneficiarioTitularPage', segment: 'buscar-extrato-beneficiario-titular', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/extrato-beneficiario/lista-extrato-beneficiario/lista-extrato-beneficiario.module#ListaExtratoBeneficiarioModule', name: 'ListaExtratoBeneficiarioPage', segment: 'lista-extrato-beneficiario', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/grupo-familiar/dependente/grupo-familiar-dependente/grupo-familiar-dependente.module#GrupoFamiliarDependenteModule', name: 'GrupoFamiliarDependentePage', segment: 'grupo-familiar-dependente', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/demonstrativo-pagamento/demonstrativo-pagamento/demonstrativo-pagamento.module#DemonstrativoPagamentoModule', name: 'DemonstrativoPagamentoPage', segment: 'demonstrativo-pagamento', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/grupo-familiar/titular/grupo-familiar-titular/grupo-familiar-titular.module#GrupoFamiliarTitularModule', name: 'GrupoFamiliarTitularPage', segment: 'grupo-familiar-titular', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/home/home.module#HomeModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/listagem-autorizacao/listagem-autorizacao.module#ListagemAutorizacaoPageModule', name: 'ListagemAutorizacaoPage', segment: 'listagem-autorizacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/listagem-faturas-negociacao/listagem-faturas-negociacao.module#ListagemFaturasNegociacaoPageModule', name: 'ListagemFaturasNegociacaoPage', segment: 'listagem-faturas-negociacao', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/extrato-beneficiario/titular/buscar-extrato-beneficiario-titular/buscar-extrato-beneficiario-titular.module#BuscarExtratoBeneficiarioTitularModule', name: 'BuscarExtratoBeneficiarioTitularPage', segment: 'buscar-extrato-beneficiario-titular', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/grupo-familiar/dependente/grupo-familiar-dependente/grupo-familiar-dependente.module#GrupoFamiliarDependenteModule', name: 'GrupoFamiliarDependentePage', segment: 'grupo-familiar-dependente', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/listagem-negociacao/listagem-negociacao.module#ListagemNegociacaoPageModule', name: 'ListagemNegociacaoPage', segment: 'listagem-negociacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/pre-home-redes-sociais/pre-home-redes-sociais.module#HomeModule', name: 'PreHomeRedesSociaisPage', segment: 'pre-home-redes-sociais', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/prestador/busca-prestador-lista/busca-prestador-lista.module#BuscaPrestadorListaModule', name: 'BuscaPrestadorListaPage', segment: 'busca-prestador-lista', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/prestador/busca-prestador/busca-prestador.module#BuscaPrestadorModule', name: 'BuscaPrestadorPage', segment: 'busca-prestador', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/prestador/prestador/prestador.module#PrestadorModule', name: 'PrestadorPage', segment: 'prestador', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/negociacao/negociacao.module#NegociacaoPageModule', name: 'NegociacaoPage', segment: 'negociacao', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/revalidacao/dependente/questionario-revalidacao-dependente/questionario-revalidacao-dependente.module#QuestionarioRevalidacaoDependenteModule', name: 'QuestionarioRevalidacaoDependentePage', segment: 'questionario-revalidacao-dependente', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/prestador/busca-prestador-lista/busca-prestador-lista.module#BuscaPrestadorListaModule', name: 'BuscaPrestadorListaPage', segment: 'busca-prestador-lista', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/prestador/prestador/prestador.module#PrestadorModule', name: 'PrestadorPage', segment: 'prestador', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/revalidacao/lista-grupo-familiar-revalidacao/lista-grupo-familiar-revalidacao.module#ListaGrupoFamiliarRevalidacaoModule', name: 'ListaGrupoFamiliarRevalidacaoPage', segment: 'lista-grupo-familiar-revalidacao', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/revalidacao/revalidacao-atualizar-endereco/revalidacao-atualizar-endereco.module#RevalidacaoAtualizarEnderecoModule', name: 'RevalidacaoAtualizarEnderecoPage', segment: 'revalidacao-atualizar-endereco', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/revalidacao/dependente/questionario-revalidacao-dependente/questionario-revalidacao-dependente.module#QuestionarioRevalidacaoDependenteModule', name: 'QuestionarioRevalidacaoDependentePage', segment: 'questionario-revalidacao-dependente', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/segunda-via-boleto/extrato-cabesp-boleto/extrato-cabesp-boleto.module#ExtratoCabespBoletoModule', name: 'ExtratoCabespBoletoPage', segment: 'extrato-cabesp-boleto', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/revalidacao/termo-convocado/termo-convocado.module#TermoConvocadoModule', name: 'TermoConvocadoPage', segment: 'termo-convocado', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/segunda-via-boleto/lista-segunda-via-boleto/lista-segunda-via-boleto.module#ListaSegundaViaBoletoModule', name: 'ListaSegundaViaBoletoPage', segment: 'lista-segunda-via-boleto', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/segunda-via-boleto/segunda-via-boleto/segunda-via-boleto.module#SegundaViaBoletoModule', name: 'SegundaViaBoletoPage', segment: 'segunda-via-boleto', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/revalidacao/termo-convocado/termo-convocado.module#TermoConvocadoModule', name: 'TermoConvocadoPage', segment: 'termo-convocado', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/segunda-via-boleto/extrato-cabesp-boleto/extrato-cabesp-boleto.module#ExtratoCabespBoletoModule', name: 'ExtratoCabespBoletoPage', segment: 'extrato-cabesp-boleto', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/segunda-via-boleto/lista-segunda-via-boleto/lista-segunda-via-boleto.module#ListaSegundaViaBoletoModule', name: 'ListaSegundaViaBoletoPage', segment: 'lista-segunda-via-boleto', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/usuario/alterar-senha-usuario/alterar-senha-usuario.module#AlterarSenhaUsuarioModule', name: 'AlterarSenhaUsuarioPage', segment: 'alterar-senha-usuario', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/usuario/modal-termos-e-condicoes/modal-termos-e-condicoes.module#ModalTermosECondicoesModule', name: 'ModalTermosECondicoesPage', segment: 'modal-termos-e-condicoes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/usuario/cadastrar-usuario/cadastrar-usuario.module#CadastrarUsuarioModule', name: 'CadastrarUsuarioPage', segment: 'cadastrar-usuario', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/usuario/codigo-ativacao-usuario/codigo-ativacao-usuario.module#CodigoAtivacaoUsuarioModule', name: 'CodigoAtivacaoUsuarioPage', segment: 'codigo-ativacao-usuario', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/usuario/modal-termos-e-condicoes/modal-termos-e-condicoes.module#ModalTermosECondicoesModule', name: 'ModalTermosECondicoesPage', segment: 'modal-termos-e-condicoes', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/usuario/perfil/perfil.module#PerfilModule', name: 'PerfilPage', segment: 'perfil', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/usuario/redefinir-senha-usuario/redefinir-senha-usuario.module#RedefinirSenhaUsuarioModule', name: 'RedefinirSenhaUsuarioPage', segment: 'redefinir-senha-usuario', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/agendamento/escolher-data-agendamento/escolher-data-agendamento.module#EscolherDataAgendamentoModule', name: 'EscolherDataAgendamentoPage', segment: 'escolher-data-agendamento', priority: 'low', defaultHistory: [] },
@@ -3422,7 +3423,7 @@ var ShowHideContainer = /** @class */ (function () {
     ], ShowHideContainer.prototype, "input", void 0);
     ShowHideContainer = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'show-hide-container',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\components\show-hide-password\show-hide-password.html"*/'<ng-content></ng-content>\n<a class="type-toggle" (click)="toggleShow()">\n	<ion-icon class="show-option" [hidden]="show" name="eye"></ion-icon>\n	<ion-icon class="hide-option" [hidden]="!show" name="eye-off"></ion-icon>\n</a>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\components\show-hide-password\show-hide-password.html"*/,
+            selector: 'show-hide-container',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\components\show-hide-password\show-hide-password.html"*/'<ng-content></ng-content>\n\n<a class="type-toggle" (click)="toggleShow()">\n\n	<ion-icon class="show-option" [hidden]="show" name="eye"></ion-icon>\n\n	<ion-icon class="hide-option" [hidden]="!show" name="eye-off"></ion-icon>\n\n</a>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\components\show-hide-password\show-hide-password.html"*/,
             host: {
                 'class': 'show-hide-password'
             }
@@ -3496,7 +3497,7 @@ var BackgroundImage = /** @class */ (function () {
     ], BackgroundImage.prototype, "src", null);
     BackgroundImage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'background-image',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\components\background-image\background-image.html"*/'<span class="bg-overlay"></span>\n<ion-spinner name="bubbles"></ion-spinner>\n<ng-content></ng-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\components\background-image\background-image.html"*/
+            selector: 'background-image',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\components\background-image\background-image.html"*/'<span class="bg-overlay"></span>\n\n<ion-spinner name="bubbles"></ion-spinner>\n\n<ng-content></ng-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\components\background-image\background-image.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* Renderer2 */]])
     ], BackgroundImage);
@@ -3592,7 +3593,7 @@ var PreloadImage = /** @class */ (function () {
     ], PreloadImage.prototype, "ratio", null);
     PreloadImage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'preload-image',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\components\preload-image\preload-image.html"*/'<ion-spinner name="bubbles"></ion-spinner>\n<ng-content></ng-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\components\preload-image\preload-image.html"*/
+            selector: 'preload-image',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\components\preload-image\preload-image.html"*/'<ion-spinner name="bubbles"></ion-spinner>\n\n<ng-content></ng-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\components\preload-image\preload-image.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_0__angular_core__["u" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["X" /* Renderer2 */]])
     ], PreloadImage);
@@ -3750,7 +3751,7 @@ var MyApp = /** @class */ (function () {
         __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* Nav */])
     ], MyApp.prototype, "nav", void 0);
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\app\app.html"*/'<ion-menu id="nao_autenticado" [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title align="center">Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content class="menu-content">\n    <ion-list text-wrap class="menu-list">\n      <button menuClose ion-item *ngFor="let p of paginasNaoAutenticado" (click)="openPage(p)">\n        <ion-icon [name]="p.icon" item-left></ion-icon>\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n<ion-menu id="titular" [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title align="center">Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content class="menu-content">\n    <ion-list text-wrap class="menu-list">\n      <button menuClose ion-item *ngFor="let p of paginasTitular" (click)="openPage(p)">\n        <ion-icon [name]="p.icon" item-left></ion-icon>\n        {{p.title}}\n      </button>\n      <button menuClose ion-item (click)="laudosWebRedirect()">\n        <ion-icon name="open" item-left></ion-icon>\n        Resultados Laboratório CASSEMS\n      </button>\n      <button menuClose ion-item (click)="logout()">\n        <ion-icon name="log-out" item-left></ion-icon>\n        Sair\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n<ion-menu id="dependente" [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title align="center">Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content class="menu-content">\n    <ion-list text-wrap class="menu-list">\n      <button menuClose ion-item *ngFor="let p of paginasDependente" (click)="openPage(p)">\n        <ion-icon [name]="p.icon" item-left></ion-icon>\n        {{p.title}}\n      </button>\n      <button menuClose ion-item (click)="laudosWebRedirect()">\n        <ion-icon name="open" item-left></ion-icon>\n        Resultados Laboratório CASSEMS\n      </button>\n      <button menuClose ion-item (click)="logout()">\n        <ion-icon name="log-out" item-left></ion-icon>\n        Sair\n      </button>\n    </ion-list>\n  </ion-content>\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\app\app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\app\app.html"*/'<ion-menu id="nao_autenticado" [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title align="center">Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content class="menu-content">\n\n    <ion-list text-wrap class="menu-list">\n\n      <button menuClose ion-item *ngFor="let p of paginasNaoAutenticado" (click)="openPage(p)">\n\n        <ion-icon [name]="p.icon" item-left></ion-icon>\n\n        {{p.title}}\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n</ion-menu>\n\n<ion-menu id="titular" [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title align="center">Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content class="menu-content">\n\n    <ion-list text-wrap class="menu-list">\n\n      <button menuClose ion-item *ngFor="let p of paginasTitular" (click)="openPage(p)">\n\n        <ion-icon [name]="p.icon" item-left></ion-icon>\n\n        {{p.title}}\n\n      </button>\n\n      <button menuClose ion-item (click)="laudosWebRedirect()">\n\n        <ion-icon name="open" item-left></ion-icon>\n\n        Resultados Laboratório CASSEMS\n\n      </button>\n\n      <button menuClose ion-item (click)="logout()">\n\n        <ion-icon name="log-out" item-left></ion-icon>\n\n        Sair\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n</ion-menu>\n\n<ion-menu id="dependente" [content]="content">\n\n  <ion-header>\n\n    <ion-toolbar>\n\n      <ion-title align="center">Menu</ion-title>\n\n    </ion-toolbar>\n\n  </ion-header>\n\n\n\n  <ion-content class="menu-content">\n\n    <ion-list text-wrap class="menu-list">\n\n      <button menuClose ion-item *ngFor="let p of paginasDependente" (click)="openPage(p)">\n\n        <ion-icon [name]="p.icon" item-left></ion-icon>\n\n        {{p.title}}\n\n      </button>\n\n      <button menuClose ion-item (click)="laudosWebRedirect()">\n\n        <ion-icon name="open" item-left></ion-icon>\n\n        Resultados Laboratório CASSEMS\n\n      </button>\n\n      <button menuClose ion-item (click)="logout()">\n\n        <ion-icon name="log-out" item-left></ion-icon>\n\n        Sair\n\n      </button>\n\n    </ion-list>\n\n  </ion-content>\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\app\app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["n" /* Platform */],
             __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */],

@@ -1,6 +1,6 @@
 webpackJsonp([3],{
 
-/***/ 373:
+/***/ 374:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginModule", function() { return LoginModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(443);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__login__ = __webpack_require__(445);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(217);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -45,7 +45,7 @@ var LoginModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 384:
+/***/ 385:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -120,25 +120,25 @@ var Usuario = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 443:
+/***/ 445:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_usuario_model__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_usuario_model__ = __webpack_require__(385);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pipes_capitalize_all_pipe__ = __webpack_require__(227);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__providers_usuario_service__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_especialidade_service__ = __webpack_require__(224);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_municipio_service__ = __webpack_require__(225);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_tipo_prestador_service__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_especialidade_service__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_municipio_service__ = __webpack_require__(224);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__providers_tipo_prestador_service__ = __webpack_require__(222);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__helpers_toast_helper__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__helpers_ios_helper__ = __webpack_require__(216);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_11_rxjs_Observable__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_observable_forkJoin__ = __webpack_require__(444);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_observable_forkJoin__ = __webpack_require__(446);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12_rxjs_add_observable_forkJoin___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_12_rxjs_add_observable_forkJoin__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__ionic_native_facebook__ = __webpack_require__(107);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__providers_beneficiario_benner_beneficiario_benner_service__ = __webpack_require__(106);
@@ -335,7 +335,7 @@ var LoginPage = /** @class */ (function () {
     };
     LoginPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-login',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\usuario\login\login.html"*/'<ion-header class="listing-header">\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n            <div class="header-logo">\n                <preload-image [ratio]="{w:583, h:100}" src="./assets/images/logo3.png"></preload-image>\n            </div>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="login-content auth-content">\n    <form class="login-form auth-form" (ngSubmit)="realizarLogin()" [formGroup]="loginForm" #loginFormElement="ngForm"\n          novalidate>\n        <ion-list>\n            <ion-item>\n                <ion-label floating>CPF</ion-label>\n                <ion-input type="number" [(ngModel)]="usuario.username"\n                           formControlName="cpf" maxlength="11"></ion-input>\n\n            </ion-item>\n            <show-hide-container>\n                <ion-item>\n                    <ion-label floating>Senha</ion-label>\n                    <ion-input type="password" [(ngModel)]="usuario.password" formControlName="senha"\n                               show-hide-input></ion-input>\n                </ion-item>\n            </show-hide-container>\n\n        </ion-list>\n        <button type="submit" icon-left ion-button block [disabled]="!loginFormElement.form.valid">\n            <ion-icon name="log-in"></ion-icon>\n            Entrar\n        </button>\n    </form>\n    <ion-row class="alt-options">\n        <ion-col no-padding width-50>\n            <button ion-button block clear class="forgot-button" (click)="realizarRecuperacaoDeSenha()">Esqueci minha\n                senha?\n            </button>\n        </ion-col>\n        <ion-col no-padding width-50>\n            <button ion-button block clear class="signup-button" (click)="realizarCadastro()">Cadastrar!</button>\n        </ion-col>\n    </ion-row>\n    <p class="auth-divider">\n        Ou\n    </p>\n    <ion-row class="alt-options">\n        <button ion-button block clear class="codigo-ativacao-button" (click)="realizarInsercaoCodigoAtivacao()">Inserir\n            Código de Ativação\n        </button>\n    </ion-row>\n    <div class="redes-sociais">\n        <button ion-button block icon-left class="facebook-auth-button" (click)="realizarLoginFacebook()">\n            <ion-icon name="logo-facebook"></ion-icon>\n            Login Facebook\n        </button>\n        <!--<button ion-button block icon-left class="google-auth-button" (click)="realizarLoginGooglePlus()">\n            <ion-icon name="logo-googleplus"></ion-icon>\n            Login Google+\n        </button>-->\n    </div>\n    <div class="laudos-web">\n        <button ion-button block (click)="laudosWebRedirect()">Resultados Laboratório CASSEMS</button>\n    </div>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\usuario\login\login.html"*/,
+            selector: 'page-login',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\usuario\login\login.html"*/'<ion-header class="listing-header">\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            <div class="header-logo">\n\n                <preload-image [ratio]="{w:583, h:100}" src="./assets/images/logo3.png"></preload-image>\n\n            </div>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="login-content auth-content">\n\n    <form class="login-form auth-form" (ngSubmit)="realizarLogin()" [formGroup]="loginForm" #loginFormElement="ngForm"\n\n          novalidate>\n\n        <ion-list>\n\n            <ion-item>\n\n                <ion-label floating>CPF</ion-label>\n\n                <ion-input type="number" [(ngModel)]="usuario.username"\n\n                           formControlName="cpf" maxlength="11"></ion-input>\n\n\n\n            </ion-item>\n\n            <show-hide-container>\n\n                <ion-item>\n\n                    <ion-label floating>Senha</ion-label>\n\n                    <ion-input type="password" [(ngModel)]="usuario.password" formControlName="senha"\n\n                               show-hide-input></ion-input>\n\n                </ion-item>\n\n            </show-hide-container>\n\n\n\n        </ion-list>\n\n        <button type="submit" icon-left ion-button block [disabled]="!loginFormElement.form.valid">\n\n            <ion-icon name="log-in"></ion-icon>\n\n            Entrar\n\n        </button>\n\n    </form>\n\n    <ion-row class="alt-options">\n\n        <ion-col no-padding width-50>\n\n            <button ion-button block clear class="forgot-button" (click)="realizarRecuperacaoDeSenha()">Esqueci minha\n\n                senha?\n\n            </button>\n\n        </ion-col>\n\n        <ion-col no-padding width-50>\n\n            <button ion-button block clear class="signup-button" (click)="realizarCadastro()">Cadastrar!</button>\n\n        </ion-col>\n\n    </ion-row>\n\n    <p class="auth-divider">\n\n        Ou\n\n    </p>\n\n    <ion-row class="alt-options">\n\n        <button ion-button block clear class="codigo-ativacao-button" (click)="realizarInsercaoCodigoAtivacao()">Inserir\n\n            Código de Ativação\n\n        </button>\n\n    </ion-row>\n\n    <div class="redes-sociais">\n\n        <button ion-button block icon-left class="facebook-auth-button" (click)="realizarLoginFacebook()">\n\n            <ion-icon name="logo-facebook"></ion-icon>\n\n            Login Facebook\n\n        </button>\n\n        <!--<button ion-button block icon-left class="google-auth-button" (click)="realizarLoginGooglePlus()">\n\n            <ion-icon name="logo-googleplus"></ion-icon>\n\n            Login Google+\n\n        </button>-->\n\n    </div>\n\n    <div class="laudos-web">\n\n        <button ion-button block (click)="laudosWebRedirect()">Resultados Laboratório CASSEMS</button>\n\n    </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\usuario\login\login.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_5__providers_usuario_service__["a" /* UsuarioService */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
@@ -359,7 +359,7 @@ var LoginPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 444:
+/***/ 446:
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";

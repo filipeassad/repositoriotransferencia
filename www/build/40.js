@@ -1,15 +1,15 @@
 webpackJsonp([40],{
 
-/***/ 333:
+/***/ 335:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FiltrosBuscaAgendamentoCentroMedicoModule", function() { return FiltrosBuscaAgendamentoCentroMedicoModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FiltrosBuscaAgendamentoEspecialidadeModule", function() { return FiltrosBuscaAgendamentoEspecialidadeModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pipes_pipe_module__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filtros_busca_agendamento_centro_medico__ = __webpack_require__(391);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__filtros_busca_agendamento_especialidade__ = __webpack_require__(394);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -20,35 +20,35 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var FiltrosBuscaAgendamentoCentroMedicoModule = /** @class */ (function () {
-    function FiltrosBuscaAgendamentoCentroMedicoModule() {
+var FiltrosBuscaAgendamentoEspecialidadeModule = /** @class */ (function () {
+    function FiltrosBuscaAgendamentoEspecialidadeModule() {
     }
-    FiltrosBuscaAgendamentoCentroMedicoModule = __decorate([
+    FiltrosBuscaAgendamentoEspecialidadeModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["J" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_3__filtros_busca_agendamento_centro_medico__["a" /* FiltrosBuscaAgendamentoCentroMedicoPage */]
+                __WEBPACK_IMPORTED_MODULE_3__filtros_busca_agendamento_especialidade__["a" /* FiltrosBuscaAgendamentoEspecialidadePage */]
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__filtros_busca_agendamento_centro_medico__["a" /* FiltrosBuscaAgendamentoCentroMedicoPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_3__filtros_busca_agendamento_especialidade__["a" /* FiltrosBuscaAgendamentoEspecialidadePage */]),
                 __WEBPACK_IMPORTED_MODULE_2__pipes_pipe_module__["a" /* PipeModule */]
             ],
-            exports: [__WEBPACK_IMPORTED_MODULE_3__filtros_busca_agendamento_centro_medico__["a" /* FiltrosBuscaAgendamentoCentroMedicoPage */]],
+            exports: [__WEBPACK_IMPORTED_MODULE_3__filtros_busca_agendamento_especialidade__["a" /* FiltrosBuscaAgendamentoEspecialidadePage */]],
             schemas: [__WEBPACK_IMPORTED_MODULE_0__angular_core__["i" /* CUSTOM_ELEMENTS_SCHEMA */]],
             providers: [],
         })
-    ], FiltrosBuscaAgendamentoCentroMedicoModule);
-    return FiltrosBuscaAgendamentoCentroMedicoModule;
+    ], FiltrosBuscaAgendamentoEspecialidadeModule);
+    return FiltrosBuscaAgendamentoEspecialidadeModule;
 }());
 
-//# sourceMappingURL=filtros-busca-agendamento-centro-medico.module.js.map
+//# sourceMappingURL=filtros-busca-agendamento-especialidade.module.js.map
 
 /***/ }),
 
-/***/ 391:
+/***/ 394:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FiltrosBuscaAgendamentoCentroMedicoPage; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FiltrosBuscaAgendamentoEspecialidadePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_forms__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(29);
@@ -68,8 +68,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-var FiltrosBuscaAgendamentoCentroMedicoPage = /** @class */ (function () {
-    function FiltrosBuscaAgendamentoCentroMedicoPage(toastHelper, navCtrl, loadingCtrl, agendamentoService) {
+var FiltrosBuscaAgendamentoEspecialidadePage = /** @class */ (function () {
+    function FiltrosBuscaAgendamentoEspecialidadePage(toastHelper, navCtrl, loadingCtrl, agendamentoService) {
         this.toastHelper = toastHelper;
         this.navCtrl = navCtrl;
         this.loadingCtrl = loadingCtrl;
@@ -77,23 +77,23 @@ var FiltrosBuscaAgendamentoCentroMedicoPage = /** @class */ (function () {
         this.listaEspecialidades = [];
         this.listaCentroMedicos = [];
         this.buscarForm = new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["b" /* FormGroup */]({
-            'codCentroMedico': new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]('', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["g" /* Validators */].required),
-            'codEspecialidade': new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]('')
+            'codEspecialidade': new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]('', __WEBPACK_IMPORTED_MODULE_1__angular_forms__["g" /* Validators */].required),
+            'codCentroMedico': new __WEBPACK_IMPORTED_MODULE_1__angular_forms__["a" /* FormControl */]('')
         });
     }
-    FiltrosBuscaAgendamentoCentroMedicoPage.prototype.ionViewDidLoad = function () {
+    FiltrosBuscaAgendamentoEspecialidadePage.prototype.ionViewDidLoad = function () {
         var _this = this;
         var loader = this.loadingCtrl.create({
             content: "Por favor aguarde...",
         });
         loader.present();
-        this.agendamentoService.buscarListaCentroMedico().subscribe(function (lista) {
+        this.agendamentoService.buscarListaEspecialidade().subscribe(function (lista) {
             if (lista.length) {
-                _this.listaCentroMedicos = lista;
+                _this.listaEspecialidades = lista;
                 loader.dismiss();
             }
             else {
-                _this.toastHelper.notificacaoMensagem('Não há centros médicos');
+                _this.toastHelper.notificacaoMensagem('Não há especialidades');
                 loader.dismiss();
                 _this.navCtrl.pop();
             }
@@ -103,28 +103,28 @@ var FiltrosBuscaAgendamentoCentroMedicoPage = /** @class */ (function () {
             _this.navCtrl.pop();
         });
     };
-    FiltrosBuscaAgendamentoCentroMedicoPage.prototype.buscarPrestador = function () {
+    FiltrosBuscaAgendamentoEspecialidadePage.prototype.buscarPrestador = function () {
         this.navCtrl.push('BuscarPrestadorAgendamentoPage', {
-            'codCentroMedico': this.codCentroMedico,
             'codEspecialidade': this.codEspecialidade,
-            'tipoBusca': "cm"
+            'codCentroMedico': this.codCentroMedico,
+            'tipoBusca': "especialidade"
         });
     };
-    FiltrosBuscaAgendamentoCentroMedicoPage.prototype.buscarEspecialidade = function () {
+    FiltrosBuscaAgendamentoEspecialidadePage.prototype.buscarCentroMedico = function () {
         var _this = this;
-        this.codEspecialidade = null;
-        if (this.codCentroMedico) {
+        this.codCentroMedico = null;
+        if (this.codEspecialidade) {
             var loader_1 = this.loadingCtrl.create({
                 content: "Por favor aguarde...",
             });
             loader_1.present();
-            this.agendamentoService.buscarListaEspecialidade(this.codCentroMedico).subscribe(function (lista) {
+            this.agendamentoService.buscarListaCentroMedico(this.codEspecialidade).subscribe(function (lista) {
                 if (!lista.length) {
-                    _this.toastHelper.notificacaoMensagem('Não existem centros médicos para esta especialidade');
-                    _this.listaEspecialidades = [];
+                    _this.toastHelper.notificacaoMensagem('Não há centros médicos para esta especialidade');
+                    _this.listaCentroMedicos = [];
                 }
                 else {
-                    _this.listaEspecialidades = lista;
+                    _this.listaCentroMedicos = lista;
                 }
                 loader_1.dismiss();
             }, function (erro) {
@@ -133,26 +133,26 @@ var FiltrosBuscaAgendamentoCentroMedicoPage = /** @class */ (function () {
             });
         }
         else {
-            this.listaEspecialidades = [];
+            this.listaCentroMedicos = [];
         }
     };
-    FiltrosBuscaAgendamentoCentroMedicoPage.prototype.limparCamposBusca = function () {
+    FiltrosBuscaAgendamentoEspecialidadePage.prototype.limparCamposBusca = function () {
         this.codEspecialidade = null;
         this.codCentroMedico = null;
     };
-    FiltrosBuscaAgendamentoCentroMedicoPage = __decorate([
+    FiltrosBuscaAgendamentoEspecialidadePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-filtros-busca-agendamento-centro-medico',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\agendamento\filtros-busca-agendamento-centro-medico\filtros-busca-agendamento-centro-medico.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n            <span class="titulo-page">Buscar Prestador</span>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="contentBuscarPrestadorAgendamento">\n    <form (ngSubmit)="buscarPrestador()" class="formBuscarPrestadorAgendamento" [formGroup]="buscarForm"\n          #buscarFormElement="ngForm">\n        <ion-list>\n            <ion-item>\n                <ion-label floating>Centro Médico</ion-label>\n                <ion-select [(ngModel)]="codCentroMedico" formControlName="codCentroMedico" cancelText="Fechar"\n                            (ngModelChange)="buscarEspecialidade()">\n                    <ion-option [value]="centroMedico.codCentroMedico" *ngFor="let centroMedico of listaCentroMedicos">\n                        {{centroMedico.descricao | capitalizeAll}}\n                    </ion-option>\n                </ion-select>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>Especialidade</ion-label>\n                <ion-select [(ngModel)]="codEspecialidade" formControlName="codEspecialidade" cancelText="Fechar"\n                            [disabled]="listaEspecialidades.length == 0">\n                    <ion-option [value]="especialidade.codEspecialidade"\n                                *ngFor="let especialidade of listaEspecialidades">{{especialidade.descricao |\n                        capitalizeAll}}\n                    </ion-option>\n                </ion-select>\n            </ion-item>\n        </ion-list>\n        <ion-row>\n            <ion-col col-6>\n                <button type="submit" ion-button block [disabled]="!buscarFormElement.form.valid || listaEspecialidades.length == 0">Buscar</button>\n            </ion-col>\n            <ion-col col-6>\n                <button type="button" ion-button block [disabled]="!buscarFormElement.form.valid"\n                        (click)="limparCamposBusca()"><span text-wrap>Limpar</span></button>\n            </ion-col>\n        </ion-row>\n    </form>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\agendamento\filtros-busca-agendamento-centro-medico\filtros-busca-agendamento-centro-medico.html"*/
+            selector: 'page-filtros-busca-agendamento-especialidade',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\agendamento\filtros-busca-agendamento-especialidade\filtros-busca-agendamento-especialidade.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            <span class="titulo-page">Buscar Prestador</span>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="contentBuscarPrestadorAgendamento">\n\n    <form (ngSubmit)="buscarPrestador()" class="formBuscarPrestadorAgendamento" [formGroup]="buscarForm"\n\n          #buscarFormElement="ngForm">\n\n        <ion-list>\n\n            <ion-item>\n\n                <ion-label floating>Especialidade</ion-label>\n\n                <ion-select [(ngModel)]="codEspecialidade" formControlName="codEspecialidade" cancelText="Fechar"\n\n                            (ngModelChange)="buscarCentroMedico()">\n\n                    <ion-option [value]="especialidade.codEspecialidade"\n\n                                *ngFor="let especialidade of listaEspecialidades">{{especialidade.descricao |\n\n                        capitalizeAll}}\n\n                    </ion-option>\n\n                </ion-select>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label floating>Centro Médico</ion-label>\n\n                <ion-select [(ngModel)]="codCentroMedico" formControlName="codCentroMedico" cancelText="Fechar"\n\n                            [disabled]="listaCentroMedicos.length == 0">\n\n                    <ion-option [value]="centroMedico.codCentroMedico" *ngFor="let centroMedico of listaCentroMedicos">\n\n                        {{centroMedico.descricao | capitalizeAll}}\n\n                    </ion-option>\n\n                </ion-select>\n\n            </ion-item>\n\n        </ion-list>\n\n        <ion-row>\n\n            <ion-col col-6>\n\n                <button type="submit" ion-button block [disabled]="!buscarFormElement.form.valid || listaCentroMedicos.length == 0">Buscar</button>\n\n            </ion-col>\n\n            <ion-col col-6>\n\n                <button type="button" ion-button block [disabled]="!buscarFormElement.form.valid"\n\n                        (click)="limparCamposBusca()"><span text-wrap>Limpar</span></button>\n\n            </ion-col>\n\n        </ion-row>\n\n    </form>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\agendamento\filtros-busca-agendamento-especialidade\filtros-busca-agendamento-especialidade.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_3__helpers_toast_helper__["a" /* ToastHelper */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["h" /* LoadingController */],
             __WEBPACK_IMPORTED_MODULE_4__providers_agendamento_service__["a" /* AgendamentoService */]])
-    ], FiltrosBuscaAgendamentoCentroMedicoPage);
-    return FiltrosBuscaAgendamentoCentroMedicoPage;
+    ], FiltrosBuscaAgendamentoEspecialidadePage);
+    return FiltrosBuscaAgendamentoEspecialidadePage;
 }());
 
-//# sourceMappingURL=filtros-busca-agendamento-centro-medico.js.map
+//# sourceMappingURL=filtros-busca-agendamento-especialidade.js.map
 
 /***/ })
 

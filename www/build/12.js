@@ -1,6 +1,6 @@
 webpackJsonp([12],{
 
-/***/ 370:
+/***/ 371:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PerfilModule", function() { return PerfilModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__perfil__ = __webpack_require__(439);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__perfil__ = __webpack_require__(441);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pipes_pipe_module__ = __webpack_require__(211);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -44,7 +44,7 @@ var PerfilModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 384:
+/***/ 385:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -119,7 +119,7 @@ var Usuario = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 439:
+/***/ 441:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -128,7 +128,7 @@ var Usuario = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__helpers_toast_helper__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_usuario_service__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_usuario_model__ = __webpack_require__(384);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__models_usuario_model__ = __webpack_require__(385);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__ = __webpack_require__(11);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5_rxjs_Observable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5_rxjs_Observable__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_facebook__ = __webpack_require__(107);
@@ -250,7 +250,7 @@ var PerfilPage = /** @class */ (function () {
     };
     PerfilPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-perfil',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\usuario\perfil\perfil.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>Perfil</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="contentPerfil">\n    <ion-refresher (ionRefresh)="recarregarDados($event)">\n        <ion-refresher-content\n                pullingIcon="arrow-dropdown"\n                pullingText="Puxe para atualizar"\n                refreshingSpinner="circles"\n                refreshingText="Carregando dados...">\n        </ion-refresher-content>\n    </ion-refresher>\n    <div class="user-details">\n        <ion-row wrap class="user-bio-row">\n            <ion-col no-padding col-12 text-center>\n                <h2 class="user-name">{{beneficiario.nome | capitalizeAll}}</h2>\n            </ion-col>\n            <section class="user-detail-section">\n                <ion-col no-padding col-12>\n                    <p class="user-description">\n                        Matrícula: {{beneficiario.matriculaCassems | matriculaCassems}}\n                    </p>\n                </ion-col>\n                <ion-col no-padding col-12>\n                    <p class="user-description">\n                        Dependência: {{beneficiario.descricaoDependencia | capitalizeAll}}\n                    </p>\n                </ion-col>\n                <ion-col no-padding col-12>\n                    <p class="user-description">\n                        Validade Carteira: {{(beneficiario.compValidadeFinal || beneficiario.dataValidadeFinal) | date:\n                        "dd/MM/y"}}\n                    </p>\n                </ion-col>\n                <ion-col no-padding col-12 *ngIf="beneficiario.cpf">\n                    <p class="user-description">\n                        CPF: {{beneficiario.cpf | cpf}}\n                    </p>\n                </ion-col>\n                <ion-col no-padding col-12 *ngIf="beneficiario.rg">\n                    <p class="user-description">\n                        RG: {{beneficiario.rg}}<span *ngIf="beneficiario.orgaoExpRg">/{{beneficiario.orgaoExpRg}}</span>\n                    </p>\n                </ion-col>\n                <ion-col no-padding col-12>\n                    <p class="user-description">\n                        Data Nascimento: {{beneficiario.dataNascimento | date: "dd/MM/y"}}\n                    </p>\n                </ion-col>\n            </section>\n        </ion-row>\n    </div>\n    <ion-row class="alt-options">\n        <button ion-button block (click)="alterarSenha()" class="alterar-senha-button">\n            Alterar Senha\n        </button>\n        <button ion-button block icon-left class="facebook-auth-button" (click)="vincularUsuarioFacebook()"\n                *ngIf="usuario.idFacebook == null">\n            <ion-icon name="logo-facebook"></ion-icon>\n            Vincular Facebook\n        </button>\n        <!--<button ion-button block icon-left class="google-auth-button" (click)="vincularUsuarioGooglePlus()"\n        *ngIf="usuario.idGooglePlus == null">\n            <ion-icon name="logo-googleplus"></ion-icon>\n            Vincular Google+\n        </button>-->\n    </ion-row>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\usuario\perfil\perfil.html"*/
+            selector: 'page-perfil',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\usuario\perfil\perfil.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>Perfil</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="contentPerfil">\n\n    <ion-refresher (ionRefresh)="recarregarDados($event)">\n\n        <ion-refresher-content\n\n                pullingIcon="arrow-dropdown"\n\n                pullingText="Puxe para atualizar"\n\n                refreshingSpinner="circles"\n\n                refreshingText="Carregando dados...">\n\n        </ion-refresher-content>\n\n    </ion-refresher>\n\n    <div class="user-details">\n\n        <ion-row wrap class="user-bio-row">\n\n            <ion-col no-padding col-12 text-center>\n\n                <h2 class="user-name">{{beneficiario.nome | capitalizeAll}}</h2>\n\n            </ion-col>\n\n            <section class="user-detail-section">\n\n                <ion-col no-padding col-12>\n\n                    <p class="user-description">\n\n                        Matrícula: {{beneficiario.matriculaCassems | matriculaCassems}}\n\n                    </p>\n\n                </ion-col>\n\n                <ion-col no-padding col-12>\n\n                    <p class="user-description">\n\n                        Dependência: {{beneficiario.descricaoDependencia | capitalizeAll}}\n\n                    </p>\n\n                </ion-col>\n\n                <ion-col no-padding col-12>\n\n                    <p class="user-description">\n\n                        Validade Carteira: {{(beneficiario.compValidadeFinal || beneficiario.dataValidadeFinal) | date:\n\n                        "dd/MM/y"}}\n\n                    </p>\n\n                </ion-col>\n\n                <ion-col no-padding col-12 *ngIf="beneficiario.cpf">\n\n                    <p class="user-description">\n\n                        CPF: {{beneficiario.cpf | cpf}}\n\n                    </p>\n\n                </ion-col>\n\n                <ion-col no-padding col-12 *ngIf="beneficiario.rg">\n\n                    <p class="user-description">\n\n                        RG: {{beneficiario.rg}}<span *ngIf="beneficiario.orgaoExpRg">/{{beneficiario.orgaoExpRg}}</span>\n\n                    </p>\n\n                </ion-col>\n\n                <ion-col no-padding col-12>\n\n                    <p class="user-description">\n\n                        Data Nascimento: {{beneficiario.dataNascimento | date: "dd/MM/y"}}\n\n                    </p>\n\n                </ion-col>\n\n            </section>\n\n        </ion-row>\n\n    </div>\n\n    <ion-row class="alt-options">\n\n        <button ion-button block (click)="alterarSenha()" class="alterar-senha-button">\n\n            Alterar Senha\n\n        </button>\n\n        <button ion-button block icon-left class="facebook-auth-button" (click)="vincularUsuarioFacebook()"\n\n                *ngIf="usuario.idFacebook == null">\n\n            <ion-icon name="logo-facebook"></ion-icon>\n\n            Vincular Facebook\n\n        </button>\n\n        <!--<button ion-button block icon-left class="google-auth-button" (click)="vincularUsuarioGooglePlus()"\n\n        *ngIf="usuario.idGooglePlus == null">\n\n            <ion-icon name="logo-googleplus"></ion-icon>\n\n            Vincular Google+\n\n        </button>-->\n\n    </ion-row>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\usuario\perfil\perfil.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],

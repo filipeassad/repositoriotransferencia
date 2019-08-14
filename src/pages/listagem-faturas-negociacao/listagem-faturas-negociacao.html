@@ -30,6 +30,9 @@
             <div style="margin-left: 10px; display: inline-block; vertical-align: middle; width: 10%;" *ngIf="itemNegociacao.sniCondicaopagamento == null">
                 <img width="80%" src="./assets/images/plus.png" alt="" (click)="negociacaoFatura(itemNegociacao)">
             </div>
+            <div style="margin-left: 10px; display: inline-block; vertical-align: middle; width: 10%;" *ngIf="itemNegociacao.sniCondicaopagamento != null">
+                <img width="80%" src="./assets/images/find.png" alt="" (click)="negociacaoFatura(itemNegociacao)">
+            </div>
         </ion-item>
     </ion-list>
 
@@ -42,14 +45,14 @@
         </ion-col>
     </ion-row>
 
-    <ion-row style="margin-top: 20px;">          
+    <ion-row style="margin-top: 20px;" *ngIf="negociacaoSelecionada.snDatacadastro || negociacaoSelecionada.snDatarejeicao">          
         <ion-col offset-1 col-10>
             <button style="width: 100%;" ion-button type="button" [disabled]="desabilitaAceitacao" (click)="aceitarTermos()" >Eu aceito os termos de uso</button>
         </ion-col>
     </ion-row>
 
     <ion-row>          
-        <ion-col offset-1 col-10>
+        <ion-col offset-1 col-10 *ngIf="negociacaoSelecionada.snDatacadastro || negociacaoSelecionada.snDatarejeicao">
             <button style="width: 100%;" ion-button type="button" (click)="rejeitarTermos()">Rejeitar</button>
         </ion-col>
     </ion-row>

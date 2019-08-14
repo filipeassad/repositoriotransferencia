@@ -1,6 +1,6 @@
 webpackJsonp([8],{
 
-/***/ 347:
+/***/ 348:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pipes_pipe_module__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lista_extrato_beneficiario__ = __webpack_require__(407);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lista_extrato_beneficiario__ = __webpack_require__(409);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var ListaExtratoBeneficiarioModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 380:
+/***/ 381:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -99,7 +99,7 @@ var BuscarExtratoBeneficiarioTO = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 381:
+/***/ 382:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -113,17 +113,17 @@ var TipoBuscaExtratoBeneficiarioEnum;
 
 /***/ }),
 
-/***/ 407:
+/***/ 409:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListaExtratoBeneficiarioPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_to_buscar_extrato_beneficiario_to_model__ = __webpack_require__(380);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_to_buscar_extrato_beneficiario_to_model__ = __webpack_require__(381);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_extrato_beneficiario_service__ = __webpack_require__(108);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__helpers_toast_helper__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__enums_tipo_busca_extrato_beneficiario_enum__ = __webpack_require__(381);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__enums_tipo_busca_extrato_beneficiario_enum__ = __webpack_require__(382);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_storage_service__ = __webpack_require__(56);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -253,7 +253,7 @@ var ListaExtratoBeneficiarioPage = /** @class */ (function () {
     };
     ListaExtratoBeneficiarioPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-lista-extrato-beneficiario',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\extrato-beneficiario\lista-extrato-beneficiario\lista-extrato-beneficiario.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n            <span class="titulo-page">Extrato Beneficiário</span>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="contentListaExtratoBeneficiario">\n    <ion-refresher (ionRefresh)="recarregarDados($event)">\n        <ion-refresher-content\n                pullingIcon="arrow-dropdown"\n                pullingText="Puxe para atualizar"\n                refreshingSpinner="circles"\n                refreshingText="Carregando dados...">\n        </ion-refresher-content>\n    </ion-refresher>\n    <ion-searchbar placeholder="Buscar" autocomplete="on" animated=true\n                   (ionInput)="buscarExtratoBeneficiario($event)"></ion-searchbar>\n    <ion-list>\n        <button ion-item class="list-item" *ngFor="let extratoBeneficiario of listaExtratoBeneficiario"\n                (click)="visualizarExtratoBeneficiario(extratoBeneficiario)">\n            <ion-row no-padding class="content-row one-line">\n\n                <ion-col no-padding width-90 class="item-content">\n                    <h3 class="item-title" text-wrap>{{ extratoBeneficiario.nome | capitalizeAll}}</h3>\n                    <p class="item-description">Data: {{ extratoBeneficiario.dataInicial | date: "dd/MM/y"}}</p>\n                    <p class="item-description">Procedimento: {{extratoBeneficiario.descProcedimento |\n                        capitalizeAll}}</p>\n                </ion-col>\n                <ion-col no-padding width-10 class="item-icon">\n                    <ion-icon name="arrow-forward"></ion-icon>\n                </ion-col>\n            </ion-row>\n        </button>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\extrato-beneficiario\lista-extrato-beneficiario\lista-extrato-beneficiario.html"*/
+            selector: 'page-lista-extrato-beneficiario',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\extrato-beneficiario\lista-extrato-beneficiario\lista-extrato-beneficiario.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            <span class="titulo-page">Extrato Beneficiário</span>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="contentListaExtratoBeneficiario">\n\n    <ion-refresher (ionRefresh)="recarregarDados($event)">\n\n        <ion-refresher-content\n\n                pullingIcon="arrow-dropdown"\n\n                pullingText="Puxe para atualizar"\n\n                refreshingSpinner="circles"\n\n                refreshingText="Carregando dados...">\n\n        </ion-refresher-content>\n\n    </ion-refresher>\n\n    <ion-searchbar placeholder="Buscar" autocomplete="on" animated=true\n\n                   (ionInput)="buscarExtratoBeneficiario($event)"></ion-searchbar>\n\n    <ion-list>\n\n        <button ion-item class="list-item" *ngFor="let extratoBeneficiario of listaExtratoBeneficiario"\n\n                (click)="visualizarExtratoBeneficiario(extratoBeneficiario)">\n\n            <ion-row no-padding class="content-row one-line">\n\n\n\n                <ion-col no-padding width-90 class="item-content">\n\n                    <h3 class="item-title" text-wrap>{{ extratoBeneficiario.nome | capitalizeAll}}</h3>\n\n                    <p class="item-description">Data: {{ extratoBeneficiario.dataInicial | date: "dd/MM/y"}}</p>\n\n                    <p class="item-description">Procedimento: {{extratoBeneficiario.descProcedimento |\n\n                        capitalizeAll}}</p>\n\n                </ion-col>\n\n                <ion-col no-padding width-10 class="item-icon">\n\n                    <ion-icon name="arrow-forward"></ion-icon>\n\n                </ion-col>\n\n            </ion-row>\n\n        </button>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\extrato-beneficiario\lista-extrato-beneficiario\lista-extrato-beneficiario.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],

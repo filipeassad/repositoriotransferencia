@@ -1,6 +1,6 @@
 webpackJsonp([16],{
 
-/***/ 342:
+/***/ 349:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pipes_pipe_module__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__demonstrativo_pagamento__ = __webpack_require__(401);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__demonstrativo_pagamento__ = __webpack_require__(410);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var DemonstrativoPagamentoModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 382:
+/***/ 383:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -69,14 +69,14 @@ var BuscaDemonstrativoPagamentoTO = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 401:
+/***/ 410:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DemonstrativoPagamentoPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_to_busca_demonstrativo_pagamento_to_model__ = __webpack_require__(382);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__models_to_busca_demonstrativo_pagamento_to_model__ = __webpack_require__(383);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__helpers_toast_helper__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_demonstrativo_pagamento_service__ = __webpack_require__(229);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__models_beneficiario_benner_en_vi_portal_beneficiario_model__ = __webpack_require__(214);
@@ -142,7 +142,7 @@ var DemonstrativoPagamentoPage = /** @class */ (function () {
     };
     DemonstrativoPagamentoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-demonstrativo-pagamento',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\demonstrativo-pagamento\demonstrativo-pagamento\demonstrativo-pagamento.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n            <span class="titulo-page">Demonstrativo Pagamento</span>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="contentDemonstrativoPagamento">\n    <div class="demonstrativo" *ngFor="let demonstrativoPagamento of listaDemonstrativoPagamento">\n        <ion-row wrap class="demonstrativo-title-row">\n            <ion-col no-padding col-12>\n                <h2 class="demonstrativo-title">{{demonstrativoPagamento.nome | capitalizeAll}}</h2>\n            </ion-col>\n            <section class="demonstrativo-details-section">\n                <ion-col no-padding col-12>\n                    <p class="demonstrativo-description">\n                        Valor: {{demonstrativoPagamento.valor | monetarioBrasil}}\n                    </p>\n                </ion-col>\n            </section>\n        </ion-row>\n    </div>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\demonstrativo-pagamento\demonstrativo-pagamento\demonstrativo-pagamento.html"*/
+            selector: 'page-demonstrativo-pagamento',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\demonstrativo-pagamento\demonstrativo-pagamento\demonstrativo-pagamento.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            <span class="titulo-page">Demonstrativo Pagamento</span>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="contentDemonstrativoPagamento">\n\n    <div class="demonstrativo" *ngFor="let demonstrativoPagamento of listaDemonstrativoPagamento">\n\n        <ion-row wrap class="demonstrativo-title-row">\n\n            <ion-col no-padding col-12>\n\n                <h2 class="demonstrativo-title">{{demonstrativoPagamento.nome | capitalizeAll}}</h2>\n\n            </ion-col>\n\n            <section class="demonstrativo-details-section">\n\n                <ion-col no-padding col-12>\n\n                    <p class="demonstrativo-description">\n\n                        Valor: {{demonstrativoPagamento.valor | monetarioBrasil}}\n\n                    </p>\n\n                </ion-col>\n\n            </section>\n\n        </ion-row>\n\n    </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\demonstrativo-pagamento\demonstrativo-pagamento\demonstrativo-pagamento.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],

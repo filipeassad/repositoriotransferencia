@@ -1,6 +1,6 @@
 webpackJsonp([24],{
 
-/***/ 364:
+/***/ 366:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pipes_pipe_module__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lista_segunda_via_boleto__ = __webpack_require__(428);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__lista_segunda_via_boleto__ = __webpack_require__(432);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var ListaSegundaViaBoletoModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 428:
+/***/ 432:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -145,7 +145,7 @@ var ListaSegundaViaBoletoPage = /** @class */ (function () {
     };
     ListaSegundaViaBoletoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-lista-segunda-via-boleto',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\segunda-via-boleto\lista-segunda-via-boleto\lista-segunda-via-boleto.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>Segunda Via Boleto</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="contentListaSegundaViaBoleto">\n    <ion-refresher (ionRefresh)="recarregarDados($event)">\n        <ion-refresher-content\n                pullingIcon="arrow-dropdown"\n                pullingText="Puxe para atualizar"\n                refreshingSpinner="circles"\n                refreshingText="Carregando dados...">\n        </ion-refresher-content>\n    </ion-refresher>\n    <ion-list text-wrap>\n        <button ion-item class="list-item" *ngFor="let boleto of listaBoletosEmAberto" (click)="visualizarBoleto(boleto)">\n            <ion-row no-padding class="content-row one-line">\n                <ion-col no-padding width-90 class="item-content">\n                    <h3 class="item-title" text-wrap *ngIf="boleto.nomeCli_titular">{{ boleto.nomeCli_titular | capitalizeAll}}</h3>\n                    <h3 class="item-title" text-wrap *ngIf="boleto.nomeCli_agregado">{{ boleto.nomeCli_agregado | capitalizeAll}}</h3>\n                    <p class="item-description">Título: {{boleto.desTpt | capitalizeAll}}</p>\n                    <p class="item-description">Número Título: {{boleto.numTitulo}}</p>\n                    <p class="item-description">Vencimento: {{boleto.dataVencimentoCalculado | date: "dd/MM/y"}}</p>\n                </ion-col>\n                <ion-col no-padding width-10 class="item-icon">\n                    <ion-icon name="arrow-forward"></ion-icon>\n                </ion-col>\n            </ion-row>\n        </button>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\segunda-via-boleto\lista-segunda-via-boleto\lista-segunda-via-boleto.html"*/
+            selector: 'page-lista-segunda-via-boleto',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\segunda-via-boleto\lista-segunda-via-boleto\lista-segunda-via-boleto.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>Segunda Via Boleto</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="contentListaSegundaViaBoleto">\n\n    <ion-refresher (ionRefresh)="recarregarDados($event)">\n\n        <ion-refresher-content\n\n                pullingIcon="arrow-dropdown"\n\n                pullingText="Puxe para atualizar"\n\n                refreshingSpinner="circles"\n\n                refreshingText="Carregando dados...">\n\n        </ion-refresher-content>\n\n    </ion-refresher>\n\n    <ion-list text-wrap>\n\n        <button ion-item class="list-item" *ngFor="let boleto of listaBoletosEmAberto" (click)="visualizarBoleto(boleto)">\n\n            <ion-row no-padding class="content-row one-line">\n\n                <ion-col no-padding width-90 class="item-content">\n\n                    <h3 class="item-title" text-wrap *ngIf="boleto.nomeCli_titular">{{ boleto.nomeCli_titular | capitalizeAll}}</h3>\n\n                    <h3 class="item-title" text-wrap *ngIf="boleto.nomeCli_agregado">{{ boleto.nomeCli_agregado | capitalizeAll}}</h3>\n\n                    <p class="item-description">Título: {{boleto.desTpt | capitalizeAll}}</p>\n\n                    <p class="item-description">Número Título: {{boleto.numTitulo}}</p>\n\n                    <p class="item-description">Vencimento: {{boleto.dataVencimentoCalculado | date: "dd/MM/y"}}</p>\n\n                </ion-col>\n\n                <ion-col no-padding width-10 class="item-icon">\n\n                    <ion-icon name="arrow-forward"></ion-icon>\n\n                </ion-col>\n\n            </ion-row>\n\n        </button>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\segunda-via-boleto\lista-segunda-via-boleto\lista-segunda-via-boleto.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],

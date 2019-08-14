@@ -1,6 +1,6 @@
 webpackJsonp([25],{
 
-/***/ 362:
+/***/ 365:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pipes_pipe_module__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__extrato_cabesp_boleto__ = __webpack_require__(426);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__extrato_cabesp_boleto__ = __webpack_require__(431);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var ExtratoCabespBoletoModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 426:
+/***/ 431:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -102,7 +102,7 @@ var ExtratoCabespBoletoPage = /** @class */ (function () {
     };
     ExtratoCabespBoletoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_1__angular_core__["n" /* Component */])({
-            selector: 'page-extrato-cabesp-boleto',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\segunda-via-boleto\extrato-cabesp-boleto\extrato-cabesp-boleto.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>\n            <span class="titulo-page">Extrato Reciprocidade</span>\n        </ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="contentExtratoCabespBoleto">\n    <div class="extrato" *ngFor="let extratoCabesp of listaExtratoCabesp">\n        <ion-row wrap class="extrato-title-row">\n            <ion-col no-padding col-12>\n                <h2 class="extrato-title" align="center">Número da Guia: {{extratoCabesp.numero}}</h2>\n            </ion-col>\n            <section class="extrato-details-section">\n                <ion-col no-padding col-12>\n                    <p class="extrato-description">\n                        Tipo da Guia: {{extratoCabesp.tipo | capitalizeAll}}\n                    </p>\n                    <p class="extrato-description">\n                        Data do Atendimento: {{extratoCabesp.dataAtendimento | date: "dd/MM/y"}}\n                    </p>\n                    <p class="extrato-description">\n                        Local do Atendimento: {{extratoCabesp.nome}}\n                    </p>\n                    <p class="extrato-description">\n                        Cidade do Atendimento: {{extratoCabesp.descricao}}\n                    </p>\n                    <p class="extrato-description">\n                        Descrição do Procedimento: {{extratoCabesp.descTuss}}\n                    </p>\n                    <p class="extrato-description">\n                        Valor do Procedimento: {{extratoCabesp.valor | monetarioBrasil}}\n                    </p>\n                </ion-col>\n            </section>\n        </ion-row>\n    </div>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\segunda-via-boleto\extrato-cabesp-boleto\extrato-cabesp-boleto.html"*/
+            selector: 'page-extrato-cabesp-boleto',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\segunda-via-boleto\extrato-cabesp-boleto\extrato-cabesp-boleto.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>\n\n            <span class="titulo-page">Extrato Reciprocidade</span>\n\n        </ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="contentExtratoCabespBoleto">\n\n    <div class="extrato" *ngFor="let extratoCabesp of listaExtratoCabesp">\n\n        <ion-row wrap class="extrato-title-row">\n\n            <ion-col no-padding col-12>\n\n                <h2 class="extrato-title" align="center">Número da Guia: {{extratoCabesp.numero}}</h2>\n\n            </ion-col>\n\n            <section class="extrato-details-section">\n\n                <ion-col no-padding col-12>\n\n                    <p class="extrato-description">\n\n                        Tipo da Guia: {{extratoCabesp.tipo | capitalizeAll}}\n\n                    </p>\n\n                    <p class="extrato-description">\n\n                        Data do Atendimento: {{extratoCabesp.dataAtendimento | date: "dd/MM/y"}}\n\n                    </p>\n\n                    <p class="extrato-description">\n\n                        Local do Atendimento: {{extratoCabesp.nome}}\n\n                    </p>\n\n                    <p class="extrato-description">\n\n                        Cidade do Atendimento: {{extratoCabesp.descricao}}\n\n                    </p>\n\n                    <p class="extrato-description">\n\n                        Descrição do Procedimento: {{extratoCabesp.descTuss}}\n\n                    </p>\n\n                    <p class="extrato-description">\n\n                        Valor do Procedimento: {{extratoCabesp.valor | monetarioBrasil}}\n\n                    </p>\n\n                </ion-col>\n\n            </section>\n\n        </ion-row>\n\n    </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\segunda-via-boleto\extrato-cabesp-boleto\extrato-cabesp-boleto.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__providers_segunda_via_boleto_service__["a" /* SegundaViaBoletoService */],
             __WEBPACK_IMPORTED_MODULE_0_ionic_angular__["h" /* LoadingController */],

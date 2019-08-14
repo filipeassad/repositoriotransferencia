@@ -1,18 +1,53 @@
-<!--
-  Generated template for the DetalheFaturaNegocicaoPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
-<ion-header>
-
-  <ion-navbar>
-    <ion-title>detalhe-fatura-negocicao</ion-title>
-  </ion-navbar>
-
+<ion-header class="listing-header">
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>Detalhes Fatura</ion-title>
+	</ion-navbar>
 </ion-header>
 
-
-<ion-content padding>
-
+<ion-content padding text-wrap>
+	<ion-row wrap class="user-bio-row">
+        <ion-col no-padding col-12>
+            <p class="user-description" style="font-size: 15px; color:#0090BF;">
+                Fatura: {{ itemNegociacaoSelecionado.sniNumeroFatura }}
+            </p>
+        </ion-col>
+    </ion-row>
+	<ion-row wrap class="user-bio-row">
+        <ion-col no-padding col-12>
+            <p class="user-description">
+                Tipo: {{ itemNegociacaoSelecionado.sniDescTipofatura }}
+            </p>
+        </ion-col>
+    </ion-row>
+	<ion-row wrap class="user-bio-row">
+        <ion-col no-padding col-12>
+            <p class="user-description">
+                Valor: R$ {{ itemNegociacaoSelecionado.sniValortotal }}
+            </p>
+        </ion-col>
+	</ion-row>
+	<ion-row wrap class="user-bio-row">
+        <ion-col no-padding col-12>
+            <p class="user-description">
+                Condições: {{ condicaoSelecionada.desCpg }}
+            </p>
+        </ion-col>
+	</ion-row>
+	<ion-row wrap class="user-bio-row" *ngIf="temEntrada">
+        <ion-col no-padding col-12>
+            <p class="user-description">
+                Entrada: {{ itemNegociacaoSelecionado.sniValorentrada }}
+            </p>
+        </ion-col>
+	</ion-row>
+	<ion-row wrap class="user-bio-row" *ngIf="temParcela">
+        <ion-col no-padding col-12>
+            <p class="user-description">
+                Parcelas: {{ itemNegociacaoSelecionado.sniQtdparcelas }}
+            </p>
+        </ion-col>
+    </ion-row>
 </ion-content>

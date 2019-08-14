@@ -1,6 +1,6 @@
 webpackJsonp([29],{
 
-/***/ 353:
+/***/ 354:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ListagemNegociacaoPageModule", function() { return ListagemNegociacaoPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listagem_negociacao__ = __webpack_require__(413);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__listagem_negociacao__ = __webpack_require__(415);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -38,7 +38,7 @@ var ListagemNegociacaoPageModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 413:
+/***/ 415:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -87,7 +87,7 @@ var ListagemNegociacaoPage = /** @class */ (function () {
     };
     ListagemNegociacaoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-listagem-negociacao',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\listagem-negociacao\listagem-negociacao.html"*/'<ion-header class="listing-header">\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>Negociações</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n    <h4 style="color:#0090BF; text-align: left;">Negociações</h4>\n    <ion-list>\n        <ion-item *ngFor="let negociacao of negociacoes">\n            <ion-row>\n                <ion-col no-padding col-2>\n                    <p>{{negociacao.snId}}</p>\n                </ion-col>\n                <ion-col no-padding col-8>\n                    <ion-row>\n                        <ion-col no-padding col-12>\n                            <p>{{negociacao.snDatacadastro | date: "dd/MM/yyyy"}}</p>\n                        </ion-col>\n                    </ion-row>\n                    <ion-row>\n                        <ion-col no-padding col-12>\n                            <p>{{negociacao.snDataaceite != null ? \'Aceito\' : (negociacao.snDatarejeicao != null ? \'Rejeitado\' : \'Aberto\') }}</p>\n                        </ion-col>\n                    </ion-row>\n                </ion-col>\n                <ion-col no-padding col-2 *ngIf="negociacao.snDataaceite == null && negociacao.snDatarejeicao == null">\n                    <img width="20px" src="./assets/images/left-arrow.png" alt="" (click)="redirecionarNegociacao(negociacao)">\n                </ion-col>\n            </ion-row>\n        </ion-item>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\listagem-negociacao\listagem-negociacao.html"*/,
+            selector: 'page-listagem-negociacao',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\listagem-negociacao\listagem-negociacao.html"*/'<ion-header class="listing-header">\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>Negociações</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n    <h4 style="color:#0090BF; text-align: left;">Negociações</h4>\n\n    <ion-list>\n\n        <ion-item *ngFor="let negociacao of negociacoes">\n\n            <ion-row>\n\n                <ion-col no-padding col-2>\n\n                    <p>{{negociacao.snId}}</p>\n\n                </ion-col>\n\n                <ion-col no-padding col-8>\n\n                    <ion-row>\n\n                        <ion-col no-padding col-12>\n\n                            <p>{{negociacao.snDatacadastro | date: "dd/MM/yyyy"}}</p>\n\n                        </ion-col>\n\n                    </ion-row>\n\n                    <ion-row>\n\n                        <ion-col no-padding col-12>\n\n                            <p>{{negociacao.snDataaceite != null ? \'Aceito\' : (negociacao.snDatarejeicao != null ? \'Rejeitado\' : \'Aberto\') }}</p>\n\n                        </ion-col>\n\n                    </ion-row>\n\n                </ion-col>\n\n                <ion-col no-padding col-2 *ngIf="negociacao.snDataaceite == null && negociacao.snDatarejeicao == null">\n\n                    <img width="20px" src="./assets/images/left-arrow.png" alt="" (click)="redirecionarNegociacao(negociacao)">\n\n                </ion-col>\n\n            </ion-row>\n\n        </ion-item>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\listagem-negociacao\listagem-negociacao.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* NavController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],

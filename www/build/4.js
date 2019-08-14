@@ -1,12 +1,12 @@
 webpackJsonp([4],{
 
-/***/ 367:
+/***/ 369:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CadastrarUsuarioModule", function() { return CadastrarUsuarioModule; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cadastrar_usuario__ = __webpack_require__(433);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__cadastrar_usuario__ = __webpack_require__(436);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(29);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -41,7 +41,7 @@ var CadastrarUsuarioModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 376:
+/***/ 377:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -91,7 +91,7 @@ var CustomValidatorsHelper = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 433:
+/***/ 436:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -99,10 +99,10 @@ var CustomValidatorsHelper = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_to_usuario_cadastro_to_model__ = __webpack_require__(434);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_to_usuario_cadastro_to_model__ = __webpack_require__(437);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_usuario_service__ = __webpack_require__(213);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__helpers_toast_helper__ = __webpack_require__(55);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__helpers_custom_validators_helper__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__helpers_custom_validators_helper__ = __webpack_require__(377);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__helpers_util_helper__ = __webpack_require__(23);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -188,7 +188,7 @@ var CadastrarUsuarioPage = /** @class */ (function () {
     };
     CadastrarUsuarioPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-cadastrar-usuario',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\usuario\cadastrar-usuario\cadastrar-usuario.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>Cadastrar</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="signup-content auth-content">\n    <form class="signup-form auth-form" (ngSubmit)="cadastrarUsuario()" [formGroup]="cadastroForm" #cadastroFormElement="ngForm" novalidate>\n        <ion-list>\n            <ion-item>\n                <ion-label floating>Matrícula CASSEMS</ion-label>\n                <ion-input type="number" [(ngModel)]="usuarioCadastro.matriculaCassems" formControlName="matricula"\n                            maxlength="16"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>CPF</ion-label>\n                <ion-input type="number" [(ngModel)]="usuarioCadastro.cpf" formControlName="cpf"\n                           maxlength="11"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>E-mail</ion-label>\n                <ion-input type="email" [(ngModel)]="usuarioCadastro.email" formControlName="email" (keyup)="alterarValorComparacaoEmail()"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>Confirmar E-mail</ion-label>\n                <ion-input type="email" [(ngModel)]="usuarioCadastro.emailConfirmar" formControlName="confirmar-email"></ion-input>\n            </ion-item>\n            <ion-item>\n                <ion-label floating>Data Nascimento</ion-label>\n                <ion-datetime displayFormat="DD/MM/YYYY" doneText="Ok" cancelText="Fechar"\n                              [(ngModel)]="usuarioCadastro.dataNascimento" formControlName="data-nascimento"></ion-datetime>\n            </ion-item>\n            <ion-item class="switcher-item">\n                <ion-label><button ion-button type="button" block clear (click)="modalTermosECondicoes()">Aceito os termos e condições</button></ion-label>\n                <ion-toggle [(ngModel)]="usuarioCadastro.aceiteTermo" color="secondary" formControlName="aceite-termo" (ionChange)="aceitarTermo($event)"></ion-toggle>\n            </ion-item>\n        </ion-list>\n        <button type="submit" ion-button block [disabled]="!cadastroFormElement.form.valid">Cadastrar</button>\n    </form>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\usuario\cadastrar-usuario\cadastrar-usuario.html"*/
+            selector: 'page-cadastrar-usuario',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\usuario\cadastrar-usuario\cadastrar-usuario.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>Cadastrar</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="signup-content auth-content">\n\n    <form class="signup-form auth-form" (ngSubmit)="cadastrarUsuario()" [formGroup]="cadastroForm" #cadastroFormElement="ngForm" novalidate>\n\n        <ion-list>\n\n            <ion-item>\n\n                <ion-label floating>Matrícula CASSEMS</ion-label>\n\n                <ion-input type="number" [(ngModel)]="usuarioCadastro.matriculaCassems" formControlName="matricula"\n\n                            maxlength="16"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label floating>CPF</ion-label>\n\n                <ion-input type="number" [(ngModel)]="usuarioCadastro.cpf" formControlName="cpf"\n\n                           maxlength="11"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label floating>E-mail</ion-label>\n\n                <ion-input type="email" [(ngModel)]="usuarioCadastro.email" formControlName="email" (keyup)="alterarValorComparacaoEmail()"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label floating>Confirmar E-mail</ion-label>\n\n                <ion-input type="email" [(ngModel)]="usuarioCadastro.emailConfirmar" formControlName="confirmar-email"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label floating>Data Nascimento</ion-label>\n\n                <ion-datetime displayFormat="DD/MM/YYYY" doneText="Ok" cancelText="Fechar"\n\n                              [(ngModel)]="usuarioCadastro.dataNascimento" formControlName="data-nascimento"></ion-datetime>\n\n            </ion-item>\n\n            <ion-item class="switcher-item">\n\n                <ion-label><button ion-button type="button" block clear (click)="modalTermosECondicoes()">Aceito os termos e condições</button></ion-label>\n\n                <ion-toggle [(ngModel)]="usuarioCadastro.aceiteTermo" color="secondary" formControlName="aceite-termo" (ionChange)="aceitarTermo($event)"></ion-toggle>\n\n            </ion-item>\n\n        </ion-list>\n\n        <button type="submit" ion-button block [disabled]="!cadastroFormElement.form.valid">Cadastrar</button>\n\n    </form>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\usuario\cadastrar-usuario\cadastrar-usuario.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__providers_usuario_service__["a" /* UsuarioService */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* ModalController */],
@@ -203,7 +203,7 @@ var CadastrarUsuarioPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 434:
+/***/ 437:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

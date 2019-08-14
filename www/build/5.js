@@ -1,6 +1,6 @@
 webpackJsonp([5],{
 
-/***/ 366:
+/***/ 367:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -8,7 +8,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlterarSenhaUsuarioModule", function() { return AlterarSenhaUsuarioModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__alterar_senha_usuario__ = __webpack_require__(431);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__alterar_senha_usuario__ = __webpack_require__(433);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_components_module__ = __webpack_require__(217);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -43,7 +43,7 @@ var AlterarSenhaUsuarioModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 376:
+/***/ 377:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -93,7 +93,7 @@ var CustomValidatorsHelper = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 431:
+/***/ 433:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -101,9 +101,9 @@ var CustomValidatorsHelper = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(17);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_to_alterar_senha_usuario_to_model__ = __webpack_require__(432);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_to_alterar_senha_usuario_to_model__ = __webpack_require__(434);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_usuario_service__ = __webpack_require__(213);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__helpers_custom_validators_helper__ = __webpack_require__(376);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__helpers_custom_validators_helper__ = __webpack_require__(377);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__helpers_toast_helper__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__providers_storage_service__ = __webpack_require__(56);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -170,7 +170,7 @@ var AlterarSenhaUsuarioPage = /** @class */ (function () {
     };
     AlterarSenhaUsuarioPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-alterar-senha-usuario',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\usuario\alterar-senha-usuario\alterar-senha-usuario.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>Alterar Senha</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="login-content auth-content">\n    <form class="login-form auth-form" (ngSubmit)="alterarSenha()" [formGroup]="alterarSenhaForm" #alterarSenhaFormElement="ngForm"\n          novalidate>\n        <ion-list>\n            <show-hide-container>\n                <ion-item>\n                    <ion-label floating>Senha Atual</ion-label>\n                    <ion-input type="password" [(ngModel)]="alterarSenhaUsuarioTO.senhaAtual" formControlName="senhaAtual"\n                               show-hide-input></ion-input>\n                </ion-item>\n            </show-hide-container>\n            <show-hide-container>\n                <ion-item>\n                    <ion-label floating>Nova Senha</ion-label>\n                    <ion-input type="password" [(ngModel)]="alterarSenhaUsuarioTO.novaSenha" formControlName="novaSenha" (keyup)="alterarValorComparacaoSenha()"\n                               show-hide-input></ion-input>\n                </ion-item>\n            </show-hide-container>\n            <show-hide-container>\n                <ion-item>\n                    <ion-label floating>Confirmar Nova Senha</ion-label>\n                    <ion-input type="password" [(ngModel)]="alterarSenhaUsuarioTO.confirmarNovaSenha" formControlName="confirmarNovaSenha"\n                               show-hide-input></ion-input>\n                </ion-item>\n            </show-hide-container>\n        </ion-list>\n        <button type="submit" ion-button block [disabled]="!alterarSenhaFormElement.form.valid">Alterar Senha</button>\n    </form>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\usuario\alterar-senha-usuario\alterar-senha-usuario.html"*/
+            selector: 'page-alterar-senha-usuario',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\usuario\alterar-senha-usuario\alterar-senha-usuario.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>Alterar Senha</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="login-content auth-content">\n\n    <form class="login-form auth-form" (ngSubmit)="alterarSenha()" [formGroup]="alterarSenhaForm" #alterarSenhaFormElement="ngForm"\n\n          novalidate>\n\n        <ion-list>\n\n            <show-hide-container>\n\n                <ion-item>\n\n                    <ion-label floating>Senha Atual</ion-label>\n\n                    <ion-input type="password" [(ngModel)]="alterarSenhaUsuarioTO.senhaAtual" formControlName="senhaAtual"\n\n                               show-hide-input></ion-input>\n\n                </ion-item>\n\n            </show-hide-container>\n\n            <show-hide-container>\n\n                <ion-item>\n\n                    <ion-label floating>Nova Senha</ion-label>\n\n                    <ion-input type="password" [(ngModel)]="alterarSenhaUsuarioTO.novaSenha" formControlName="novaSenha" (keyup)="alterarValorComparacaoSenha()"\n\n                               show-hide-input></ion-input>\n\n                </ion-item>\n\n            </show-hide-container>\n\n            <show-hide-container>\n\n                <ion-item>\n\n                    <ion-label floating>Confirmar Nova Senha</ion-label>\n\n                    <ion-input type="password" [(ngModel)]="alterarSenhaUsuarioTO.confirmarNovaSenha" formControlName="confirmarNovaSenha"\n\n                               show-hide-input></ion-input>\n\n                </ion-item>\n\n            </show-hide-container>\n\n        </ion-list>\n\n        <button type="submit" ion-button block [disabled]="!alterarSenhaFormElement.form.valid">Alterar Senha</button>\n\n    </form>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\usuario\alterar-senha-usuario\alterar-senha-usuario.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_4__providers_usuario_service__["a" /* UsuarioService */],
             __WEBPACK_IMPORTED_MODULE_6__helpers_toast_helper__["a" /* ToastHelper */],
@@ -185,7 +185,7 @@ var AlterarSenhaUsuarioPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 432:
+/***/ 434:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";

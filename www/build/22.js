@@ -1,6 +1,6 @@
 webpackJsonp([22],{
 
-/***/ 365:
+/***/ 363:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -9,7 +9,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pipes_pipe_module__ = __webpack_require__(211);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__segunda_via_boleto__ = __webpack_require__(429);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__segunda_via_boleto__ = __webpack_require__(428);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -44,7 +44,7 @@ var SegundaViaBoletoModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 429:
+/***/ 428:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -52,7 +52,7 @@ var SegundaViaBoletoModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(29);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_clipboard__ = __webpack_require__(236);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_boleto_sapiens_model__ = __webpack_require__(430);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__models_boleto_sapiens_model__ = __webpack_require__(429);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__providers_segunda_via_boleto_service__ = __webpack_require__(218);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__helpers_toast_helper__ = __webpack_require__(55);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__providers_storage_service__ = __webpack_require__(56);
@@ -229,7 +229,7 @@ var SegundaViaBoletoPage = /** @class */ (function () {
     };
     SegundaViaBoletoPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["n" /* Component */])({
-            selector: 'page-segunda-via-boleto',template:/*ion-inline-start:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\segunda-via-boleto\segunda-via-boleto\segunda-via-boleto.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>Segunda Via Boleto</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content class="contentSegundaViaBoleto" text-wrap>\n    <div class="details">\n        <ion-row wrap class="details-title-row">\n            <ion-col no-padding col-12 text-center>\n                <h2 class="details-title" *ngIf="boleto.nomeCli_titular">{{boleto.nomeCli_titular | capitalizeAll}}</h2>\n                <h2 class="details-title" *ngIf="boleto.nomeCli_agregado">{{boleto.nomeCli_agregado | capitalizeAll}}</h2>\n            </ion-col>\n            <section class="details-section">\n                <ion-col no-padding col-12>\n                    <p class="details-description">\n                        Título: {{boleto.desTpt | capitalizeAll}}\n                    </p>\n                </ion-col>\n                <ion-col no-padding col-12>\n                    <p class="details-description">\n                        Número Título: {{boleto.numTitulo}}\n                    </p>\n                </ion-col>\n                <ion-col no-padding col-12>\n                    <p class="details-description">\n                        Transação: {{boleto.desTns | capitalizeAll}}\n                    </p>\n                </ion-col>\n                <ion-col no-padding col-12>\n                    <p class="details-description">\n                        Valor: {{boleto.vlr_Abe | monetarioBrasil}}\n                    </p>\n                </ion-col>\n                <ion-col no-padding col-12>\n                    <p class="details-description">\n                        Vencimento: {{boleto.dataVencimentoCalculado | date: "dd/MM/y"}}\n                    </p>\n                </ion-col>\n            </section>\n        </ion-row>\n        <section class="opcoes-boleto">\n            <section class="linha-digitavel-section" *ngIf="boleto.numeroDigitavel && boleto.dias_Venc < 60">\n                <h2 class="section-title" text-center="">Linha Digitável</h2>\n                <p text-center>{{boleto.numeroDigitavel}}</p>\n                <button class="copiar-linha-digitavel-button" ion-button full type="button"\n                        (click)="copiarLinhaDigitavel()">Copiar Linha Digitável\n                </button>\n                <button class="enviar-por-email-button" ion-button full type="button"\n                        (click)="abrirAlertOpcaoEmail()">Enviar\n                    Boleto por E-mail\n                </button>\n            </section>\n            <section class="boleto-vencido-section" *ngIf="boleto.dias_Venc >= 60">\n                <h4 class="section-title" text-center><ion-icon name="alert" class="icon-color-warning"></ion-icon> Atenção</h4>\n                <p text-center>Boleto vencido a mais de 60 dias. Vá até um local de atendimento para negociação.</p>\n            </section>\n            <button class="extrato-cabesp-button" ion-button full type="button" *ngIf="boleto.reciprocidade"\n                    (click)="abrirExtratoCabespBoleto()">Visualizar Extrato Reciprocidade\n            </button>\n        </section>\n    </div>\n</ion-content>\n'/*ion-inline-end:"D:\Projetos Android\CassemsBeneficiario-02\app-cassems-beneficiario-#76\app-cassems-beneficiario-#76\src\pages\segunda-via-boleto\segunda-via-boleto\segunda-via-boleto.html"*/
+            selector: 'page-segunda-via-boleto',template:/*ion-inline-start:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\segunda-via-boleto\segunda-via-boleto\segunda-via-boleto.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>Segunda Via Boleto</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content class="contentSegundaViaBoleto" text-wrap>\n\n    <div class="details">\n\n        <ion-row wrap class="details-title-row">\n\n            <ion-col no-padding col-12 text-center>\n\n                <h2 class="details-title" *ngIf="boleto.nomeCli_titular">{{boleto.nomeCli_titular | capitalizeAll}}</h2>\n\n                <h2 class="details-title" *ngIf="boleto.nomeCli_agregado">{{boleto.nomeCli_agregado | capitalizeAll}}</h2>\n\n            </ion-col>\n\n            <section class="details-section">\n\n                <ion-col no-padding col-12>\n\n                    <p class="details-description">\n\n                        Título: {{boleto.desTpt | capitalizeAll}}\n\n                    </p>\n\n                </ion-col>\n\n                <ion-col no-padding col-12>\n\n                    <p class="details-description">\n\n                        Número Título: {{boleto.numTitulo}}\n\n                    </p>\n\n                </ion-col>\n\n                <ion-col no-padding col-12>\n\n                    <p class="details-description">\n\n                        Transação: {{boleto.desTns | capitalizeAll}}\n\n                    </p>\n\n                </ion-col>\n\n                <ion-col no-padding col-12>\n\n                    <p class="details-description">\n\n                        Valor: {{boleto.vlr_Abe | monetarioBrasil}}\n\n                    </p>\n\n                </ion-col>\n\n                <ion-col no-padding col-12>\n\n                    <p class="details-description">\n\n                        Vencimento: {{boleto.dataVencimentoCalculado | date: "dd/MM/y"}}\n\n                    </p>\n\n                </ion-col>\n\n            </section>\n\n        </ion-row>\n\n        <section class="opcoes-boleto">\n\n            <section class="linha-digitavel-section" *ngIf="boleto.numeroDigitavel && boleto.dias_Venc < 60">\n\n                <h2 class="section-title" text-center="">Linha Digitável</h2>\n\n                <p text-center>{{boleto.numeroDigitavel}}</p>\n\n                <button class="copiar-linha-digitavel-button" ion-button full type="button"\n\n                        (click)="copiarLinhaDigitavel()">Copiar Linha Digitável\n\n                </button>\n\n                <button class="enviar-por-email-button" ion-button full type="button"\n\n                        (click)="abrirAlertOpcaoEmail()">Enviar\n\n                    Boleto por E-mail\n\n                </button>\n\n            </section>\n\n            <section class="boleto-vencido-section" *ngIf="boleto.dias_Venc >= 60">\n\n                <h4 class="section-title" text-center><ion-icon name="alert" class="icon-color-warning"></ion-icon> Atenção</h4>\n\n                <p text-center>Boleto vencido a mais de 60 dias. Vá até um local de atendimento para negociação.</p>\n\n            </section>\n\n            <button class="extrato-cabesp-button" ion-button full type="button" *ngIf="boleto.reciprocidade"\n\n                    (click)="abrirExtratoCabespBoleto()">Visualizar Extrato Reciprocidade\n\n            </button>\n\n        </section>\n\n    </div>\n\n</ion-content>\n\n'/*ion-inline-end:"D:\Filipe\Projetos Android\cassems-beneficiario\src\pages\segunda-via-boleto\segunda-via-boleto\segunda-via-boleto.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* LoadingController */],
             __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["m" /* NavParams */],
@@ -247,7 +247,7 @@ var SegundaViaBoletoPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 430:
+/***/ 429:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
