@@ -47,7 +47,7 @@
 
     <ion-row style="margin-top: 20px;" *ngIf="negociacaoSelecionada.snDatacadastro || negociacaoSelecionada.snDatarejeicao">          
         <ion-col offset-1 col-10>
-            <button style="width: 100%;" ion-button type="button" [disabled]="desabilitaAceitacao" (click)="aceitarTermos()" >Eu aceito os termos de uso</button>
+            <button style="width: 100%;" ion-button type="button" [disabled]="desabilitaAceitacao" (click)="mostrarTermosAceitacao()" >Eu aceito os termos de uso</button>
         </ion-col>
     </ion-row>
 
